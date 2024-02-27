@@ -1,0 +1,32 @@
+name: 🚀 Deploy to Innovation Sandbox
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ftp.bgsandbox.com
+        username: willelder@bgsandbox.com
+        password: ${{ secrets.ftp_password }}
+        port: 21
+        local-dir: ./_site/
+        server-dir: innovation.bgsandbox.com/oam/
+        exclude: |
+          **/.DS_Store
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/assets/sass/**
+          **/uswds/img/material-icons-deprecated/**
+          **/uswds/img/material-icons/*
