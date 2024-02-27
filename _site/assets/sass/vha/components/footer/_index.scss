@@ -1,0 +1,46 @@
+@use "uswds-core" as *;
+
+.usa-footer {
+
+    .usa-footer__logo-img {
+        max-width: 18rem;
+    }
+    
+    .usa-social-link {
+        background: none;
+    }
+
+    &__secondary-section {
+        background-color: #e6e6e6;
+        color: #{color("gray-warm-90")};
+
+        a {
+            color: #{color("gray-warm-90")};
+        }
+    }
+
+}
+
+.usa-identifier {
+    background-color: #0e1d33;
+
+    &__identity-disclaimer a,
+    &__identity-disclaimer a:visited,
+    .usa-link {
+        color: #fff;
+    }
+
+}
+
+.usa-identifier .usa-link,
+.usa-identifier__identity-disclaimer a,
+.usa-identifier__identity-disclaimer a:visited {
+    color: #fff;
+}
+
+.usa-identifier__required-link.usa-link:active,
+.usa-identifier__required-link.usa-link:hover,
+.usa-identifier__required-link:active,
+.usa-identifier__required-link:hover {
+    color: #e6e6e6;
+}

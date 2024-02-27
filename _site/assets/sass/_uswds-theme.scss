@@ -1,0 +1,48 @@
+/*
+----------------------------------------
+USWDS with settings overrides
+----------------------------------------
+Uncomment the following lines and add a list of changed settings
+in the form $setting: value,
+----------------------------------------
+*/
+
+
+ @use "uswds-core" with (
+  $theme-utility-breakpoints: (
+    'card':              false,   // 160px
+    'card-lg':           false,   // 240px
+    'mobile':            true,   // 320px
+    'mobile-lg':         true,    // 480px
+    'tablet':            true,    // 640px
+    'tablet-lg':         true,   // 880px
+    'desktop':           true,    // 1024px
+    'desktop-lg':        true,   // 1200px
+    'widescreen':        true,   // 1400px
+  ),
+
+  $theme-show-compile-warnings: false,
+  $theme-show-notifications: false,
+  $theme-grid-container-max-width: "widescreen",
+
+  
+  /* ----------------------------------------
+  TYPOGRAPHY
+  ---------------------------------------- */
+  $theme-font-path: "../uswds/fonts",
+  /* ----------------------------------------
+  HEADER
+  ---------------------------------------- */
+  $theme-image-path: "../uswds/img",
+  $theme-header-max-width: "widescreen",
+  $theme-banner-max-width: "widescreen",
+
+  /* ----------------------------------------
+  FOOTER
+  ---------------------------------------- */
+  $theme-footer-max-width: "widescreen",
+
+  $theme-identifier-max-width: "widescreen",
+
+  $theme-card-border-width: 1px,
+);

@@ -1,0 +1,11 @@
+@use "uswds-core" as *;
+
+.site-wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
+section {
+    position: relative;
+    z-index: 1;
+}

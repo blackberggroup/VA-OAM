@@ -1,0 +1,10 @@
+@use "uswds-core" as *;
+
+.usa-card {
+    
+    &__heading,
+    &__container {
+        font-family: "Myriad-Pro", helvetica, arial, sans-serif;
+    }
+
+}

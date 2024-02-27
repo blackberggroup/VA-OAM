@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  pull_request:
+    types:
+      - opened
+    paths:
+      - '**/*'      
+
+jobs:
+  file-list:
+    runs-on: ubuntu-latest
+    name: 🖊️ Changed files - PR Desc.
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v42
+
+      - name: List all changed files
+        env:
+          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+        run: |
+          for file in $ALL_CHANGED_FILES; do
+            echo "$file was changed"
+          done
+
+      - name: Update PR description
+        run: |
+          changedFiles="${{ steps.changed-files.outputs.all_changed_files }}"
+          prNumber="${{ github.event.number }}"
+          currentDescription=$(curl -sSL -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/pulls/$prNumber" | jq -r .body)
+
+          # Escape double quotes in JSON
+          changedFiles="${changedFiles//\"/\\\"}"
+
+          # Construct the JSON payload with jq, placing the changed files at the bottom
+          newDescription=$(jq -n --arg cf "$changedFiles" --arg cd "$currentDescription" '{"body":"\($cd)\n\n## Changed Files in this Pull Request ##\n- \($cf | split(" ") | join("\n - "))"}')
+          
+          # Use echo to ensure proper JSON formatting
+          echo "${newDescription}" > new_description.json
+
+          curl -sSL \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -X PATCH -d "@new_description.json" \
+            "https://api.github.com/repos/${{ github.repository }}/pulls/$prNumber"

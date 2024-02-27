@@ -1,0 +1,31 @@
+@use "uswds-core" as *;
+
+.page-title {
+
+    @include at-media(mobile) {
+    
+        &__content {
+            text-align: center;
+        }
+
+        &__logo {
+            img {
+                display: none;
+            }
+        }        
+    }
+
+    @include at-media(tablet-lg) {
+    
+        &__content {
+            text-align: right;
+        }
+
+        &__logo {
+            img {
+                display: block;
+                max-width: 30rem;
+            }
+        }        
+    }
+}

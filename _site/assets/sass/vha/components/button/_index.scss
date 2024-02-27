@@ -1,0 +1,8 @@
+@use "uswds-core" as *;
+
+.vha-button {
+    &.usa-button--outline.usa-button--inverse {
+        box-shadow: inset 0 0 0 2px #{color("base-lightest")};
+        color: #{color("base-lightest")};
+    }
+}

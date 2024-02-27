@@ -1,0 +1,144 @@
+.vcl-button {
+    background: #8b0a03 url(../uswds/img/usa-icons/chevron_right-white.svg) calc(100% - 0.3em) 0.5rem no-repeat;
+    background-size: 1.5em auto;
+    border-radius: 0 0 0.2em 0.2em;
+    -webkit-box-shadow: 0 2px 5px #1b1b1b;
+    box-shadow: 0 2px 5px #1b1b1b;
+    padding: 0 26px 0.8em 10px;
+    text-align: left;
+    max-width: 26rem !important;
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+    font-size: .9rem;
+    z-index: 1;
+}
+@media screen and (max-width: 800px) {
+    .vcl-button {
+        display: none;
+   }
+}
+a.vcl-button .vcl-logo {
+    content: "";
+    background: url(../uswds/img/vcl-logo-white.svg) calc(100% + 0.2em) 0.4rem no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    margin: 0.3em 0.5em -0.7em;
+}
+.vcl-modal {
+    max-width: 55rem !important;
+}
+.vcl-modal__title {
+    color: red;
+    padding-left: 41px;
+    background: url(../uswds/img/vcl-logo.png) no-repeat 0;
+    background-position-x: 0;
+    background-position-y: center;
+    background-size: auto auto;
+    background-position: left 5px;
+    background-size: 32px auto;
+    font-size: 1.34rem !important;
+}
+.usa-prose {
+    color: #1b1b1b;
+    li a {
+        color: #1b1b1b;
+        display: block;
+        padding: 1rem 2.4rem;
+        text-decoration: none;
+   }
+}
+.vcl-call {
+    background: url(../uswds/img/usa-icons/phone.svg) no-repeat 0;
+    background-position-x: 0;
+    background-position-y: center;
+    background-size: auto auto;
+    background-position: left 11px;
+    background-size: 32px auto;
+}
+.vcl-text {
+    background: url(../uswds/img/material-icons/vcl-mobile.svg) no-repeat 0;
+    background-position-x: 0;
+    background-position-y: center;
+    background-size: auto auto;
+    background-position: left 11px;
+    background-size: 32px !important;
+}
+.vcl-chat {
+    background: url(../uswds/img/material-icons/vcl-chat.svg) no-repeat 0;
+    background-position-x: 0;
+    background-position-y: center;
+    background-size: auto auto;
+    background-position: left 11px;
+    background-size: 32px auto !important;
+}
+.vcl-tty {
+    background: url(../uswds/img/material-icons/tty.svg) no-repeat 0;
+    background-position-x: 0;
+    background-position-y: center;
+    background-size: auto auto;
+    background-position: left 11px;
+    background-size: 32px auto;
+}
+.usa-header--extended .usa-logo {
+    max-width: none;
+}
+.usa-banner__header-text {
+    color: #000;
+}
+.usa-banner__button-text {
+    color: #005ea2 !important;
+}
+.usa-banner__header-action {
+    color: #005ea2 !important;
+    font-size: .75rem !important;
+}
+.usa-banner__content {
+    color: #000;
+}
+.usa-banner__inner {
+    max-width: none;
+}
+.usa-nav__secondary {
+    bottom: 5em;
+}
+.usa-modal__close {
+    &:active, &:hover {
+        color: #0e1d33;
+   }
+}
+.usa-nav__primary .usa-accordion__button span {
+    padding-right: 0.5rem;
+}
+.about-dropdown, .portfolio-dropdown {
+    display: none;
+    width: 15px;
+}
+
+/* ===================================================================== 
+Temporary overrides for usa-header dropdown arrows excluding usa-banner ======================================================================== */
+@supports ((-webkit-mask:url()) or (mask:url())) {
+    .usa-header {
+        .usa-nav__primary button[aria-expanded=false] span::after, .usa-accordion__button[aria-expanded=false]::before {
+            -webkit-mask-image: url(""),linear-gradient(transparent,transparent) !important;
+            mask-image: url(""),linear-gradient(transparent,transparent) !important;
+       }
+        .usa-nav__primary button[aria-expanded=true] span::after {
+            -webkit-mask-image: url(""),linear-gradient(transparent,transparent) !important;
+            mask-image: url(""),linear-gradient(transparent,transparent) !important;
+       }
+   }
+}
+.usa-header {
+    .usa-banner__button[aria-expanded=true]::after {
+        background-image: url("") !important;
+   }
+    .usa-nav__primary button[aria-expanded=true] span::after {
+        background-image: url("") !important;
+   }
+    .usa-accordion__button[aria-expanded=false],.usa-accordion__button[aria-expanded=false]:hover {
+        background-image: url(""),linear-gradient(transparent,transparent) !important;
+   }
+}

@@ -1,0 +1,17 @@
+name: Compress Images
+on:
+  pull_request:
+    types: [ labeled ]
+
+jobs:
+  compress:
+    name: 🗜️ Compress
+    if: ${{ github.event.label.name == 'image compression' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+      - uses: namoscato/action-tinify@v1
+        with:
+          api_key: ${{ secrets.TINIFY_API_KEY }}      
