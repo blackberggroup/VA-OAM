@@ -6,14 +6,14 @@ Main Branch -
 Develop Branch - 
 
 ## How to Install and Run the Project
-1. Clone this repo. Navigate to the directory where you'd like to put the va-website-template directory and run:
+1. Clone this repo. Navigate to the directory where you'd like to put the VA-OAM directory and run:
     ```bash
-    git clone https://github.com/WBDynamics/va-website-template.git
+    git clone https://github.com/blackberggroup/VA-OAM.git
     ```
     
-    This will create a va-ncchi-beta directory with the website files inside. Navigate to this new directory:
+    This will create a directory with the website files inside. Navigate to this new directory:
     ```bash
-    cd va-website-template
+    cd VA-OAM
     ```
 
 1. Install Node.js `16.16.0` or higher =>
