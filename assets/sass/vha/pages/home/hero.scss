@@ -1,0 +1,50 @@
+@use "uswds-core" as *;
+
+.hero {
+
+    &__image-container {
+        position: relative;
+
+        @include at-media("tablet-lg") {
+            padding-top: 40%;
+        }
+    }
+
+    &__image {
+        background-image: url('../../assets/img/home/hero-bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 40%;
+        position: relative;
+
+        @include at-media("tablet-lg") {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 1;            
+        }
+    }
+
+    &__image-content {
+        position: relative;
+
+        @include at-media("tablet-lg") {
+            position: absolute;
+            top: 0;
+            z-index: 10;
+
+            .gradient-text {
+                background: #ffffff;
+                background: linear-gradient(to right,#fff 0,#fff 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            h2 {
+                color: #fff;
+            }
+        }
+    }
+}

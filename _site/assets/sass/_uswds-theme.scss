@@ -7,7 +7,6 @@ in the form $setting: value,
 ----------------------------------------
 */
 
-
  @use "uswds-core" with (
   $theme-utility-breakpoints: (
     'card':              false,   // 160px
@@ -30,6 +29,7 @@ in the form $setting: value,
   TYPOGRAPHY
   ---------------------------------------- */
   $theme-font-path: "../uswds/fonts",
+
   /* ----------------------------------------
   HEADER
   ---------------------------------------- */
@@ -45,4 +45,9 @@ in the form $setting: value,
   $theme-identifier-max-width: "widescreen",
 
   $theme-card-border-width: 1px,
+
+  /* ----------------------------------------
+  THEME COLORS
+  ---------------------------------------- */
+  $theme-color-primary: #1A5694,
 );
