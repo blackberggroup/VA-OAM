@@ -10,10 +10,20 @@
     content: "";
 }
 
+/* ----------------------------------------
+Positioning
+---------------------------------------- */
 .left-neg-8 {
     left:-4rem;
 }
 
 .bottom-neg-8 {
     bottom:-4rem;
+}
+
+/* ----------------------------------------
+Background Patterns
+---------------------------------------- */
+.bg-pattern-light {
+    background-image: url('../../assets/img/decore/pattern-light-blue.png');
 }
