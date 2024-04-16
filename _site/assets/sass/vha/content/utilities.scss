@@ -11,19 +11,28 @@
 }
 
 /* ----------------------------------------
-Positioning
+Positioning & Rotation
 ---------------------------------------- */
-.left-neg-8 {
-    left:-4rem;
-}
+.top-neg-4 { top:-2rem; }
+.top-neg-5 { top:-2.5rem; }
+.top-neg-6 { top:-3rem; }
+.top-neg-10 { top:-5rem; }
 
-.bottom-neg-8 {
-    bottom:-4rem;
-}
+.left-neg-8 { left:-4rem; }
+.left-neg-transform-50 { transform: translateX(-50%); }
 
+.bottom-neg-8 { bottom:-4rem; }
+.bottom-neg-9 { bottom:-4.5rem; }
+.bottom-neg-10 { bottom:-5rem; }
+.rotate-180 { transform: rotate(180deg); }
 /* ----------------------------------------
 Background Patterns
 ---------------------------------------- */
 .bg-pattern-light {
     background-image: url('../../assets/img/decore/pattern-light-blue.png');
 }
+
+.bg-gradient-primary {
+    background: linear-gradient(251.73deg, #1A5694 -10.48%, #081B2E 85.54%);
+}
+

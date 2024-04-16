@@ -1,0 +1,17 @@
+@use "uswds-core" as *;
+
+.usa-form {
+
+    &--inline {
+
+        .usa-button {
+            margin: .5rem 0 0 0;
+        }
+    }
+
+    @include at-media("mobile-lg") {
+        &--max {
+            max-width: 100%;
+        }
+    }
+}
