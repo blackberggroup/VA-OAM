@@ -5,6 +5,9 @@ p {
     font-size: 1rem;
     line-height: 1.6;
 }
+.font-body-4xl {
+    @include font-size(80px);
+}
 
 .font-body-3xl {
     @include font-size(52px);

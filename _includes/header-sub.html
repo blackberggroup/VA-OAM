@@ -67,103 +67,58 @@
 <header class="usa-header usa-header--extended tablet-lg:padding-top-3">
   <div class="usa-navbar">
     <div class="usa-logo">
-      <em class="usa-logo__text"><a href="/ecosystem/views/home.html" title="VHA Innovation Ecosystem">
-          VA <span> | VHA Innovation Ecosystem</span>
+      <em class="usa-logo__text"><a href="/oam/" title="Office of Advanced Manufacturing">
+          VA <span> | Office of Advanced Manufacturing</span>
         </a></em>
     </div>
     <button type="button" class="usa-menu-btn">Menu</button>
   </div>
-  <nav aria-label="Primary navigation" class="usa-nav">
+  <nav aria-label="Primary navigation" class="usa-nav clearfix">
     <div class="usa-nav__inner">
       <button type="button" class="usa-nav__close">
         <img src="../assets/uswds/img/usa-icons/close.svg" role="img" alt="Close" />
       </button>
       <ul class="usa-nav__primary usa-accordion">
+        <li class="usa-nav__primary-item" title="OAM Home Page">
+          <a href="/oam/" class="usa-nav-link font-body-md"><span>Home</span></a>
+        </li>        
         <li class="usa-nav__primary-item">
           <button type="button" class="usa-accordion__button usa-nav__link" aria-expanded="false"
             aria-controls="extended-nav-section-one">
-            <span class="font-body-md">About&nbsp;&nbsp;&nbsp;</span><i class="arrow down one position-absolute"></i>
+            <span class="font-body-md">Who We Are</span><i class="arrow down usa-nav__arrow"></i>
           </button>
           <ul id="extended-nav-section-one" class="usa-nav__submenu">
             <li class="usa-nav__submenu-item">
-              <a href="/ecosystem/views/about/mission.html" class="font-body-md"
-                title="Mission"><span>Mission</span></a>
+              <a href="/oam/who-we-are/our-story" class="font-body-md"
+                title="Our Story"><span>Our Story</span></a>
             </li>
             <li class="usa-nav__submenu-item">
-              <a href="/ecosystem/views/about/leadership.html" class="font-body-md"
-                title="Leadership"><span>Leadership</span></a>
+              <a href="/oam/who-we-are/our-team" class="font-body-md"
+                title="Our Team"><span>Our Team</span></a>
             </li>
           </ul>
         </li>
         <li class="usa-nav__primary-item">
           <button type="button" class="usa-accordion__button usa-nav__link two" aria-expanded="false"
             aria-controls="extended-nav-section-two">
-            <span class="font-body-md">Portfolios and Programs</span><span><i class="arrow down two position-absolute"></i></span>
+            <span class="font-body-md">Products</span><i class="arrow down usa-nav__arrow"></i>
           </button>
           <ul id="extended-nav-section-two" class="usa-nav__submenu">
-            <li class="usa-nav__submenu-item one" title="VHA Innovators Network" onmouseover="ShowSolutionsMenu1();">
-              <a href="/ecosystem/views/innovators-network/innovators-network.html"
-                class="font-body-md"><span>Innovators Network</span><span><i class="arrow right one"></i></span></a>
+            <li class="usa-nav__submenu-item">
+              <a href="/oam/products/" class="font-body-md"
+                title="All Products"><span>All Products</span></a>
             </li>
-            <li class="usa-nav__submenu-item two" focus="" title="VHA Diffusion of Excellence" onmouseover="ShowSolutionsMenu2();">
-              <a class="font-body-md" href="/ecosystem/views/diffusion-excellence/"><span>Diffusion of Excellence</span><span><i class="arrow right two"></i></span></a>
+            <li class="usa-nav__submenu-item">
+              <a href="/oam/products/product-idea-submission/" class="font-body-md"
+                title="Product Idea Submission"><span>Product Idea Submission</span></a>
             </li>
-            <li class="usa-nav__submenu-item three" title="VHA National Centers for Innovation to Impact" onmouseover="ShowSolutionsMenu3();">
-              <a href="/ecosystem/views/national-centers/nci2i.html" class="font-body-md"><span>National Centers for Innovation to Impact</span><span><i class="arrow right three"></i></span></a>
-            </li>
-            <li class="usa-nav__submenu-item four" title="VHA IE Fellowships" onmouseover="ShowSolutionsMenu4();">
-              <a href="/ecosystem/views/programs/fellowship/" class="font-body-md"><span>Fellowships</span><span><i class="arrow right four"></i></span></a>
-            </li>
-            <li class="usa-nav__submenu-item five" title="VHA IE Community Engagement" onmouseover="ShowSolutionsMenu5();">
-              <a href="/ecosystem/views/programs/community-engagement.html" class="font-body-md"><span>Community
-                  Engagement</span></a>
-            </li>
-            <div id="smDiv1" class="smDiv grid-col-3" style="display: none;">
-              <div class="grid-row">
-                  <ul class="usa-nav__submenu" style="width:100% !important;">
-                      <li class="usa-nav__submenu-item"> <a class="font-body-md" href="/ecosystem/views/innovators-network/spark-seed-spread.html">Spark-Seed-Spread</a> </li>
-                      <li class="usa-nav__submenu-item"> <a class="font-body-md" href="/ecosystem/views/innovators-network/greenhouse-initiative.html">Greenhouse Initiative</a> </li>
-                      <li class="usa-nav__submenu-item"> <a class="font-body-md" href="/ecosystem/views/innovators-network/inet-resources.html">Employee Innovator Fundamentals</a> </li>
-                      <li class="usa-nav__submenu-item"> <a class="font-body-md" href="/ecosystem/views/innovators-network/vaipm.html">VA Intrapreneurial Product Marketplace</a> </li>
-                  </ul>
-              </div>
-            </div>
-            <div id="smDiv2" class="smDiv grid-col-3" style="display: none;">
-              <div class="grid-row">
-                <ul class="usa-nav__submenu" style="width:100% !important;">
-                  <li class="usa-nav__submenu-item"> <a class="font-body-md" href="/ecosystem/views/diffusion-excellence/sharktank/">VHA Shark Tank Competition</a> </li>
-                  <li class="usa-nav__submenu-item"> <a class="font-body-md" href="/ecosystem/views/diffusion-excellence/national-diffusion-practices/">National Diffusion Practices</a> </li>
-                  <li class="usa-nav__submenu-item"> <a class="font-body-md" href="/ecosystem/views/diffusion-excellence/diffusion-talent-accelerator/">Diffusion Talent Accelerator</a> </li>
-                  <li class="usa-nav__submenu-item"> <a class="font-body-md" href="https://marketplace.va.gov/">Diffusion Marketplace</a> </li>
-                </ul>
-              </div>
-            </div>
-            <div id="smDiv3" class="smDiv grid-col-3" style="display: none;">
-              <div class="grid-row">
-                <ul class="usa-nav__submenu" style="width:100% !important;">
-                    <li class="usa-nav__submenu-item"> <a class="font-body-md" href="/ecosystem/views/national-centers/ncchi/">National Center for Collaborative Healthcare Innovation</a> </li>
-                    <li class="usa-nav__submenu-item"> <a class="font-body-md" href="/ecosystem/views/national-centers/necie.html">New England Center for Innovation Excellence</a> </li>
-                </ul>
-              </div>
-            </div>
-            <div id="smDiv4" class="smDiv grid-col-3" style="display: none;">
-              <div class="grid-row">
-                <ul class="usa-nav__submenu" style="width:100% !important;">
-                  <li class="usa-nav__submenu-item"> <a class="font-body-md" href="/ecosystem/views/programs/fellowship/senior-innovation-fellowship/">Senior Innovation Fellowship</a> </li>
-                  <li class="usa-nav__submenu-item"> <a class="font-body-md" href="/ecosystem/views/programs/fellowship/entrepreneur-residence-fellowship/">Entrepreneur in Residence Fellowship</a> </li>
-                  <li class="usa-nav__submenu-item"> <a class="font-body-md" href="https://catalyst.mit.edu/">MIT Catalyst Fellowship</a> </li>
-                  <li class="usa-nav__submenu-item"> <a class="font-body-md" href="/ecosystem/views/programs/fellowship/fellowship-application/">Fellowships Application</a> </li>
-                </ul>
-              </div>
-            </div>
-          </ul>
-          
-        </li>
-        <li class="usa-nav__primary-item" title="Pathfinder">
-          <a href="https://www.pathfinder.va.gov/" class="usa-nav-link font-body-md"><span>Pathfinder</span></a>
+          </ul>                    
         </li>
         <li class="usa-nav__primary-item" title="News and Events">
-          <a href="/ecosystem/views/news-events/newsandevents.html" class="usa-nav-link font-body-md"><span>News and Events</span></a>
+          <a href="/oam/news-and-events/" class="usa-nav-link font-body-md"><span>News and Events</span></a>
+        </li>
+        <li class="usa-nav__primary-item" title="Fellowships">
+          <a href="/oam/fellowships/" class="usa-nav-link font-body-md"><span>Fellowships</span></a>
         </li>
       </ul>
       <div class="usa-nav__secondary">
@@ -182,72 +137,4 @@
     </div>
   </nav>
 </header>
-
-<script>
-  function ShowSolutionsMenu1() {
-    document.getElementById("smDiv1").style.display = "block";
-    document.getElementById("smDiv2").style.display = "none";
-    document.getElementById("smDiv3").style.display = "none";
-    document.getElementById("smDiv4").style.display = "none";
-  }
-
-  function ShowSolutionsMenu2() {
-    document.getElementById("smDiv1").style.display = "none";
-    document.getElementById("smDiv2").style.display = "block";
-    document.getElementById("smDiv3").style.display = "none";
-    document.getElementById("smDiv4").style.display = "none";
-  }
-
-  function ShowSolutionsMenu3() {
-    document.getElementById("smDiv1").style.display = "none";
-    document.getElementById("smDiv2").style.display = "none";
-    document.getElementById("smDiv3").style.display = "block";
-    document.getElementById("smDiv4").style.display = "none";
-  }
-
-  function ShowSolutionsMenu4() {
-    document.getElementById("smDiv1").style.display = "none";
-    document.getElementById("smDiv2").style.display = "none";
-    document.getElementById("smDiv3").style.display = "none";
-    document.getElementById("smDiv4").style.display = "block";
-  }
-
-  function ShowSolutionsMenu5() {
-    document.getElementById("smDiv1").style.display = "none";
-    document.getElementById("smDiv2").style.display = "none";
-    document.getElementById("smDiv3").style.display = "none";
-    document.getElementById("smDiv4").style.display = "none";
-  }
-
-  $(window).click(function () {
-    document.getElementById("smDiv1").style.display = "none";
-    document.getElementById("smDiv2").style.display = "none";
-    document.getElementById("smDiv3").style.display = "none";
-    document.getElementById("smDiv4").style.display = "none";
-  });
-
-  if (window.innerWidth < 1025) {
-    $(".arrow.right.one").click(function () {
-      ShowSolutionsMenu1();
-    }); 
-
-    $(".arrow.right.two").click(function () {
-      ShowSolutionsMenu2();
-    }); 
-
-    $(".arrow.right.three").click(function () {
-      ShowSolutionsMenu3();
-    }); 
-
-    $(".arrow.right.four").click(function () {
-      ShowSolutionsMenu4();
-    }); 
-
-    $(".arrow.right.five").click(function () {
-      ShowSolutionsMenu5();
-    }); 
-  }
-  
-
-</script>
 <!-- END USWDS Header, extended-->
