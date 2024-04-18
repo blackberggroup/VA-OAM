@@ -10,6 +10,7 @@
     content: "";
 }
 
+.unselectable { user-select: none; }
 /* ----------------------------------------
 Positioning & Rotation
 ---------------------------------------- */
