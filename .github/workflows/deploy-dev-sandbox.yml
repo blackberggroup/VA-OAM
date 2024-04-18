@@ -34,7 +34,6 @@ jobs:
           **/node_modules/**
           **/assets/sass/**
           **/uswds/img/material-icons-deprecated/**
-          **/uswds/img/material-icons/*
   lighthouse:
     name: 👀 Lighthouse Scan
     runs-on: ubuntu-latest
