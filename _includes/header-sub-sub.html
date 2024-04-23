@@ -27,7 +27,7 @@
       <div class="usa-banner__content usa-accordion__content" id="gov-banner-default-default">
         <div class="grid-row grid-gap-lg">
           <div class="usa-banner__guidance tablet:grid-col-6">
-            <img class="usa-banner__icon usa-media-block__img" src="../assets/uswds/img/icon-dot-gov.svg" role="img" alt="goverment building icon"
+            <img class="usa-banner__icon usa-media-block__img" src="../../assets/uswds/img/icon-dot-gov.svg" role="img" alt="goverment building icon"
               aria-hidden="true" />
             <div class="usa-media-block__body">
               <p>
@@ -38,7 +38,7 @@
             </div>
           </div>
           <div class="usa-banner__guidance tablet:grid-col-6">
-            <img class="usa-banner__icon usa-media-block__img" src="../assets/uswds/img/icon-https.svg" role="img" alt="lock icon" aria-hidden="true" />
+            <img class="usa-banner__icon usa-media-block__img" src="../../assets/uswds/img/icon-https.svg" role="img" alt="lock icon" aria-hidden="true" />
             <div class="usa-media-block__body">
               <p>
                 <strong>Secure .gov websites use HTTPS</strong><br />A
@@ -76,7 +76,7 @@
   <nav aria-label="Primary navigation" class="usa-nav clearfix">
     <div class="usa-nav__inner">
       <button type="button" class="usa-nav__close">
-        <img src="../assets/uswds/img/usa-icons/close.svg" role="img" alt="Close" />
+        <img src="../../assets/uswds/img/usa-icons/close.svg" role="img" alt="Close" />
       </button>
       <ul class="usa-nav__primary usa-accordion">
         <li class="usa-nav__primary-item" title="OAM Home Page">
@@ -137,72 +137,4 @@
     </div>
   </nav>
 </header>
-
-<script>
-  function ShowSolutionsMenu1() {
-    document.getElementById("smDiv1").style.display = "block";
-    document.getElementById("smDiv2").style.display = "none";
-    document.getElementById("smDiv3").style.display = "none";
-    document.getElementById("smDiv4").style.display = "none";
-  }
-
-  function ShowSolutionsMenu2() {
-    document.getElementById("smDiv1").style.display = "none";
-    document.getElementById("smDiv2").style.display = "block";
-    document.getElementById("smDiv3").style.display = "none";
-    document.getElementById("smDiv4").style.display = "none";
-  }
-
-  function ShowSolutionsMenu3() {
-    document.getElementById("smDiv1").style.display = "none";
-    document.getElementById("smDiv2").style.display = "none";
-    document.getElementById("smDiv3").style.display = "block";
-    document.getElementById("smDiv4").style.display = "none";
-  }
-
-  function ShowSolutionsMenu4() {
-    document.getElementById("smDiv1").style.display = "none";
-    document.getElementById("smDiv2").style.display = "none";
-    document.getElementById("smDiv3").style.display = "none";
-    document.getElementById("smDiv4").style.display = "block";
-  }
-
-  function ShowSolutionsMenu5() {
-    document.getElementById("smDiv1").style.display = "none";
-    document.getElementById("smDiv2").style.display = "none";
-    document.getElementById("smDiv3").style.display = "none";
-    document.getElementById("smDiv4").style.display = "none";
-  }
-
-  $(window).click(function () {
-    document.getElementById("smDiv1").style.display = "none";
-    document.getElementById("smDiv2").style.display = "none";
-    document.getElementById("smDiv3").style.display = "none";
-    document.getElementById("smDiv4").style.display = "none";
-  });
-
-  if (window.innerWidth < 1025) {
-    $(".arrow.right.one").click(function () {
-      ShowSolutionsMenu1();
-    }); 
-
-    $(".arrow.right.two").click(function () {
-      ShowSolutionsMenu2();
-    }); 
-
-    $(".arrow.right.three").click(function () {
-      ShowSolutionsMenu3();
-    }); 
-
-    $(".arrow.right.four").click(function () {
-      ShowSolutionsMenu4();
-    }); 
-
-    $(".arrow.right.five").click(function () {
-      ShowSolutionsMenu5();
-    }); 
-  }
-  
-
-</script>
 <!-- END USWDS Header, extended-->
