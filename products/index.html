@@ -6,21 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta name="description" content="Welcome to VHA Office of Advanced Manufacturing (OAM), where we lead the way in harnessing cutting-edge technologies such as 3D printing for health care applications.">
   <meta name="keywords" content="VHA Office of Advanced Manufacturing, OAM">
-  <title>Thank You | Office of Advanced Manufacturing</title>
+  <title>Products | Office of Advanced Manufacturing</title>
 
-  <meta property="og:title" content="Our Team | Office of Advanced Manufacturing">
-  <meta property="og:url" content="https://innovation.va.gov/oam/products/thank-you/">
+  <meta property="og:title" content="Products | Office of Advanced Manufacturing">
+  <meta property="og:url" content="https://innovation.va.gov/oam/products/all-products/">
   <meta property="og:description" content="Welcome to VHA Office of Advanced Manufacturing (OAM), where we lead the way in harnessing cutting-edge technologies such as 3D printing for health care applications.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://innovation.bgsandbox.com/oam/assets/img/og-image.jpg">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
   
   <link id="favicon" rel="shortcut icon" href="../../assets/img/favicon.ico">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="../../assets/uswds/js/uswds-init.min.js"></script>
+
+<style>
+  .usa-alert .usa-alert__body{
+    margin-left: 0 !important;
+  }
+</style>
+
 </head>
 
 <body>
@@ -30,17 +37,17 @@
       {% include "header-sub-sub.html" %}
       
         <main>
-          {% include "_includes/products/thank-you/page-title.html" %}
-          {% include "_includes/products/thank-you/content.html" %}
+          {% include "_includes/products/page-title.html" %}
+          {% include "_includes/products/product-list.html" %}
         </main>
 
         {% include "footer-sub.html" %}
-
     </div>
     <!-- SITE WRAPPER - END -->
 
     <script src="../../assets/uswds/js/uswds.min.js"></script>
     <script src="../../assets/js/vendors/lazy/jquery.lazy.min.js"></script>
+    <script src="../../assets/js/vendors/parallax-scroll/parallax-scroll.js"></script>
     <script src="../../assets/js/functions.js"></script>
 
 </body>
