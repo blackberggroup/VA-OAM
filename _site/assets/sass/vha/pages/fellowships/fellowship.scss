@@ -6,3 +6,10 @@
 .bg-current-fellows {
     background: var(--OAM-Primary-Blue-100, #EEF1F7) url(../../assets/img/decore/design-element-2.png) no-repeat top right;
 }
+
+@media screen and (max-width: 880px) {
+    .jls-flex {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+}
