@@ -71,7 +71,7 @@ jQuery(document).ready(function() {
 			id: "Cleveland, OH",
 			attached: true,
 			isLink: false,
-			tooltip: "VA Northeast Ohio Health Care System",
+			tooltip: "VA Northeast Ohio Healthcare System",
 			popover: "<h4 class=\"text-primary margin-top-0\">VA Northeast Ohio Healthcare System</h4>\nCleveland, OH",
 			data: {},
 			src: "assets/img/map-svg/default-pin.svg",
@@ -84,7 +84,7 @@ jQuery(document).ready(function() {
 			id: "Pittsburgh, PA",
 			attached: true,
 			isLink: false,
-			tooltip: "VA Pittsburgh Health Care System",
+			tooltip: "VA Pittsburgh Healthcare System",
 			popover: "<h4 class=\"text-primary margin-top-0\">VA Pittsburgh Healthcare System</h4>\nPittsburgh, PA",
 			data: {},
 			src: "assets/img/map-svg/default-pin.svg",
@@ -123,5 +123,5 @@ jQuery(document).ready(function() {
 		responsive: true
 	});
 
-    $('#mapsvg').css('background','');
+    // $('#mapsvg').css('background','');
 });
