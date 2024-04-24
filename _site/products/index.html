@@ -63,7 +63,7 @@
       <div class="usa-banner__content usa-accordion__content" id="gov-banner-default-default">
         <div class="grid-row grid-gap-lg">
           <div class="usa-banner__guidance tablet:grid-col-6">
-            <img class="usa-banner__icon usa-media-block__img" src="../assets/uswds/img/icon-dot-gov.svg" role="img" alt="goverment building icon"
+            <img class="usa-banner__icon usa-media-block__img" src="../../assets/uswds/img/icon-dot-gov.svg" role="img" alt="goverment building icon"
               aria-hidden="true" />
             <div class="usa-media-block__body">
               <p>
@@ -74,7 +74,7 @@
             </div>
           </div>
           <div class="usa-banner__guidance tablet:grid-col-6">
-            <img class="usa-banner__icon usa-media-block__img" src="../assets/uswds/img/icon-https.svg" role="img" alt="lock icon" aria-hidden="true" />
+            <img class="usa-banner__icon usa-media-block__img" src="../../assets/uswds/img/icon-https.svg" role="img" alt="lock icon" aria-hidden="true" />
             <div class="usa-media-block__body">
               <p>
                 <strong>Secure .gov websites use HTTPS</strong><br />A
@@ -97,7 +97,7 @@
     </div>
   </div>
 </section>
-<!-- END USWDS Banner, gov domain --> 
+<!-- END USWDS Banner, gov domain -->
 
 <!-- BEGIN USWDS Header, extended -->
 <header class="usa-header usa-header--extended tablet-lg:padding-top-3">
@@ -112,7 +112,7 @@
   <nav aria-label="Primary navigation" class="usa-nav clearfix">
     <div class="usa-nav__inner">
       <button type="button" class="usa-nav__close">
-        <img src="../assets/uswds/img/usa-icons/close.svg" role="img" alt="Close" />
+        <img src="../../assets/uswds/img/usa-icons/close.svg" role="img" alt="Close" />
       </button>
       <ul class="usa-nav__primary usa-accordion">
         <li class="usa-nav__primary-item" title="OAM Home Page">
@@ -173,157 +173,90 @@
     </div>
   </nav>
 </header>
-
-<script>
-  function ShowSolutionsMenu1() {
-    document.getElementById("smDiv1").style.display = "block";
-    document.getElementById("smDiv2").style.display = "none";
-    document.getElementById("smDiv3").style.display = "none";
-    document.getElementById("smDiv4").style.display = "none";
-  }
-
-  function ShowSolutionsMenu2() {
-    document.getElementById("smDiv1").style.display = "none";
-    document.getElementById("smDiv2").style.display = "block";
-    document.getElementById("smDiv3").style.display = "none";
-    document.getElementById("smDiv4").style.display = "none";
-  }
-
-  function ShowSolutionsMenu3() {
-    document.getElementById("smDiv1").style.display = "none";
-    document.getElementById("smDiv2").style.display = "none";
-    document.getElementById("smDiv3").style.display = "block";
-    document.getElementById("smDiv4").style.display = "none";
-  }
-
-  function ShowSolutionsMenu4() {
-    document.getElementById("smDiv1").style.display = "none";
-    document.getElementById("smDiv2").style.display = "none";
-    document.getElementById("smDiv3").style.display = "none";
-    document.getElementById("smDiv4").style.display = "block";
-  }
-
-  function ShowSolutionsMenu5() {
-    document.getElementById("smDiv1").style.display = "none";
-    document.getElementById("smDiv2").style.display = "none";
-    document.getElementById("smDiv3").style.display = "none";
-    document.getElementById("smDiv4").style.display = "none";
-  }
-
-  $(window).click(function () {
-    document.getElementById("smDiv1").style.display = "none";
-    document.getElementById("smDiv2").style.display = "none";
-    document.getElementById("smDiv3").style.display = "none";
-    document.getElementById("smDiv4").style.display = "none";
-  });
-
-  if (window.innerWidth < 1025) {
-    $(".arrow.right.one").click(function () {
-      ShowSolutionsMenu1();
-    }); 
-
-    $(".arrow.right.two").click(function () {
-      ShowSolutionsMenu2();
-    }); 
-
-    $(".arrow.right.three").click(function () {
-      ShowSolutionsMenu3();
-    }); 
-
-    $(".arrow.right.four").click(function () {
-      ShowSolutionsMenu4();
-    }); 
-
-    $(".arrow.right.five").click(function () {
-      ShowSolutionsMenu5();
-    }); 
-  }
-  
-
-</script>
 <!-- END USWDS Header, extended-->
-
+      
         <main>
+
           <section id="page-title" class="page-title position-relative">
-            <div class="grid-container position-relative">
-              <nav class="usa-breadcrumb position-absolute bg-transparent" aria-label="Breadcrumbs,,">
-                <ol class="usa-breadcrumb__list">
-                  <li class="usa-breadcrumb__list-item">
-                      <a href="/oam/" class="usa-breadcrumb__link"><span>Home</span></a>
-                  </li>
-                  <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
-                      <span>Products</span>
-                  </li>
-                </ol>
-              </nav>      
-              <div class="grid-row grid-gap padding-bottom-5 mobile:padding-top-8 tablet:padding-top-8 desktop-lg:padding-top-9">
-                <div class="page-title__side-title font-body-xs margin-bottom-2">
-                  OAM Products
-                </div>              
-                <div class="grid-col-12 tablet-lg:grid-col-10 tablet-lg:grid-offset-1">
-                    <h1 class="font-body-4xl margin-bottom-1 tablet:margin-bottom-2 margin-top-0 gradient-text">Products</h1>
-                    <!--<h2 class="h3 margin-0">OAM's Vision and Impact Since 2020</h2>-->
-                </div>
-              </div>
-            </div>      
-          </section>  
-        </main>
+    <div class="grid-container position-relative">
+      <nav class="usa-breadcrumb position-absolute bg-transparent" aria-label="Breadcrumbs,,">
+        <ol class="usa-breadcrumb__list">
+          <li class="usa-breadcrumb__list-item">
+              <a href="/oam/" class="usa-breadcrumb__link"><span>Home</span></a>
+          </li>
+          <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
+              <span>Products</span>
+          </li>
+        </ol>
+      </nav>      
+      <div class="grid-row grid-gap padding-bottom-5 mobile:padding-top-8 tablet:padding-top-8 desktop-lg:padding-top-9">
+        <div class="page-title__side-title font-body-xs margin-bottom-2">
+          OAM Products
+        </div>              
+        <div class="grid-col-12 tablet-lg:grid-col-10 tablet-lg:grid-offset-1">
+            <h1 class="font-body-4xl margin-bottom-1 tablet:margin-bottom-2 margin-top-0 gradient-text">Products</h1>
+            <!--<h2 class="h3 margin-0">OAM's Vision and Impact Since 2020</h2>-->
+        </div>
+      </div>
+    </div>      
+  </section> 
 
-       
-          <div class="grid-container">
-            <div class="usa-alert usa-alert--warning usa-alert--slim">
-              <div class="usa-alert__body">
-                  <p class="usa-alert__text">VA Network Access is necessary to view the products below</p>
-                </div>
-             </div>
-          </div>
-        
+          
+<div class="grid-container">
+  <div class="usa-alert usa-alert--warning usa-alert--slim">
+    <div class="usa-alert__body">
+        <p class="usa-alert__text">VA Network Access is necessary to view the products below</p>
+      </div>
+   </div>
+</div>
 
-        <!-- Product Template from json file -->
-        <div id="template-output"></div>
+<!-- Product Template from json file -->
+<div id="template-output"></div>
 
-        <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                //fetch('https://raw.githubusercontent.com/RyanCrux/products-demo/main/data.json')
+<script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        //fetch('https://raw.githubusercontent.com/RyanCrux/products-demo/main/data.json')
 
-                fetch('https://data.bgsandbox.com/oam-sharepoint-products/product-data.JSON')
+        fetch('https://data.bgsandbox.com/oam-sharepoint-products/product-data.JSON')
 
 
-                    .then(response => response.json())
-                    .then(data => {
-                        var output = document.getElementById('template-output');
-                        var template = '';
-                      
-                        data.forEach(item => {
-                            template += `
+            .then(response => response.json())
+            .then(data => {
+                var output = document.getElementById('template-output');
+                var template = '';
+              
+                data.forEach(item => {
+                    template += `
 
-                            <section padding-y-5 tablet-lg:padding-y-8">
-                              <div class="grid-container">
+                    <section padding-y-5 tablet-lg:padding-y-8">
+                      <div class="grid-container">
 
-                                  <div class="grid-row grid-gap flex-align-center border-bottom-1px border-primary padding-bottom-5 padding-top-5">
-                                      <div class="grid-col-12 tablet-lg:grid-col-6 widescreen:grid-col-5 widescreen:grid-offset-1 text-center">
-                                        <a href="${item['SP Details Page']}">
-                                          <img src="${item['Image URL']}" alt="${item.Title}" class="img-fluid radius-lg" loading="lazy" />
-                                        </a>
-                                      </div>
-                                      <div class="grid-col-12 tablet-lg:grid-col-6 margin-bottom-4 tablet-lg:margin-bottom-0 flex-align-start flex-align-self-start">
-                                          <h2 class="text-primary margin-top-0">${item.Title}</h2>
-                                          <p>${item['Brief Description']}</p>
-                                          <a href="${item['SP Details Page']}" class="usa-button usa-button--vha">View Product</a>
-                                      </div>
-                                  </div>
+                          <div class="grid-row grid-gap flex-align-center border-bottom-1px border-primary padding-bottom-5 padding-top-5">
+                              <div class="grid-col-12 tablet-lg:grid-col-6 widescreen:grid-col-5 widescreen:grid-offset-1 text-center">
+                                <a href="${item['SP Details Page']}">
+                                  <img src="${item['Image URL']}" alt="${item.Title}" class="img-fluid radius-lg" loading="lazy" />
+                                </a>
                               </div>
-                            </section> 
+                              <div class="grid-col-12 tablet-lg:grid-col-6 margin-bottom-4 tablet-lg:margin-bottom-0 flex-align-start flex-align-self-start">
+                                  <h2 class="text-primary margin-top-0">${item.Title}</h2>
+                                  <p>${item['Brief Description']}</p>
+                                  <a href="${item['SP Details Page']}" class="usa-button usa-button--vha">View Product</a>
+                              </div>
+                          </div>
+                      </div>
+                    </section> 
 
-                            `;
-                        });
-                        output.innerHTML = template;
-                    })
-                    .catch(error => console.error('Error:', error));
-            });
-        </script>
-        <!-- END Product Template from json file -->
+                    `;
+                });
+                output.innerHTML = template;
+            })
+            .catch(error => console.error('Error:', error));
+    });
+</script>
+<!-- END Product Template from json file -->
+
+        </main>
 
         <section class="oam-footer bg-gradient-primary usa-dark-background text-white">
   <div class="grid-container position-relative">
@@ -349,15 +282,15 @@
           <div class="grid-row grid-gap-1">
             <div class="grid-col-auto width-5">
               <a href="https://www.facebook.com/VHAInnovation?mibextid=LQQJ4d" title="Visit Our Facebook Page"><img class="height-4"
-                  src="../../assets/img/icons/icon-facebook.svg" alt="Facebook" /></a>
+                  src="../assets/img/icons/icon-facebook.svg" alt="Facebook" /></a>
             </div>
             <div class="grid-col-auto width-5">
               <a href="https://x.com/vainnovation?s=21" title="Visit Our Twitter Page"><img class="height-4"
-                  src="../../assets/img/icons/icon-twitter.svg" alt="Twitter" /></a>
+                  src="../assets/img/icons/icon-twitter.svg" alt="Twitter" /></a>
             </div>
             <div class="grid-col-auto width-5">
               <a href="https://www.youtube.com/@VeteransHealth" title="Visit Our YouTube Channel"><img class="height-4"
-                  src="../../assets/img/icons/icon-youtube.svg" alt="YouTube" /></a>
+                  src="../assets/img/icons/icon-youtube.svg" alt="YouTube" /></a>
             </div>                    
           </div>                  
         </div>
@@ -393,7 +326,7 @@
       </div>                  
     </div> 
     <div class="position-absolute bottom-0 left-neg-3 z-bottom unselectable" data-parallax='{"x": -100, "smoothness": 10}'>
-      <img src="../../assets/img/decore/triangle-1.svg" width="1056" height="68" class="display-block img-fluid" alt=""/>
+      <img src="../assets/img/decore/triangle-1.svg" width="1056" height="68" class="display-block img-fluid" alt="" />
     </div>    
   </div>
 </section>
@@ -405,7 +338,7 @@
       <div class="grid-row grid-gap">
         <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
           <div class="mobile-lg:grid-col-auto">
-            <img class="usa-footer__logo-img" src="../../assets/img/va-color-seal-black-text.png"
+            <img class="usa-footer__logo-img" src="../assets/img/va-color-seal-black-text.png"
               title="U.S. Department of Veterans Affairs" alt="Logo for the U.S. Department of Veterans Affairs" />
             <p class="usa-footer__logo-heading"><h3 class="font-serif-lg text-bold">In Crisis? Get Help Now</h3>
               <a href="http://www.veteranscrisisline.net/" title="Get Help Now for Veterans in Crisis"><button type="button" class="usa-button">Veterans Crisis Line</button></a>
@@ -567,7 +500,7 @@
       </div>
       <button type="button" class="usa-button usa-modal__close" aria-label="Close this window" data-close-modal>
         <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-          <use xlink:href="../../assets/uswds/img/sprite.svg#close"></use>
+          <use xlink:href="../assets/uswds/img/sprite.svg#close"></use>
         </svg>
       </button>
     </div>
@@ -575,7 +508,11 @@
 </div>
 <!-- END USWDS Modal popup -->
 
-<a href="#" class="back-to-top text-center padding-1" title="Return to the top of the page"><span class="show">TOP</span><img src="../../assets/img/icons/arrow-alt-circle-up-solid.svg" width="26" height="26" alt="Back to top icon"/></a>
+<a href="#" class="back-to-top text-center padding-1" title="Return to the top of the page"><span class="show">TOP</span><img src="../assets/img/icons/arrow-alt-circle-up-solid.svg" width="26" height="26" alt="Back to top icon"/></a>
+
+
+
+
 
     </div>
     <!-- SITE WRAPPER - END -->

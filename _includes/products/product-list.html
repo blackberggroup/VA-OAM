@@ -1,0 +1,54 @@
+
+<div class="grid-container">
+  <div class="usa-alert usa-alert--warning usa-alert--slim">
+    <div class="usa-alert__body">
+        <p class="usa-alert__text">VA Network Access is necessary to view the products below</p>
+      </div>
+   </div>
+</div>
+
+<!-- Product Template from json file -->
+<div id="template-output"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        //fetch('https://raw.githubusercontent.com/RyanCrux/products-demo/main/data.json')
+
+        fetch('https://data.bgsandbox.com/oam-sharepoint-products/product-data.JSON')
+
+
+            .then(response => response.json())
+            .then(data => {
+                var output = document.getElementById('template-output');
+                var template = '';
+              
+                data.forEach(item => {
+                    template += `
+
+                    <section padding-y-5 tablet-lg:padding-y-8">
+                      <div class="grid-container">
+
+                          <div class="grid-row grid-gap flex-align-center border-bottom-1px border-primary padding-bottom-5 padding-top-5">
+                              <div class="grid-col-12 tablet-lg:grid-col-6 widescreen:grid-col-5 widescreen:grid-offset-1 text-center">
+                                <a href="${item['SP Details Page']}">
+                                  <img src="${item['Image URL']}" alt="${item.Title}" class="img-fluid radius-lg" loading="lazy" />
+                                </a>
+                              </div>
+                              <div class="grid-col-12 tablet-lg:grid-col-6 margin-bottom-4 tablet-lg:margin-bottom-0 flex-align-start flex-align-self-start">
+                                  <h2 class="text-primary margin-top-0">${item.Title}</h2>
+                                  <p>${item['Brief Description']}</p>
+                                  <a href="${item['SP Details Page']}" class="usa-button usa-button--vha">View Product</a>
+                              </div>
+                          </div>
+                      </div>
+                    </section> 
+
+                    `;
+                });
+                output.innerHTML = template;
+            })
+            .catch(error => console.error('Error:', error));
+    });
+</script>
+<!-- END Product Template from json file -->
