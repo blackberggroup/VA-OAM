@@ -1,12 +1,220 @@
-<section id="vision" class="vision padding-top-5 tablet-lg:padding-top-8 padding-bottom-3 tablet-lg:padding-bottom-5 z-bottom">
+<section id="timeline" class="timeline padding-y-5 tablet-lg:padding-y-8 bg-primary-lighter">
     <div class="grid-container position-relative">
         <div class="grid-row grid-gap">
-            <div class="grid-col-12 tablet-lg:grid-col-6 tablet-lg:grid-offset-6">
-                <p class="desktop:font-body-lg">The Office of Advanced Manufacturing (OAM) is a national program office within VHA that plays a crucial role in implementing cutting-edge manufacturing technologies, such as 3D printing, in health care. These technologies allow for faster innovation and improved access to personalized health care solutions for Veterans under VA's care.</p>
+            <div class="grid-col-12 text-center">
+                <h2 class="text-primary">The Establishment of OAM</h2>
             </div>
         </div>
-        <div class="design-element position-absolute top-neg-3 left-neg-1 z-bottom unselectable" data-parallax='{"y": -50, "smoothness": 10}'>
-            <img src="../../assets/img/decore/design-element-3.png" width="729" height="404" class="display-block img-fluid" alt="" />
+        <div class="grid-row">
+            <ol>
+                <li>
+                  <div>
+                    <span class="usa-tag bg-warning text-black time">2010</span>
+                    <h3 class="h4 margin-top-0">Innovative 3D-printing Breakthrough</h3>
+                    Introduction of the first VHA patient-specific solution utilizing 3D-printing technology in a clinical setting, successfully executed by the Central Virginia VA Health Care System.
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span class="usa-tag bg-warning text-black time">2015</span>
+                    <h3 class="h4 margin-top-0">The Innovation Creation Series for Prosthetics and Assistive Technologies</h3>
+                    VHA hosted a two-day make-a-thon designed to accelerate the development of personalized technologies that improve care and quality of life for Veterans with disabilities. 
+                  </div>
+                </li>
+                <li>
+                    <div>
+                      <span class="usa-tag bg-warning text-black time">2017</span>
+                      <h3 class="h4 margin-top-0">First Health Care System with Integrated 3D-printing Network</h3>
+                      VHA partnered with Stratasys to establish the first integrated 3D-printing network within a health care system, designed to rapidly advance quality care, foster collaborative best practices, and enhance doctor preparedness across VHA.
+                    </div>
+                  </li>
+                <li>
+                    <div>
+                        <span class="usa-tag bg-warning text-black time">2018</span>
+                        <h3 class="h4 margin-top-0">Advancing Health Care with 3D Imaging</h3>
+                        Collaboration between VA Puget Sound Health Care System and GE Healthcare led to the accelerated integration of 3D imaging in health care services. 
+                    </div>
+                </li> 
+                <li>
+                    <div>
+                        <span class="usa-tag bg-warning text-black time">Mar 2020</span>
+                        <h3 class="h4 margin-top-0">Collaborative Efforts in Response to COVID-19</h3>
+                        VHA collaborated with the U.S. Food and Drug Administration (FDA), National Institutes of Health (NIH), and America Makes to assess 3D-printed solutions, resulting in the production of millions of essential parts to meet critical COVID-19 demands.
+                    </div>
+                </li> 
+                <li>
+                    <div>
+                        <span class="usa-tag bg-warning text-black time">Apr 2020</span>
+                        <h3 class="h4 margin-top-0">Joint Incentive Fund Project Kick-off</h3>
+                        The VHA-Department of Defense (DoD) 3D Printing Consortium for Medical Applications was initiated through collaboration between VHA and DoD. 
+                    </div>
+                </li> 
+                <li>
+                    <div>
+                        <span class="usa-tag bg-warning text-black time">Oct 2020</span>
+                        <h3 class="h4 margin-top-0">VA Medical Centers Gain FDA Recognition</h3>
+                        VA Puget Sound was registered with the FDA as a medical device manufacturer under the VHA Office of Discovery Education and Affiliate Networks (DEAN). Central Virginia VA Health was temporarily registered to aid in the COVID-19 pandemic response.
+                    </div>
+                </li> 
+                <li>
+                    <div>
+                        <span class="usa-tag bg-warning text-black time">Nov 2020</span>
+                        <h3 class="h4 margin-top-0">Establishment of VHA Office of Advanced Manufacturing</h3>
+                        VA Puget Sound was registered with the FDA as a medical device manufacturer under the VHA Office of Discovery Education and Affiliate Networks (DEAN). Central Virginia VA Health was temporarily registered to aid in the COVID-19 pandemic response.
+                    </div>
+                </li>                                                                                 
+  
+                <li></li>
+              </ol>                      
+        </div>
+        <div class="grid-row arrows flex-justify-center">
+            <button class="arrow arrow__prev disabled usa-button" disabled>
+                <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="../../assets/uswds/img/sprite.svg#arrow_back"></use>
+                    </svg>
+            </button>
+            <button class="arrow arrow__next usa-button">
+                <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="../../assets/uswds/img/sprite.svg#arrow_forward"></use>
+                    </svg>
+            </button>         
+        </div>
+        <div class="design-element position-absolute bottom-neg-3 left-neg-1 z-bottom unselectable" data-parallax='{"y": -50, "smoothness": 10}'>
+            <img src="../../assets/img/decore/design-element-1.png" width="729" height="404" class="display-block img-fluid" alt="" />
         </div>
     </div>
 </section>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script type="text/javascript">
+    (function () {
+  // VARIABLES
+  const timeline = document.querySelector(".timeline ol"),
+    elH = document.querySelectorAll(".timeline li > div"),
+    arrows = document.querySelectorAll(".timeline .arrows .arrow"),
+    arrowPrev = document.querySelector(".timeline .arrows .arrow__prev"),
+    arrowNext = document.querySelector(".timeline .arrows .arrow__next"),
+    firstItem = document.querySelector(".timeline li:first-child"),
+    lastItem = document.querySelector(".timeline li:last-child"),
+    xScrolling = 280,
+    disabledClass = "disabled";
+
+  // START
+  window.addEventListener("load", init);
+
+  function init() {
+    setEqualHeights(elH);
+    animateTl(xScrolling, arrows, timeline);
+    setSwipeFn(timeline, arrowPrev, arrowNext);
+    setKeyboardFn(arrowPrev, arrowNext);
+  }
+
+  // SET EQUAL HEIGHTS
+  function setEqualHeights(el) {
+    let counter = 0;
+    for (let i = 0; i < el.length; i++) {
+      const singleHeight = el[i].offsetHeight;
+
+      if (counter < singleHeight) {
+        counter = singleHeight;
+      }
+    }
+
+    for (let i = 0; i < el.length; i++) {
+      el[i].style.height = `${counter}px`;
+    }
+  }
+
+  // CHECK IF AN ELEMENT IS IN VIEWPORT
+  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  // SET STATE OF PREV/NEXT ARROWS
+  function setBtnState(el, flag = true) {
+    if (flag) {
+      el.classList.add(disabledClass);
+    } else {
+      if (el.classList.contains(disabledClass)) {
+        el.classList.remove(disabledClass);
+      }
+      el.disabled = false;
+    }
+  }
+
+  // ANIMATE TIMELINE
+  function animateTl(scrolling, el, tl) {
+    let counter = 0;
+    for (let i = 0; i < el.length; i++) {
+      el[i].addEventListener("click", function () {
+        if (!arrowPrev.disabled) {
+          arrowPrev.disabled = true;
+        }
+        if (!arrowNext.disabled) {
+          arrowNext.disabled = true;
+        }
+        const sign = this.classList.contains("arrow__prev") ? "" : "-";
+        if (counter === 0) {
+          tl.style.transform = `translateX(-${scrolling}px)`;
+        } else {
+          const tlStyle = getComputedStyle(tl);
+          // add more browser prefixes if needed here
+          const tlTransform =
+            tlStyle.getPropertyValue("-webkit-transform") ||
+            tlStyle.getPropertyValue("transform");
+          const values =
+            parseInt(tlTransform.split(",")[4]) +
+            parseInt(`${sign}${scrolling}`);
+          tl.style.transform = `translateX(${values}px)`;
+        }
+
+        setTimeout(() => {
+          isElementInViewport(firstItem)
+            ? setBtnState(arrowPrev)
+            : setBtnState(arrowPrev, false);
+          isElementInViewport(lastItem)
+            ? setBtnState(arrowNext)
+            : setBtnState(arrowNext, false);
+        }, 1100);
+
+        counter++;
+      });
+    }
+  }
+
+  // ADD SWIPE SUPPORT FOR TOUCH DEVICES
+  function setSwipeFn(tl, prev, next) {
+    const hammer = new Hammer(tl);
+    hammer.on("swipeleft", () => next.click());
+    hammer.on("swiperight", () => prev.click());
+  }
+
+  // ADD BASIC KEYBOARD FUNCTIONALITY
+  function setKeyboardFn(prev, next) {
+    document.addEventListener("keydown", (e) => {
+      if (e.which === 37 || e.which === 39) {
+        const timelineOfTop = timeline.offsetTop;
+        const y = window.pageYOffset;
+        if (timelineOfTop !== y) {
+          window.scrollTo(0, timelineOfTop);
+        }
+        if (e.which === 37) {
+          prev.click();
+        } else if (e.which === 39) {
+          next.click();
+        }
+      }
+    });
+  }
+})();
+
+</script>
