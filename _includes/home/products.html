@@ -1,6 +1,22 @@
 <section id="products-overview" class="products-overview padding-top-5 tablet-lg:padding-top-8 padding-bottom-3 tablet-lg:padding-bottom-5 bg-pattern-light">
     <div class="grid-container position-relative">
         <div class="grid-row grid-gap products-overview__row">
+
+            <div id="oam-products-section" class="grid-col-12 tablet-lg:grid-col-12 desktop-lg:grid-col-3 margin-bottom-5 desktop-lg:margin-bottom-0">
+                <h2 class="text-primary margin-top-0 margin-bottom-2">OAM Products</h2>
+                <p>At the VHA Office of Advanced Manufacturing, we redefine healthcare through revolutionary products crafted with precision and innovation.</p>
+
+                <div class="grid-container margin-top-205 margin-bottom-205 padding-0">
+                    <div class="usa-alert usa-alert--warning usa-alert--slim">
+                      <div class="usa-alert__body padding-right-0">
+                          <p class="usa-alert__text">VA Network Access is necessary to view the products below.</p>
+                        </div>
+                     </div>
+                </div>
+
+                <a href="products/" class="usa-button">View More OAM Products</a>
+            </div>
+
             <div id="template-output" class="grid-col-12 tablet-lg:grid-col-12 desktop-lg:grid-col-9 display-flex flex-wrap"></div>
 
             <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
@@ -43,28 +59,28 @@
                                 `;
                             });
                             output.innerHTML = template;
+
+                            // Move the OAM Products section above the template when size breaks
+                            moveOAMProductsSection();
+                            window.addEventListener('resize', moveOAMProductsSection);
+
+                            function moveOAMProductsSection() {
+                                var screenWidth = window.innerWidth;
+                                var oamProductsSection = document.getElementById('oam-products-section');
+                                var templateOutput = document.getElementById('template-output');
+
+                                if (screenWidth < 1200) { // breakpoint
+                                    templateOutput.parentNode.insertBefore(oamProductsSection, templateOutput);
+                                } else {
+                                    templateOutput.parentNode.insertBefore(templateOutput, oamProductsSection);
+                                }
+                            }
                         })
                         .catch(error => console.error('Error:', error));
                 });
             </script>
             <!-- END Product Template from json file -->
 
-            <div class="grid-col-12 tablet-lg:grid-col-12 desktop-lg:grid-col-3 margin-bottom-5 desktop-lg:margin-bottom-0 mobile:order-0 desktop-lg:order-4">
-                <h2 class="text-primary margin-top-0 margin-bottom-2">OAM Products</h2>
-                <p>At the VHA Office of Advanced Manufacturing, we redefine healthcare through revolutionary products crafted with precision and innovation.</p>
-
-                <div class="grid-container margin-top-205 margin-bottom-205 padding-0">
-                    <div class="usa-alert usa-alert--warning usa-alert--slim">
-                      <div class="usa-alert__body padding-right-0">
-                          <p class="usa-alert__text">VA Network Access is necessary to view the products below.</p>
-                        </div>
-                     </div>
-                </div>
-
-                <a href="products/" class="usa-button">View More OAM Products</a>
-            </div>
-
-            
         </div>
         <div class="position-absolute top-neg-10 right-neg-1 z-bottom unselectable" data-parallax='{"y": -50, "smoothness": 10}'>
             <img src="assets/img/decore/design-element-2.png" width="729" height="404" class="display-block img-fluid" alt="" />
