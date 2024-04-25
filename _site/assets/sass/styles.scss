@@ -1,7 +1,9 @@
 @forward "uswds-theme";
 @forward "usa-accordion";
+@forward "usa-alert";
 @forward "usa-button";
 @forward "usa-banner";
+@forward "usa-breadcrumb";
 @forward "usa-card";
 @forward "usa-collection";
 @forward "usa-content";
@@ -15,6 +17,7 @@
 @forward "usa-layout-docs";
 @forward "usa-layout-grid";
 @forward "usa-link";
+@forward "usa-media-block";
 @forward "usa-modal";
 @forward "usa-paragraph";
 @forward "usa-prose";
@@ -28,8 +31,5 @@
 @forward "uswds-helpers";
 @forward "uswds-typography";
 @forward "uswds-utilities";
-@forward "usa-checkbox";
-@forward "usa-search";
-@forward "usa-media-block";
-@forward "usa-breadcrumb";
+@forward "uswds-form-controls";
 @forward "uswds-theme-custom-styles";
