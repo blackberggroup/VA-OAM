@@ -1,50 +1,86 @@
 <section id="products-overview" class="products-overview padding-top-5 tablet-lg:padding-top-8 padding-bottom-3 tablet-lg:padding-bottom-5 bg-pattern-light">
     <div class="grid-container position-relative">
         <div class="grid-row grid-gap products-overview__row">
-            <div class="usa-card products-overview__item grid-col-12 tablet-lg:grid-col-4 desktop-lg:grid-col-3 order-1">
-                <div class="usa-card__container shadow-3">
-                    <div class="usa-card__media usa-card__media--exdent products-overview__item-header">
-                        <div class="usa-card__img">
-                            <img src="assets/img/home/product-thermal-fuse-cover.jpg" class="img-fluid" alt="Thermal Fuse Cover on display with a blue background" />
-                        </div>
-                    </div>
-                    <div class="usa-card__body products-overview__item-body padding-top-2">
-                        <h3 class="text-primary">Thermal Fuse Cover</h3>
-                        <p>The 3D printed thermal fuse cover answered a need raised by the National Center for Patient Safety for a home oxygen delivery system safety device to prevent burns and fires.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="usa-card products-overview__item grid-col-12 tablet-lg:grid-col-4 desktop-lg:grid-col-3 order-2">
-                <div class="usa-card__container shadow-3">
-                    <div class="usa-card__media usa-card__media--exdent products-overview__item-header">
-                        <div class="usa-card__img">
-                            <img src="assets/img/home/product-radiotherapy-bolus.jpg" class="img-fluid" alt="Radiotherapy Bolus on display with a blue background" />
-                        </div>
-                    </div>
-                    <div class="usa-card__body products-overview__item-body padding-top-2">
-                        <h3 class="text-primary">Radiotherapy Bolus</h3>
-                        <p>The Radiotherapy Bolus is a device that is placed on the skin of a patient as a radiotherapy accessory intended to help control the radiation dose received by the patient. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="usa-card products-overview__item grid-col-12 tablet-lg:grid-col-4 desktop-lg:grid-col-3 order-3">
-                <div class="usa-card__container shadow-3">
-                    <div class="usa-card__media usa-card__media--exdent products-overview__item-header">
-                        <div class="usa-card__img">
-                            <img src="assets/img/home/product-assistive-technology.jpg" class="img-fluid" alt="Assistive Technology on display with a blue background" />
-                        </div>
-                    </div>
-                    <div class="usa-card__body products-overview__item-body padding-top-2">
-                        <h3 class="text-primary">Assistive Technology</h3>
-                        <p>VHA teams up with NIH to offer the Assistive Technology (AT) Catalog, featuring collaborative patient-therapist-engineer designed devices tailored to individual needs, empowering goal achievement.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-col-12 tablet-lg:grid-col-12 desktop-lg:grid-col-3 margin-bottom-5 desktop-lg:margin-bottom-0 mobile:order-0 desktop-lg:order-4">
+
+            <div id="oam-products-section" class="grid-col-12 tablet-lg:grid-col-12 desktop-lg:grid-col-3 margin-bottom-5 desktop-lg:margin-bottom-0">
                 <h2 class="text-primary margin-top-0 margin-bottom-2">OAM Products</h2>
                 <p>At the VHA Office of Advanced Manufacturing, we redefine healthcare through revolutionary products crafted with precision and innovation.</p>
+
+                <div class="grid-container margin-top-205 margin-bottom-205 padding-0">
+                    <div class="usa-alert usa-alert--warning usa-alert--slim">
+                      <div class="usa-alert__body padding-right-0">
+                          <p class="usa-alert__text">VA Network Access is necessary to view the products below.</p>
+                        </div>
+                     </div>
+                </div>
+
                 <a href="products/" class="usa-button">View More OAM Products</a>
             </div>
+
+            <div id="template-output" class="grid-col-12 tablet-lg:grid-col-12 desktop-lg:grid-col-9 display-flex flex-wrap"></div>
+
+            <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    fetch('https://data.bgsandbox.com/oam-sharepoint-products/product-data.JSON')
+                        .then(response => response.json())
+                        .then(data => {
+                            var output = document.getElementById('template-output');
+                            var template = '';
+
+                            data.slice(0, 3).forEach(item => {
+                                // Find the first 630 characters without cutting off words
+                                var description = item['Brief Description'];
+                                if (description.length > 630) {
+                                    description = description.substring(0, 630);
+                                    // Find the last space after the first 630 characters
+                                    var lastSpaceIndex = description.lastIndexOf(' ');
+                                    // Don't cut off a word, remove any trailing spaces
+                                    description = description.substring(0, lastSpaceIndex).trim() + '...';
+                                }
+                                template += `
+                                <div class="usa-card products-overview__item grid-col-12 tablet-lg:grid-col-4 desktop-lg:grid-col-4">
+                                    <div class="usa-card__container shadow-3">
+                                        <div class="usa-card__media usa-card__media--exdent products-overview__item-header">
+                                            <div class="usa-card__img">
+                                                <a href="${item['SP Details Page']}">
+                                                    <img src="${item['Image URL']}" alt="${item.Title}" class="img-fluid radius-lg" loading="lazy" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="usa-card__body products-overview__item-body padding-top-2">
+                                            <a href="${item['SP Details Page']}" class="text-no-underline">
+                                                <h3 class="text-primary">${item.Title}</h3>
+                                            </a>
+                                            <p>${description}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                `;
+                            });
+                            output.innerHTML = template;
+
+                            // Move the OAM Products section above the template when size breaks
+                            moveOAMProductsSection();
+                            window.addEventListener('resize', moveOAMProductsSection);
+
+                            function moveOAMProductsSection() {
+                                var screenWidth = window.innerWidth;
+                                var oamProductsSection = document.getElementById('oam-products-section');
+                                var templateOutput = document.getElementById('template-output');
+
+                                if (screenWidth < 1200) { // breakpoint
+                                    templateOutput.parentNode.insertBefore(oamProductsSection, templateOutput);
+                                } else {
+                                    templateOutput.parentNode.insertBefore(templateOutput, oamProductsSection);
+                                }
+                            }
+                        })
+                        .catch(error => console.error('Error:', error));
+                });
+            </script>
+            <!-- END Product Template from json file -->
+
         </div>
         <div class="position-absolute top-neg-10 right-neg-1 z-bottom unselectable" data-parallax='{"y": -50, "smoothness": 10}'>
             <img src="assets/img/decore/design-element-2.png" width="729" height="404" class="display-block img-fluid" alt="" />
