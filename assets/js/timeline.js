@@ -93,7 +93,7 @@
           isElementInViewport(lastItem)
             ? setBtnState(arrowNext)
             : setBtnState(arrowNext, false);
-        }, 1100);
+        }, 500);
 
         counter++;
       });
