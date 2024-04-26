@@ -282,7 +282,103 @@
         </div>
     </div>
 </section>
-            
+            <section id="external-articles" class="external-articles padding-y-5 tablet-lg:padding-y-8 bg-pattern-light">
+        <div class="grid-container">
+
+            <!-- pagination control -->
+            <div
+                    data-jplist-control="pagination"
+                    data-group="data-group-1"
+                    data-items-per-page="6"
+                    data-current-page="0"
+                    data-jump=".pagination-controls.one"
+                    data-name="pagination1"
+                    class="pagination-controls one margin-bottom-3">
+
+                    <div class="grid-row display-flex flex-justify-center">
+                      <nav aria-label="Pagination" class="usa-pagination ">
+                          <ul class="usa-pagination__list">
+                            <li class="usa-pagination__item usa-pagination__arrow">
+                              <a href="javascript:void(0);" class="usa-pagination__link usa-pagination__previous-page" data-type="prev" aria-label="Previous page">
+                                <svg class="usa-icon" aria-hidden="true" role="img">
+                                  <use xlink:href="../assets/uswds/img/sprite.svg#navigate_before"></use>
+                                </svg>
+                                <span class="usa-pagination__link-text">Previous</span>
+                              </a>
+                            </li>
+                            <div class="jplist-holder" data-type="pages">
+                              <li class="usa-pagination__item usa-pagination__page-no">
+                                  <a href="javascript:void(0);" class="usa-pagination__button bg-white" data-type="page" aria-label="Page {pageNumber}">{pageNumber}</a>
+                              </li>
+                              </div>
+                            <li class="usa-pagination__item usa-pagination__arrow">
+                              <a href="javascript:void(0);" class="usa-pagination__link usa-pagination__next-page" data-type="next" aria-label="Next page">
+                                <span class="usa-pagination__link-text">Next </span>
+                                <svg class="usa-icon" aria-hidden="true" role="img">
+                                  <use xlink:href="../assets/uswds/img/sprite.svg#navigate_next"></use>
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                  </div>
+
+            </div>
+
+            <!-- hidden sort control -->
+            <div
+                style="display: none"
+                data-jplist-control="hidden-sort"
+                data-group="data-group-1"
+                data-path=".date"
+                data-order="dsc"
+                data-type="datetime">
+            </div>
+
+            <div class="grid-row grid-gap oam-news__item-container" data-jplist-group="data-group-1"></div>
+
+            <!-- pagination control -->
+            <div
+                    data-jplist-control="pagination"
+                    data-group="data-group-1"
+                    data-items-per-page="6"
+                    data-current-page="0"
+                    data-jump=".pagination-controls.one"
+                    data-name="pagination1"
+                    class="pagination-controls margin-top-3">
+
+                <div class="grid-row display-flex flex-justify-center">
+                    <nav aria-label="Pagination" class="usa-pagination ">
+                        <ul class="usa-pagination__list">
+                          <li class="usa-pagination__item usa-pagination__arrow">
+                            <a href="javascript:void(0);" class="usa-pagination__link usa-pagination__previous-page" data-type="prev" aria-label="Previous page">
+                              <svg class="usa-icon" aria-hidden="true" role="img">
+                                <use xlink:href="../assets/uswds/img/sprite.svg#navigate_before"></use>
+                              </svg>
+                              <span class="usa-pagination__link-text">Previous</span>
+                            </a>
+                          </li>
+                          <div class="jplist-holder" data-type="pages">
+                            <li class="usa-pagination__item usa-pagination__page-no">
+                                <a href="javascript:void(0);" class="usa-pagination__button bg-white" data-type="page" aria-label="Page {pageNumber}">{pageNumber}</a>
+                            </li>
+                            </div>
+                          <li class="usa-pagination__item usa-pagination__arrow">
+                            <a href="javascript:void(0);" class="usa-pagination__link usa-pagination__next-page" data-type="next" aria-label="Next page">
+                              <span class="usa-pagination__link-text">Next </span>
+                              <svg class="usa-icon" aria-hidden="true" role="img">
+                                <use xlink:href="../assets/uswds/img/sprite.svg#navigate_next"></use>
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+
+            </div>
+
+        </div>
+</section>
         </main>
 
         <section class="oam-footer bg-gradient-primary usa-dark-background text-white">
@@ -544,6 +640,9 @@
     <script src="../assets/js/vendors/lazy/jquery.lazy.min.js"></script>
     <script src="../assets/js/vendors/parallax-scroll/parallax-scroll.js"></script>
     <script src="../assets/js/functions.js"></script>
+    <script src="../assets/js/news-json-render.js"></script>
+    <script src="../assets/js/jplist.min.js"></script>
+    <script>jplist.init();</script>
 
 </body>
 
