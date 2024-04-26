@@ -400,7 +400,7 @@
                 <div class="grid-container margin-top-205 margin-bottom-205 padding-0">
                     <div class="usa-alert usa-alert--warning usa-alert--slim">
                       <div class="usa-alert__body padding-right-0">
-                          <p class="usa-alert__text">VA Network Access is necessary to view the products below.</p>
+                          <p class="usa-alert__text">VA Network Access is necessary to view these products.</p>
                         </div>
                      </div>
                 </div>
@@ -422,8 +422,8 @@
                             data.slice(0, 3).forEach(item => {
                                 // Find the first 630 characters without cutting off words
                                 var description = item['Brief Description'];
-                                if (description.length > 630) {
-                                    description = description.substring(0, 630);
+                                if (description.length > 400) {
+                                    description = description.substring(0, 400);
                                     // Find the last space after the first 630 characters
                                     var lastSpaceIndex = description.lastIndexOf(' ');
                                     // Don't cut off a word, remove any trailing spaces
@@ -435,7 +435,7 @@
                                         <div class="usa-card__media usa-card__media--exdent products-overview__item-header">
                                             <div class="usa-card__img">
                                                 <a href="${item['SP Details Page']}">
-                                                    <img src="${item['Image URL']}" alt="${item.Title}" class="img-fluid radius-lg" loading="lazy" />
+                                                    <img src="${item['Image URL']}" alt="${item.Title}" class="img-fluid" loading="lazy" />
                                                 </a>
                                             </div>
                                         </div>
@@ -451,7 +451,7 @@
                             });
                             output.innerHTML = template;
 
-                            // Move the OAM Products section above the template output based on screen size
+                            // Move the OAM Products section above the template when size breaks
                             moveOAMProductsSection();
                             window.addEventListener('resize', moveOAMProductsSection);
 
