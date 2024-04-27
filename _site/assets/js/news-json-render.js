@@ -5,26 +5,50 @@ var data = {
             "img": "../../assets/img/news-and-events/newsletters/fy24-q2/assistive-technology-design-logo.jpg",
             "alt": "A male patient using VR in a hospital",
             "title": "Veteran Prevails with Assistive Technology",
-            "description": "Army Veteran Joshua Maloney shares his transition from addiction to recovery with the help of virtual reality.",
-            "url": "fy24-q3/pre-procedural-medical-models/",
+            "description": "",
+            "url": "fy24-q2/veteran-prevails-with-assistive-technology/",
             "date": "2024-03-18 00:00:00"
         },
         {
-            "img": "/hil/assets/images/immersive/news/va-news-patient-with-vr.jpg",
+            "img": "../../assets/img/news-and-events/newsletters/fy24-q2/assistive-technology-library-launch.jpg",
             "alt": "A male patient using VR in a hospital",
-            "title": "How immersive technology became a Veteran" + "'" + "s dying wish",
-            "description": "Immersive technology gave Army Veteran Mr. Tito one last chance to experience his homeland.",
-            "url": "https://news.va.gov/128736/immersive-technology-became-veterans-dying-wish/",
-            "date": "2024-02-24 00:00:00"
+            "title": "Assistive Technology Design Library Launch",
+            "description": "",
+            "url": "fy24-q2/assistive-technology-library-launch/",
+            "date": "2024-03-18 00:00:00"
         },
         {
-            "img": "/hil/assets/images/immersive/news/va-news-man-at-monitors_vp1.jpg",
-            "alt": "A man sitting, talking, and pointing to a laptop and monitor with virtual reality goggles on a desk",
-            "title": "Virtual-world treatments create improvements in patient care - VA News",
-            "description": "Virtual reality-an immersive experience that may include the sights, sounds, smells and reactions to a situation-is an effective tool, and is used and taught at VA for treating post-traumatic stress disorder (PTSD) and fine motor skills deficits.",
-            "url": "https://news.va.gov/115825/virtual-treatments-create-improvements-care/",
-            "date": "2023-02-20 00:00:00"
+            "img": "../../assets/img/news-and-events/newsletters/fy24-q2/radiotherapy-bolus.jpg",
+            "alt": "",
+            "title": "Radiotherapy Bolus",
+            "description": "",
+            "url": "fy24-q2/radiotherapy-bolus/",
+            "date": "2024-03-18 00:00:00"
         },
+        {
+            "img": "../../assets/img/news-and-events/newsletters/fy24-q2/thermal-fuse-cover.jpg",
+            "alt": "",
+            "title": "Thermal Fuse Cover",
+            "description": "",
+            "url": "fy24-q2/thermal-fuse-cover/",
+            "date": "2024-03-18 00:00:00"
+        },
+        {
+            "img": "../../assets/img/news-and-events/newsletters/fy24-q2//richmond-lab-cutting-ceremony.jpg",
+            "alt": "",
+            "title": "Richmond Lab Ribbon Cutting Ceremony",
+            "description": "",
+            "url": "fy24-q2/richmond-lab-cutting-ceremony/",
+            "date": "2024-03-18 00:00:00"
+        },
+        {
+            "img": "../../assets/img/news-and-events/newsletters/fy24-q2/under-secretary-of-va-for-health-podcast-q2-2024.jpg",
+            "alt": "",
+            "title": "Under Secretary of VA for Health Podcast",
+            "description": "",
+            "url": "https://www.youtube.com/watch?v=NHWhuSG3xec&ab_channel=VeteransHealthAdministration",
+            "date": "2024-03-18 00:00:00"
+        },                        
         {
             "img": "/hil/assets/images/immersive/news/va-news-woman-headset_vp1.jpg",
             "alt": "A woman and man sitting behind a woman using a virtual reality headset and controllers",
@@ -304,14 +328,9 @@ data.data.sort().forEach(news => $('.oam-news__item-container').append(
 "</div>" +
 "</div>" +
 "<div class='usa-card__body products-overview__item-body padding-top-2'>" +
-"<a href='" + news.url + "' class='text-no-underline'>" +
-"<h3 class='text-primary margin-0 line-height-sans-3'>" + news.title + "</h3>" +
-"</a>" +
+"<h3 class='margin-0 line-height-sans-3'><a href='" + news.url + "' class='text-primary text-no-underline'>" + news.title + "</a></h3>" +
 "<span class='date'>" + news.date + "</span>" +
 "</div>" +
 "</article>"));
 
 $(".oam-news__item-container div:empty" ).remove();
-
-
-
