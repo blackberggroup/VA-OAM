@@ -20,7 +20,7 @@ var data = {
         {
             "img": "../assets/img/news-and-events/newsletters/fy24-q2/radiotherapy-bolus.jpg",
             "alt": "A man's face with a black nose piece",
-            "title": "Radiotherapy Bolus",
+            "title": "Radiotherapy Bolus", 
             "description": "",
             "url": "fy24-q2/radiotherapy-bolus/",
             "date": "2024-03-18 00:00:00"
