@@ -3,7 +3,7 @@ var data = {
     "data": [
         {
             "img": "../../assets/img/news-and-events/newsletters/fy24-q2/assistive-technology-design-logo.jpg",
-            "alt": "A male patient using VR in a hospital",
+            "alt": "Assistive Technology logo",
             "title": "Veteran Prevails with Assistive Technology",
             "description": "",
             "url": "fy24-q2/veteran-prevails-with-assistive-technology/",
@@ -11,7 +11,7 @@ var data = {
         },
         {
             "img": "../../assets/img/news-and-events/newsletters/fy24-q2/assistive-technology-library-launch.jpg",
-            "alt": "A male patient using VR in a hospital",
+            "alt": "Pencil holder with pencil and eraser",
             "title": "Assistive Technology Design Library Launch",
             "description": "",
             "url": "fy24-q2/assistive-technology-library-launch/",
@@ -19,7 +19,7 @@ var data = {
         },
         {
             "img": "../../assets/img/news-and-events/newsletters/fy24-q2/radiotherapy-bolus.jpg",
-            "alt": "",
+            "alt": "A man's face with a black nose piece",
             "title": "Radiotherapy Bolus",
             "description": "",
             "url": "fy24-q2/radiotherapy-bolus/",
@@ -27,15 +27,15 @@ var data = {
         },
         {
             "img": "../../assets/img/news-and-events/newsletters/fy24-q2/thermal-fuse-cover.jpg",
-            "alt": "",
+            "alt": "Two white plastic thermal fuse cover pieces on purple backdrop",
             "title": "Thermal Fuse Cover",
             "description": "",
             "url": "fy24-q2/thermal-fuse-cover/",
             "date": "2024-03-18 00:00:00"
         },
         {
-            "img": "../../assets/img/news-and-events/newsletters/fy24-q2//richmond-lab-cutting-ceremony.jpg",
-            "alt": "",
+            "img": "../../assets/img/news-and-events/newsletters/fy24-q2/richmond-lab-cutting-ceremony.jpg",
+            "alt": "A group of people at a ribbon cutting ceremony, joyfully cutting a ribbon to mark a special occasion",
             "title": "Richmond Lab Ribbon Cutting Ceremony",
             "description": "",
             "url": "fy24-q2/richmond-lab-cutting-ceremony/",
@@ -43,276 +43,516 @@ var data = {
         },
         {
             "img": "../../assets/img/news-and-events/newsletters/fy24-q2/under-secretary-of-va-for-health-podcast-q2-2024.jpg",
-            "alt": "",
+            "alt": "Three people standing in front of a computer screen, engaged in a discussion or collaboration",
             "title": "Under Secretary of VA for Health Podcast",
             "description": "",
             "url": "https://www.youtube.com/watch?v=NHWhuSG3xec&ab_channel=VeteransHealthAdministration",
             "date": "2024-03-18 00:00:00"
-        },                        
-        {
-            "img": "/hil/assets/images/immersive/news/va-news-woman-headset_vp1.jpg",
-            "alt": "A woman and man sitting behind a woman using a virtual reality headset and controllers",
-            "title": "Improving Veterans" + "&#8217;" + " inpatient experience through virtual reality - VA News",
-            "description": "Our frontline team members are improving the inpatient experience by walking a mile in Veterans" + "&#8217;" + " shoes, all through virtual reality (VR).",
-            "url": "https://news.va.gov/117020/improving-experience-through-virtual-reality/",
-            "date": "2023-03-27 00:00:00"
         },
         {
-            "img": "/hil/assets/images/immersive/news/va-news-man-in-wheelchair_vp1.jpg",
-            "alt": "A man in a wheelchair with an airplane pose using virtual reality goggles",
-            "title": "VA expands virtual reality for Veteran rehabilitation - VA News",
-            "description": "VA" + "&#8217;" + "s Office of Healthcare Innovation and Learning (OHIL) has established a three-year collaboration with Penumbra to test, co-develop and scale additional virtual reality (VR) solutions.",
-            "url": "https://news.va.gov/117227/va-expands-virtual-reality-rehabilitation/",
-            "date": "2023-04-03 00:00:00"
+            "img": "../../assets/img/news-and-events/external/si-News-Img-997.png",
+            "alt": "White plastic 3d jaw model",
+            "title": "New 3D printed advanced surgical tool: More efficient care",
+            "description": "",
+            "url": "https://news.va.gov/110647/3d-printed-advanced-surgical-tool/",
+            "date": "2023-11-17 00:00:00"
+        },  
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img-998.png",
+            "alt": "Behind the knife logo",
+            "title": "Behind the Knife Podcast: 3DP innovations in surgery",
+            "description": "",
+            "url": "https://behindtheknife.org/podcast-series/innovations-in-surgery",
+            "date": "2022-10-27 00:00:00"
         },
         {
-            "img": "/hil/assets/images/immersive/news/va-news-image001_edited1_vp2.jpg",
-            "alt": "Two women and two men standing for a photo",
-            "title": "The VA Immersive Experience: Defining a new reality for Veteran health care - VA News",
-            "description": "VA Immersive is defining a new reality in health care, transforming care delivery and experience, and reinforcing why Veterans and staff choose VA.",
-            "url": "https://news.va.gov/125386/immersive-experience-defining-health-care/",
-            "date": "2023-10-26 00:00:00"
-        },
+            "img": "../../assets/img/news-and-events/external/si-News-Img-999.png",
+            "alt": "U.S. Food & Drug Admin logo",
+            "title": "VA, FDA collaborate to accelerate medical device innovation",
+            "description": "",
+            "url": "https://news.va.gov/press-room/va-fda-work-together-to-accelerate-medical-device-innovation-advance-care-for-all-americans/",
+            "date": "2022-09-28 00:00:00"
+        },         
         {
-            "img": "/hil/assets/images/immersive/news/va-news-tech-and-vet_vp1.jpg",
-            "alt": "A woman observing a man using a virtual reality headset",
-            "title": "Veterans experience immersive technology - VA News",
-            "description": "In September, Gulf Coast VA partnered with VA" + "&#8217;" + "s Office of Healthcare Innovation and Learning" + "&#8217;" + "s immersive team to host a Veteran eXpeRience (VXR) event.",
-            "url": "https://news.va.gov/125147/veterans-experience-immersive-technology/",
-            "date": "2023-11-01 00:00:00"
-        },
+            "img": "../../assets/img/news-and-events/external/si-News-Img0.png",
+            "alt": "A man in a blue shirt and glasses focused on his computer screen",
+            "title": "VA Cleared to use 3DP Tech for Surgery",
+            "description": "",
+            "url": "https://www.militarytimes.com/news/your-military/2022/08/25/va-launches-3d-printing-device-to-assist-veterans-surgeries/",
+            "date": "2022-08-25 00:00:00"
+        }, 
         {
-            "img": "/hil/assets/images/immersive/news/va-news-veteran-kari_option-3_vp1.jpg",
-            "alt": "Two women examining medical gadgets",
-            "title": "Embracing virtual reality: Kari Shulman" + "&#8217;" + "s success story - VA News",
-            "description": "The story of Kari Ann Shulman, a proud Veteran of the Women" + "&#8217;" + "s Army Corps, offers a fresh take on the transformative power of immersive technology.",
-            "url": "https://news.va.gov/126135/embracing-virtual-reality-kari-shulmans-story/",
-            "date": "2023-11-21 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/va-news-headset-rear-view_vp2.jpg",
-            "alt": "A person using a virtual reality headset",
-            "title": "The transformative role of virtual reality-based meditation",
-            "description": "Immersive technology like virtual reality (VR) is providing new hope to Veterans with treatment-resistant depression (TRD).",
-            "url": "https://news.va.gov/127697/transformative-role-virtual-reality-meditation/",
-            "date": "2024-01-19 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/va-news-round-table-graphic.jpg",
-            "alt": "A photo of a woman with a headset featured within a VA Immersive Executive Roundtable 2023 graphic",
-            "title": "2023 VA Immersive Executive Roundtable",
-            "description": "Read the White Paper developed from the 2023 VA Immersive Executive Roundtable.",
-            "url": "https://www.innovation.va.gov/hil/assets/documents/va-immersive-executive-roundtable-final.pdf",
-            "date": "2023-04-01 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-vr-for-ptsd-at-va-orlando.jpg",
-            "alt": "A man using virtual reality goggles and controllers",
-            "title": "\"I was at Peace\": Orlando VA Uses Virtual Reality for Veteran Mental Health",
-            "description": "U.S. Navy Veteran is living with post-traumatic stress disorder. He's now coping with his PTSD through the use of virtual reality goggles. Hear his story and experience with VA Immersive at the Orlando VA.",
-            "url": "https://www.clickorlando.com/news/local/2023/02/22/i-was-at-peace-orlando-va-uses-virtual-reality-tech-to-support-mental-health-for-veterans/",
-            "date": "2023-02-22 17:30:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/va-news-person-with-helmet_vp1.jpg",
-            "alt": "A woman using virtual reality goggle and a man and woman observing her",
-            "title": "Innovators gather for 2023 VA Immersive Summit",
-            "description": "Collaborators from all over gathered in both in-person and virtually in August 2023 to share the transformative power of immersive technology in VA health care.",
-            "url": "https://news.va.gov/124168/innovators-gather-for-2023-va-immersive-summit/",
-            "date": "2023-09-29 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/va-news-operator-two-screens_vp1.jpg",
-            "alt": "A man using a video simulator with virtual reality goggles and controllers",
-            "title": "Immersive technology assists with treatment for PTSD",
-            "description": "Virtual reality (VR) BraveMind software working to expand exposure therapy access to Veterans battling posttraumatic stress disorder (PTSD).",
-            "url": "https://news.va.gov/124160/immersive-technology-assists-treatment-for-ptsd/",
-            "date": "2023-09-28 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-daybreak-grand-challenge.jpg",
-            "alt": "A man using virtual reality goggles and controllers",
-            "title": "Winners Revealed in VA Mission Daybreak Grand Challenge to Reduce Veteran Suicides",
-            "description": "OxfordVR" + "&#8217;" + "s gameChange treats severe social isolation common to PTSD, psychosis, and severe depression, and a precursor to suicidal thoughts and behavior. Through virtual reality, gameChange offers an immersive and scalable opportunity to treat Veterans where they are before a crisis moment.",
-            "url": "https://www.va.gov/opa/pressrel/pressrelease.cfm?id=5857",
-            "date": "2023-02-16 06:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img1-Inside-the-effort-to-expand-virtual-reality.jpg",
-            "alt": "A man and woman using virtual reality goggles with a meditation hand pose",
-            "title": "Inside the Effort to Expand Virtual Reality Treatments for Mental Health | Science| Smithsonian Magazine",
-            "description": "At Western North Carolina VA HCS, VA has completed more than 450 sessions using immersive technology as a distraction tool to help decrease pain, stress, anxiety, boredom, and restless behaviors. So far, the response from Veterans has been highly encouraging.",
-            "url": "https://www.smithsonianmag.com/science-nature/inside-the-effort-to-expand-virtual-reality-treatments-for-mental-health-180979995/",
-            "date": "2022-05-06 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img2-October-2022-Shark-Tank-Winner.jpg",
-            "alt": "A conference with with many guests and two men sitting on chairs at the podium",
-            "title": "Employee Well-Being Centers and Cart",
-            "description": "The Employee Well-Being Centers and Carts uses virtual reality to improve the lives of VHA employees. It garnered support through the 2022 VHA Shark Tank Competition and will now be implemented across VISN 21, Sierra Nevada VA Healthcare System.",
-            "url": "https://marketplace.va.gov/innovations/employee-well-being-centers-and-carts",
-            "date": "2020-03-01 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img5-Boundary-Breaking-Extended-Reality-Network.jpg",
-            "alt": "A woman pointing to a digital screen",
-            "title": "Boundary-breaking Extended Reality Network grows and spreads new opportunities - VA News",
-            "description": "Boundary-breaking Extended Reality Network grows and spreads new opportunities: Developing and spreading innovative extended reality (XR) health care tools for Veterans is actively being integrated into the fabric of Veterans Health Administration (VHA).",
-            "url": "https://news.va.gov/89759/boundary-breaking-extended-reality-network-grows-spreads-new-opportunities/",
-            "date": "2021-06-09 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img6-Inside-the-Effort-to-Expand-Virtual-Reality-Treatments-for-Mental-Health.jpg",
-            "alt": "A woman using virtual reality goggles",
-            "title": "Inside the Effort to Expand Virtual Reality Treatments for Mental Health | Science| Smithsonian Magazine",
-            "description": "Inside the Effort to Expand Virtual Reality Treatments for Mental Health: Medical professionals are embracing the technology to help patients deal with PTSD, anxiety disorders and more",
-            "url": "https://www.smithsonianmag.com/science-nature/inside-the-effort-to-expand-virtual-reality-treatments-for-mental-health-180979995/",
-            "date": "2022-05-06 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img7-VAntagePoint-Virtual-Reality-Collaboration.jpg",
-            "alt": "A man in combat attire conversating with a woman",
-            "title": "VAntage Point: Virtual reality collaboration is transforming Veterans' health care - FedHealthIT",
-            "description": "Veterans Health Administration Innovation Ecosystem and Wellovate announced the launch of a groundbreaking initiative using Wellovate" + "&#8217;" + "s Waya Health platform to enhance the care provided to Veterans.",
-            "url": "https://www.fedhealthit.com/2021/09/vantage-point-virtual-reality-collaboration-is-transforming-veterans-health-care/",
-            "date": "2021-09-01 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img8-Face-of-Innovation-DrAnne.jpg",
-            "alt": "A headshot photo of Dr. Anne",
-            "title": "Face of InnoVAtion: Dr. Anne Lord Bailey - VA News",
-            "description": "Dr. Anne Lord Bailey: The boundary-breaking work transforming VA has never been more crucial to long-time VHA Innovators Network (iNET) Innovation Specialist,Dr. Anne Lord Bailey.",
-            "url": "https://news.va.gov/93794/face-of-innovation-dr-anne-lord-bailey/",
-            "date": "2021-08-29 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img9-Listen-how-VA-is-using-VR-for-PTSD.jpg",
-            "alt": "A man in combat attire shaking hands with a woman at a desk",
-            "title": "Listen: How VA is Using Virtual Reality for PTSD Treatment (governmentciomedia.com)",
-            "description": "How VA is Using Virtual Reality for PTSD Treatment: The agency is exploring the use of augmented reality for conditions ranging from anxiety and PTSD to chronic pain management.",
-            "url": "https://governmentciomedia.com/listen-how-va-using-virtual-reality-ptsd-treatment",
-            "date": "2021-10-25 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img10-Waya-Health-to-Lead-Study.jpg",
-            "alt": "A man placing a virtual reality headset on the head of a woman",
-            "title": "Waya Health to Lead Study of Virtual Reality Health Care for Veterans | AP News",
-            "description": "Waya Health to Lead Study of Virtual Reality Health Care for Veterans: Wellovate LLC, a national leader in the clinical use of virtual reality (VR), today announced the launch of a groundbreaking initiative using its Waya Health platform to enhance the care provided to U.S. military veterans.",
-            "url": "https://apnews.com/press-release/pr-newswire/technology-health-veterans-",
-            "date": "2023-01-01 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img11-VAs-Extended-Reality-Network-Expanding.jpg",
-            "alt": "A woman using a virtual reality headset",
-            "title": "VA" + "&#8217;" + "s Extended Reality Network Expanding Across Agency - Nextgov",
-            "description": "VA" + "&#8217;" + "s Extended Reality Network Expanding Across Agency: There are more than 75 Veterans Health Administration sites using extended reality in some fashion.",
-            "url": "https://www.nextgov.com/emerging-tech/2021/08/vas-extended-reality-network-expanding-across-",
-            "date": "2021-08-01 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img12-Frontiers-Effect-on-Immersive-Virtual-Reality.jpg",
-            "alt": "A woman standing in front of open windows using a virtual reality headset and controllers",
-            "title": "Frontiers | Effect of Immersive Virtual Reality on Pain and Anxiety at a Veterans Affairs Health Care Facility (frontiersin.org)",
-            "description": "VA researchers published the conclusions of their year-long study on the impact of virtual reality distraction on acute and chronic pain in Veterans within the Veterans Affairs Health Care System.",
-            "url": "https://www.frontiersin.org/articles/10.3389/frvir.2021.719681/full?",
-            "date": "2021-10-05 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img13-NextGov-VAs-Extended-Reality.jpg",
-            "alt": "A man presenting to a group of people in a conference",
-            "title": "Nextgov: VA" + "&#8217;" + "s Extended Reality Network Expanding Across Agency - FedHealthIT",
-            "description": "VA" + "&#8217;" + "s Extended Reality Network Expanding Across Agency: Launched last fall, the Veterans Affairs Department's Extended Reality Network is gaining steam and support among veterans and health care practitioners.",
-            "url": "https://www.fedhealthit.com/2021/08/nextgov-vas-extended-reality-network-expanding-across-agency/",
-            "date": "2021-08-01 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img14-Improving-Delivery-of-Healthcare-using-Extended-Reality.jpg",
-            "alt": "A graphic featuring the logo and text of Potomac Officers Club",
-            "title": "VA Improving Delivery of Health Care Using Extended Reality Tech - Potomac Officers Club",
-            "description": "The Department of Veterans Affairs is working to improve health care delivery by fielding extended reality technologies that can transport patients to places like art museums or beaches without leaving their hospital beds.",
-            "url": "https://potomacofficersclub.com/news/va-improving-delivery-of-health-care-using-extended-reality-tech/",
-            "date": "2021-06-14 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img15-VA-Integrates-Extended-Reality-Tech-Across-Sites.jpg",
-            "alt": "A woman observing two paintings of women working in a field",
-            "title": "VA Integrates Extended Reality Technology Across Sites and Treatments - Nextgov",
-            "description": "As it works to innovate health care delivery, the Veterans Affairs Department is deploying immersive, extended reality technologies that can transport patients to an art museum, the beach, or elsewhere—without ever leaving their hospital beds.",
-            "url": "https://www.nextgov.com/emerging-tech/2021/06/va-integrates-extended-reality-technology-across-sites-and-treatments/174678/",
-            "date": "2021-06-11 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img16-VA-Implements-Use-of-Extended-Reality-Tech-to-Support-Veteran-Therapy.jpg",
-            "alt": "A man using a virtual reality headset while painting",
-            "title": "VA Implements Use of Extended Reality Tech to Support Veteran Therapy (executivegov.com)",
-            "description": "VA is implementing technologies that would allow Veterans to virtually receive therapeutic treatment. VA intends to do this through the use of extended reality, which covers virtual, augmented, and mixed reality technologies altogether.",
-            "url": "https://executivegov.com/2021/06/va-implements-use-of-extended-reality-tech-to-support-veteran-therapy/",
-            "date": "2021-06-14 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img17-Donation-of-Virtual-reality-devices.jpg",
-            "alt": "A woman assisting a man with a virtual reality headset",
-            "title": "Donation Of Virtual Reality Devices To GCVHCS Adds Innovative Rehabilitation Therapy For Veterans | VA Gulf Coast Health Care | Veterans Affairs",
-            "description": "The Gulf Coast Veterans Health Care System recently accepted a donation of three virtual reality systems from Penumbra, Inc., to bolster Veteran kinesiology and occupational therapeutic activities.",
-            "url": "https://www.va.gov/gulf-coast-health-care/stories/gcvhcs-receives-virtual-reality-therapy-devices-through-vha-innovation-ecosystem/",
-            "date": "2022-02-14 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img18-vr-for-pain-health.jpg",
-            "alt": "A man in a military uniform sitting on a wheelchair using a virtual reality headset",
-            "title": "New Study: Virtual Reality Tech Helps Veterans Deal With Pain|Health Tech Insider",
-            "description": "Virtual Reality Tech Helps Veterans Deal With Pain: Waya Health has announced a new collaboration with the Veterans Health Administration Innovation Ecosystem (VHA IE) Extended Reality (VHA XR) Network.",
-            "url": "https://healthtechinsider.com/2021/09/10/new-study-virtual-reality-tech-helps-veterans-deal-with-pain/",
-            "date": "2021-09-10 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img19-Charles-George-VA-leads-VR-use.jpg",
-            "alt": "A man using a virtual reality headset on a hospital bed",
-            "title": "Charles George VA leads virtual reality use for veterans | Mountain Xpress",
-            "description": "Charles George VA leads virtual reality use for veterans: Caitlin Rawlins, innovation specialist for the Western North Carolina Veteran Affairs Health Care System, remembers vividly the first time that a patient at the Charles George Department of Veterans Affairs Medical Center long-term care facility used virtual reality.",
-            "url": "https://mountainx.com/living/virtual-reality-veterans/",
-            "date": "2022-01-07 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img20-Durham-VA-Takes-Part-in-Virtual-Reality.jpg",
-            "alt": "A photo of a VA medical center building",
-            "title": "Durham VA takes part in virtual reality-based therapy for veterans (cbs17.com)",
-            "description": "Durham VA takes part in virtual reality-based therapy for veterans: The Durham Veterans Affairs Medical System is adding another medical innovation to their lineup of care.",
-            "url": "https://www.cbs17.com/news/local-news/durham-county-news/durham-va-takes-part-in-virtual-reality-based-therapy-for-veterans/",
-            "date": "2022-07-05 11:51:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img21-Virtual-Reality-at-the-US-Department-Veterans-Affairs.jpg",
-            "alt": "One man using a virtual reality headset",
-            "title": "Virtual Reality at the US Department of Veterans Affairs: a Guest Contribution (vrforhealth.com)",
-            "description": "Extended reality, particularly virtual reality, is at the forefront of disruptive innovations in the health care industry, and the U.S. Department of Veterans Affairs is helping pave the way forward.",
-            "url": "https://vrforhealth.com/2022/06/20/vr-for-va-veterans/",
-            "date": "2022-06-20 00:00:00"
-        },
-        {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img22-Immersive-technology-Defining-a-new-reality.jpg",
-            "alt": "Two men using virtual reality sets",
-            "title": "Immersive technology: Defining a new reality for Veteran health care - VA News",
-            "description": "Defining a new reality for Veteran health care: How XR is impacting health care for Veterans.",
-            "url": "https://news.va.gov/106227/immersive-technology-new-reality-veteran-healthcare/",
+            "img": "../../assets/img/news-and-events/external/si-News-Img1.png",
+            "alt": "A woman standing in front 3d printing machine",
+            "title": "VHA 3DP Surgical Fellowship",
+            "description": "",
+            "url": "https://medschool.vcu.edu/news/archive/better-surgery-through-3d-printing/",
             "date": "2022-07-29 00:00:00"
-        },
+        }, 
         {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img23-Virtual-reality-Veteran-on-virtual-trips-around-the-world.jpg",
-            "alt": "A woman with a protective mask assisting a man using a virtual reality headset and blood pressure devices",
-            "title": "Virtual reality: Veteran on virtual trips around the world - VA News",
-            "description": "Veteran on virtual trips around the world: South Texas VA uses virtual reality to serve spinal cord injury & disorder patients.",
-            "url": "https://news.va.gov/108553/virtual-trips-around-the-world/",
-            "date": "2022-09-15 00:00:00"
-        },
+            "img": "../../assets/img/news-and-events/external/si-News-Img2.png",
+            "alt": "FDA Workshop: 3DP Medical Devices at the Point of Care",
+            "title": "FDA Workshop: 3DP Medical Devices at the Point of Care",
+            "description": "",
+            "url": "https://www.fda.gov/medical-devices/3d-printing-medical-devices/3d-printing-medical-devices-point-care-discussion-paper",
+            "date": "2021-12-10 00:00:00"
+        }, 
         {
-            "img": "/hil/assets/images/immersive/news/neImmersive-NE-Img24-Virtual-Reality-Comes-To-Birmingham-VA.jpg",
-            "alt": "A woman sitting and using a virtual reality headset and controllers",
-            "title": "Virtual Reality Comes To Birmingham VA To Better Veteran Experience | VA Birmingham Health Care | Veterans Affairs",
-            "description": "Virtual Reality comes to Birmingham VA to better Veteran experience: Brittany Hinton, Birmingham VA Assistant Nurse Manager, participates in the new Virtual Reality (VR) training for the hospital discharge process.",
-            "url": "https://www.va.gov/birmingham-health-care/stories/virtual-reality-comes-to-birmingham-va-to-better-veteran-experience/",
-            "date": "2022-11-18 00:00:00"
-        }                                                                           
+            "img": "../../assets/img/news-and-events/external/si-News-Img3.png",
+            "alt": "VHA Collaborates with 3D Systems",
+            "title": "VHA Collaborates with 3D Systems",
+            "description": "",
+            "url": "https://www.3dsystems.com/press-releases/3d-systems-veterans-health-administration-collaboration-transforms-patient-care-us",
+            "date": "2020-11-05 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img4.png",
+            "alt": "The Today Show features the GioStent",
+            "title": "The Today Show features the GioStent",
+            "description": "",
+            "url": "https://www.today.com/health/how-veteran-s-homemade-solution-becomes-3d-printed-hearing-device-t219618",
+            "date": "2021-05-26 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img5.png",
+            "alt": "3DP for pre-surgical planning",
+            "title": "3DP for pre-surgical planning",
+            "description": "",
+            "url": "https://www.youtube.com/watch?v=2JoAWaL6ZiU",
+            "date": "2020-10-01 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img6.png",
+            "alt": "3DP for Assistive Technology",
+            "title": "3DP for Assistive Technology",
+            "description": "",
+            "url": "https://www.youtube.com/watch?v=DwuC7xdsFCc",
+            "date": "2020-09-01 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img7.png",
+            "alt": "A team of medical professionals, including doctors and nurses, working together in an operating room",
+            "title": "3D Printing Transforms Veteran Care",
+            "description": "",
+            "url": "https://govciomedia.com/emerging-uses-of-3d-printing-manufacturing-are-transforming-veteran-care/",
+            "date": "2022-05-31 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img8.png",
+            "alt": "Government Matters Interview: Dr. Beth Ripley",
+            "title": "Government Matters Interview: Dr. Beth Ripley",
+            "description": "",
+            "url": "https://www.youtube.com/watch?v=hw5quUs_FVQ;%20https://govmatters.tv/department-of-veterans-affairs-could-get-3d-printed-living-bone-to-clinics-in-three-years/?noamp=available",
+            "date": "2021-05-01 00:00:00"
+        },     
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img9.png",
+            "alt": "A female scientist in a laboratory examining data on a tablet computer",
+            "title": "Collaboration Spotlight: Advanced Solutions Life Sciences",
+            "description": "",
+            "url": "https://www.va.gov/puget-sound-health-care/news-releases/va-puget-sound-health-care-systems-va-ventures-partners-with-advance-solutions-life-science-to-bring-3d-printed/",
+            "date": "2022-05-15 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img10.png",
+            "alt": "3D printing prosthetic test sockets for amputated patients",
+            "title": "3D printing prosthetic test sockets for amputated patients",
+            "description": "",
+            "url": "https://www.va.gov/central-alabama-health-care/stories/central-alabama-prosthetics-team-embraces-technology-with-charleston-va-in-3-d-printing-project/",
+            "date": "2021-11-19 00:00:00"
+        },     
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img11.png",
+            "alt": "3D Printing, Prosthetic Expansions Bring Customized Care to Veterans",
+            "title": "3D Printing, Prosthetic Expansions Bring Customized Care to Veterans",
+            "description": "",
+            "url": "https://govciomedia.com/3d-printing-prosthetic-expansions-bring-customized-care-to-veterans/",
+            "date": "2021-11-06 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img12.png",
+            "alt": "Dr. Michael Amendola: 3D printing for Veteran Care",
+            "title": "Dr. Michael Amendola: 3D printing for Veteran Care",
+            "description": "",
+            "url": "https://news.va.gov/93168/vha-ie-trailblazers-how-dr-michael-amendola-uses-3d-printing-for-veteran-care/",
+            "date": "2021-08-19 00:00:00"
+        },     
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img13.png",
+            "alt": "3d printed nasal swabs stored in a box on a table.",
+            "title": "Safety and Effectiveness of 3D Printed Nasal Swabs",
+            "description": "",
+            "url": "https://news.va.gov/92704/covid-19-testing-va-studying-3d-printed-nasal-swabs-to-guard-against-future-declines-in-traditional-swabs/",
+            "date": "2021-08-06 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img14.png",
+            "alt": "A man wearing a 3d printed face mask in front of a white wall, prioritizing safety and protection.",
+            "title": "VA Leverages 3DP to Guard Against COVID-19",
+            "description": "",
+            "url": "https://www.research.va.gov/currents/0521-Amid-shortage-of-face-masks-researchers-explore-3D-options-to-guard-against-COVID-19-other-infectious-diseases.cfm",
+            "date": "2021-05-27 00:00:00"
+        },     
+        // {
+        //     "img": "../../assets/img/news-and-events/external/si-News-Img15.png",
+        //     "alt": "3D Printed Ear Stent Developed at VA",
+        //     "title": "3D Printed Ear Stent Developed at VA",
+        //     "description": "",
+        //     "url": "https://techlinkcenter.org/technologies/customizable-stent-for-collapsed-ear-canals-improves-hearing/8a45d891-7b6a-4637-a794-893c0563884c",
+        //     "date": "2021-05-17 00:00:00"
+        // }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img16.png",
+            "alt": "Various masks and items displayed on a table.",
+            "title": "PAPR Hood System at VA",
+            "description": "",
+            "url": "https://news.va.gov/88873/va-protects-frontline-health-care-providers-innovative-mask/",
+            "date": "2021-05-20 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img17.png",
+            "alt": "",
+            "title": "3D Printed Block Preventing In-Patient Suicides",
+            "description": "",
+            "url": "https://www.defensemedianetwork.com/stories/va-hospital-improvises-new-device-prevent-patient-suicides/",
+            "date": "2021-05-10 00:00:00"
+        }, 
+        // {
+        //     "img": "../../assets/img/news-and-events/external/si-News-Img18.png",
+        //     "alt": "",
+        //     "title": "FDA Approves GioStent for a Veteran",
+        //     "description": "",
+        //     "url": "https://www.nextgov.com/emerging-tech/2021/03/fda-approves-va-made-3d-printed-hearing-device-south-carolina-veteran/172746/",
+        //     "date": "2021-05-17 00:00:00"
+        // }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img19.png",
+            "alt": "",
+            "title": "Additive manufacturing in Federal agencies",
+            "description": "",
+            "url": "https://fedtechmagazine.com/article/2020/12/3-ways-additive-manufacturing-supports-federal-agencies-perfcon",
+            "date": "2020-12-23 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img20.png",
+            "alt": "",
+            "title": "COVID-19 Maker Challenge",
+            "description": "",
+            "url": "https://news.va.gov/82801/covid-19-maker-challenge-delivers-solutions-veterans-va-staff-america/",
+            "date": "2020-12-30 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img21.png",
+            "alt": "A person using a tool on a machine, focused on their work.",
+            "title": "3D Printing to Augment Support Chains",
+            "description": "",
+            "url": "https://www.forbes.com/sites/jimvinoski/2020/11/12/the-va-blazes-the-trail-to-fix-medical-supply-chains-with-point-of-care-3d-printing/?sh=44e05dc66df3",
+            "date": "2020-11-12 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external//si-News-Img22.png",
+            "alt": "A collage of people wearing masks and other items to protect themselves.",
+            "title": "Clear Talker Mask",
+            "description": "",
+            "url": "https://news.va.gov/80675/va-mask-invention-enhances-communication/",
+            "date": "2020-11-06 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img23.png",
+            "alt": "3D printer creating objects layer by layer. Revolutionizing manufacturing with its precision and versatility.",
+            "title": "VA Leverages 3D Printing to Produce Medical Devices In-House",
+            "description": "",
+            "url": "https://www.nextgov.com/emerging-tech/2020/11/va-makes-moves-3d-print-and-produce-medical-devices-house/169819/",
+            "date": "2020-11-05 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img24.png",
+            "alt": "VA Ventures Launch",
+            "title": "VA Ventures Launch",
+            "description": "",
+            "url": "https://news.va.gov/79924/va-ventures-veteran-health-care/",
+            "date": "2020-10-13 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img25.png",
+            "alt": "Two people in suits, Dr. Ripley with Dr. Fauci",
+            "title": "Dr. Ripley Discusses Public Service",
+            "description": "",
+            "url": "https://ourpublicservice.org/blog/dr-anthony-fauci-and-other-exceptional-doctors-on-the-importance-of-public-service/",
+            "date": "2020-10-07 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img26.png",
+            "alt": "Dr. Ripley wins Service to America Medal",
+            "title": "Dr. Ripley wins Service to America Medal",
+            "description": "",
+            "url": "https://ourpublicservice.org/wp-content/uploads/2020/10/Dr.-Beth-Ripley-Press-Release.pdf",
+            "date": "2020-10-05 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img27.png",
+            "alt": "3D printed face shield",
+            "title": "3DP in Medical and Military Arenas",
+            "description": "",
+            "url": "https://fedtechmagazine.com/article/2020/07/3d-printing-gains-foothold-medical-and-military-arenas",
+            "date": "2020-07-14 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img28.png",
+            "alt": "",
+            "title": "3D Printing leads to VA award nominations",
+            "description": "",
+            "url": "https://news.va.gov/74728/va-grabs-two-sammies-nominations-for-innovations-benefitting-veterans/",
+            "date": "2020-05-15 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img29.png",
+            "alt": "A man using an automated mannequin to teach a class",
+            "title": "Pandemic response shows revolutionary nature of 3D Printing",
+            "description": "",
+            "url": "https://www.plasticsnews.com/news/panel-says-pandemic-response-opens-eyes-3d-printing",
+            "date": "2020-05-14 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img30.png",
+            "alt": "",
+            "title": "Dr. Beth Ripley explains how 3D Printing can fight COVID-19",
+            "description": "",
+            "url": "https://federalnewsnetwork.com/technology-main/2020/04/agencies-utilizing-3d-printing-to-fight-coronavirus/",
+            "date": "2020-04-16 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img31.png",
+            "alt": "",
+            "title": "VA uses 3D Printing to address COVID-19 while saving money",
+            "description": "",
+            "url": "https://www.live5news.com/2020/04/08/charleston-va-using-d-printer-make-face-shields-percent-cheaper-than-supplier/",
+            "date": "2020-04-08 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img32.png",
+            "alt": "",
+            "title": "VA creates first 3D Printed mask approved by FDA",
+            "description": "",
+            "url": "https://govciomedia.com/fda-approves-first-3d-printed-mask-for-covid-19-support/",
+            "date": "2020-04-06 00:00:00"
+        },   
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img33.png",
+            "alt": "",
+            "title": "VA steps to the plate with 3D Printing to combat COVID-19",
+            "description": "",
+            "url": "https://www.nextgov.com/emerging-tech/2020/03/fda-nih-va-partner-accelerate-3d-printed-protective-gear-covid-19-response/164246/",
+            "date": "2020-05-31 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img34.png",
+            "alt": "",
+            "title": "Medical 3D Printing changes the game for Veteran care",
+            "description": "",
+            "url": "https://radiologybusiness.com/topics/health-it/enterprise-imaging/imaging-informatics/medical-3d-printing-polishes-its-act-prime",
+            "date": "2020-02-14 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img36.png",
+            "alt": "",
+            "title": "VA pushes the frontier of 3D Printing in medical settings",
+            "description": "",
+            "url": "https://www.audacy.com/connectingvets/articles/veteran-innovation-experience-3d-printing-technology",
+            "date": "2019-10-23 00:00:00"
+        },   
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img37.png",
+            "alt": "",
+            "title": "3D printing helps VA doctors treat heart conditions",
+            "description": "",
+            "url": "https://news.va.gov/67128/3d-printing-helps-va-doctors-treat-heart-conditions/",
+            "date": "2019-10-15 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external//si-News-Img38.png",
+            "alt": "",
+            "title": "Treating Heart Disease Using 3D Printing",
+            "description": "",
+            "url": "https://www.azom.com/news.aspx?newsID=52230",
+            "date": "2019-10-02 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img39.png",
+            "alt": "",
+            "title": "Defeating heart disease using 3D Printing",
+            "description": "",
+            "url": "https://3dprint.com/254882/va-puget-sound-initiative-advancing-3d-printing-for-heart-disease/",
+            "date": "2019-10-01 00:00:00"
+        },   
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img40.png",
+            "alt": "",
+            "title": "Dr. Beth Ripley on Advancing 3D Printing in Healthcare",
+            "description": "",
+            "url": "https://3dprintingindustry.com/news/interview-va-puget-sounds-dr-beth-ripley-on-advancing-3d-printing-in-healthcare-161959/",
+            "date": "2019-09-20 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img41.png",
+            "alt": "",
+            "title": "Improving Veteran care through collaboration and technology",
+            "description": "",
+            "url": "https://newsroom.uw.edu/news/uw-medicine-va-partner-3d-print-models-heart-care",
+            "date": "2019-08-19 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img42.png",
+            "alt": "",
+            "title": "VA transforms patient care through 3D Printing",
+            "description": "",
+            "url": "https://executivegov.com/2019/08/beth-ripley-va-seeks-to-transform-patient-care-with-3d-printing/",
+            "date": "2019-08-19 00:00:00"
+        },   
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img43.png",
+            "alt": "",
+            "title": "VA Leading Innovation in Medical 3D Printing",
+            "description": "",
+            "url": "https://govciomedia.com/va-leading-innovation-in/",
+            "date": "2019-08-16 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img44.png",
+            "alt": "",
+            "title": "VA charts the future by training staff on 3D Printing",
+            "description": "",
+            "url": "https://www.nextgov.com/emerging-tech/2019/08/va-seeks-staff-use-3d-printing-personalize-care-patients/159239/",
+            "date": "2019-08-16 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img45.png",
+            "alt": "",
+            "title": "VA develops new tool to improve diagnosis accuracy",
+            "description": "",
+            "url": "https://techlinkcenter.org/news/new-deep-lung-catheter-from-va-has-flexible-sampling-tip-camera-for-improved-diagnosis/",
+            "date": "2019-07-26 00:00:00"
+        },   
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img46.png",
+            "alt": "",
+            "title": "3D Printing speeds up Veterans' dental care",
+            "description": "",
+            "url": "https://news.va.gov/63282/3d-technology-expedites-veterans-dental-care/",
+            "date": "2019-07-19 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img47.png",
+            "alt": "",
+            "title": "VA lab uses 3D Printing as a crucial tool",
+            "description": "",
+            "url": "https://www.va.gov/pittsburgh-health-care/stories/3d-printing-longtime-staple-of-vaphs-research-lab/",
+            "date": "2019-05-30 00:00:00"
+        }, 
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img48.png",
+            "alt": "",
+            "title": "VA enters new frontier with 3D Printing",
+            "description": "",
+            "url": "https://federalnewsnetwork.com/veterans-affairs/2019/04/va-sees-growing-3d-printing-network-as-new-frontier-for-agencys-medical-research/",
+            "date": "2019-04-19 00:00:00"
+        },   
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img49.png",
+            "alt": "",
+            "title": "Creating artificial bones and organs using 3D Printing",
+            "description": "",
+            "url": "https://www.military.com/daily-news/2019/04/17/va-looks-create-artificial-organs-even-bones-3d-printing.html",
+            "date": "2019-04-17 00:00:00"
+        },   
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img50.png",
+            "alt": "",
+            "title": "VA uses 3D Printing to improve Veteran care",
+            "description": "",
+            "url": "https://www.nextgov.com/emerging-tech/2019/04/va-looks-3d-printing-improve-veteran-care/156382/",
+            "date": "2019-05-30 00:00:00"
+        },   
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img51.png",
+            "alt": "",
+            "title": "VA plans to create 3D-Printed artificial lung",
+            "description": "",
+            "url": "https://www.usmedicine.com/non-clinical-topics/technology/va-announces-plans-to-create-3d-printed-artificial-lung/",
+            "date": "2019-04-08 00:00:00"
+        },   
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img52.png",
+            "alt": "",
+            "title": "3D Printing expands across healthcare systems",
+            "description": "",
+            "url": "https://www.healthdatamanagement.com/articles/3d-modeling-gains-more-traction-in-care-organizations",
+            "date": "2019-05-08 00:00:00"
+        },   
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img53.png",
+            "alt": "",
+            "title": "3D Printing: The latest weapon against cancer",
+            "description": "",
+            "url": "https://komonews.com/news/healthworks/vietnam-veterans-surgery-gets-help-from-3d-printed-kidney",
+            "date": "2019-02-08 00:00:00"
+        },   
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img54.png",
+            "alt": "",
+            "title": "New 3D Printing software advances how Veterans receive care",
+            "description": "",
+            "url": "https://news.va.gov/56207/3d-printing-helps-veterans-surgery/",
+            "date": "2019-02-05 00:00:00"
+        },   
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img55.png",
+            "alt": "",
+            "title": "Expanding 3D Printing network will advance Veterans' healthcare",
+            "description": "",
+            "url": "https://www.forbes.com/sites/robinseatonjefferson/2019/01/31/expanding-3d-printing-network-aims-to-improve-us-veterans-health-care/?sh=566509ac160d",
+            "date": "2019-01-31 00:00:00"
+        },   
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img56.png",
+            "alt": "",
+            "title": "Imagine holding your own heart': Accelerating 3D Printing in healthcare",
+            "description": "",
+            "url": "https://www.geekwire.com/2018/imagine-holding-heart-ge-teams-u-s-veterans-affairs-seattle-accelerate-3d-printing-health-care/",
+            "date": "2018-11-30 00:00:00"
+        },   
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img57.png",
+            "alt": "",
+            "title": "VA advances patient care with new 3D Printing methods",
+            "description": "",
+            "url": "http://faculty.washington.edu/paubin/wordpress/archives/965",
+            "date": "2018-11-05 00:00:00"
+        },   
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img58.png",
+            "alt": "",
+            "title": "Using 3D printing to help Veterans in new ways",
+            "description": "",
+            "url": "https://komonews.com/news/local/va-hospitals-embrace-3d-printing-to-care-for-veterans",
+            "date": "2018-10-31 00:00:00"
+        },   
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img60.png",
+            "alt": "",
+            "title": "3D Printing of detailed body structures",
+            "description": "",
+            "url": "https://newsroom.uw.edu/postscript/detail-never-3-d-printing-body-structures",
+            "date": "2018-06-13 00:00:00"
+        },   
+        {
+            "img": "../../assets/img/news-and-events/external/si-News-Img61.png",
+            "alt": "",
+            "title": "Heart experts show value of 3D Printed Heart Models",
+            "description": "",
+            "url": "https://3dprint.com/169478/3d-printed-heart-model-paper/",
+            "date": "2017-03-31 00:00:00"
+        }
     ]
 
 }
@@ -323,7 +563,7 @@ data.data.sort().forEach(news => $('.oam-news__item-container').append(
 "<div class='usa-card__media usa-card__media--exdent products-overview__item-header'>" +
 "<div class='usa-card__img'>" +
 "<a href='" + news.url + "'>" +
-"<img src='" + news.img + "' alt='" + news.alt + "' class='img-fluid' />" +
+"<img src='" + news.img + "' alt='" + news.title + "' class='img-fluid' />" +
 "</a>" +
 "</div>" +
 "</div>" +

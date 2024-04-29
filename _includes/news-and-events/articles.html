@@ -20,29 +20,31 @@
                       <nav aria-label="Pagination" class="usa-pagination ">
                           <ul class="usa-pagination__list">
                             <li class="usa-pagination__item usa-pagination__arrow">
-                              <a href="javascript:void(0);" class="usa-pagination__link usa-pagination__previous-page" data-type="prev" aria-label="Previous page">
+                              <button class="usa-button usa-button--unstyled usa-pagination__link usa-pagination__previous-page" data-type="prev" aria-label="Previous page">
                                 <svg class="usa-icon" aria-hidden="true" role="img">
                                   <use xlink:href="../assets/uswds/img/sprite.svg#navigate_before"></use>
                                 </svg>
                                 <span class="usa-pagination__link-text">Previous</span>
                               </a>
                             </li>
-                            <div class="jplist-holder" data-type="pages">
-                              <li class="usa-pagination__item usa-pagination__page-no">
-                                  <a href="javascript:void(0);" class="usa-pagination__button bg-white" data-type="page" aria-label="Page {pageNumber}">{pageNumber}</a>
+                            <li>
+                              <ul class="jplist-holder padding-0" data-type="pages">
+                                <li class="usa-pagination__item usa-pagination__page-no">
+                                  <a href="#" class="usa-pagination__button bg-white" data-type="page" aria-label="Page {pageNumber}">{pageNumber}</a>
                               </li>
-                              </div>
+                            </ul>
+                            </li>
                             <li class="usa-pagination__item usa-pagination__arrow">
-                              <a href="javascript:void(0);" class="usa-pagination__link usa-pagination__next-page" data-type="next" aria-label="Next page">
+                              <button class="usa-button usa-button--unstyled usa-pagination__link usa-pagination__next-page bg-transparent" data-type="next" aria-label="Next page">
                                 <span class="usa-pagination__link-text">Next </span>
                                 <svg class="usa-icon" aria-hidden="true" role="img">
                                   <use xlink:href="../assets/uswds/img/sprite.svg#navigate_next"></use>
                                 </svg>
-                              </a>
+                              </button>
                             </li>
                           </ul>
                         </nav>
-                  </div>
+                  </div>                 
 
             </div>
 
@@ -55,6 +57,7 @@
                 data-order="dsc"
                 data-type="datetime">
             </div>
+
 
             <div class="grid-row grid-gap oam-news__item-container" data-jplist-group="data-group-1"></div>
 
@@ -69,32 +72,46 @@
                     class="pagination-controls margin-top-3">
 
                 <div class="grid-row display-flex flex-justify-center">
-                    <nav aria-label="Pagination" class="usa-pagination ">
-                        <ul class="usa-pagination__list">
-                          <li class="usa-pagination__item usa-pagination__arrow">
-                            <a href="javascript:void(0);" class="usa-pagination__link usa-pagination__previous-page" data-type="prev" aria-label="Previous page">
-                              <svg class="usa-icon" aria-hidden="true" role="img">
-                                <use xlink:href="../assets/uswds/img/sprite.svg#navigate_before"></use>
-                              </svg>
-                              <span class="usa-pagination__link-text">Previous</span>
-                            </a>
-                          </li>
-                          <div class="jplist-holder" data-type="pages">
-                            <li class="usa-pagination__item usa-pagination__page-no">
-                                <a href="javascript:void(0);" class="usa-pagination__button bg-white" data-type="page" aria-label="Page {pageNumber}">{pageNumber}</a>
-                            </li>
-                            </div>
-                          <li class="usa-pagination__item usa-pagination__arrow">
-                            <a href="javascript:void(0);" class="usa-pagination__link usa-pagination__next-page" data-type="next" aria-label="Next page">
-                              <span class="usa-pagination__link-text">Next </span>
-                              <svg class="usa-icon" aria-hidden="true" role="img">
-                                <use xlink:href="../assets/uswds/img/sprite.svg#navigate_next"></use>
-                              </svg>
-                            </a>
+                  <nav aria-label="Pagination" class="usa-pagination ">
+                    <ul class="usa-pagination__list">
+                      <li class="usa-pagination__item usa-pagination__arrow">
+                        <button class="usa-button usa-button--unstyled usa-pagination__link usa-pagination__previous-page" data-type="prev" aria-label="Previous page">
+                          <svg class="usa-icon" aria-hidden="true" role="img">
+                            <use xlink:href="../assets/uswds/img/sprite.svg#navigate_before"></use>
+                          </svg>
+                          <span class="usa-pagination__link-text">Previous</span>
+                        </a>
+                      </li>
+                      <li>
+                        <ul class="jplist-holder padding-0" data-type="pages">
+                          <li class="usa-pagination__item usa-pagination__page-no">
+                              <a href="#" class="usa-pagination__button bg-white" data-type="page" aria-label="Page {pageNumber}">{pageNumber}</a>
                           </li>
                         </ul>
-                      </nav>
+                        </li>
+                      <li class="usa-pagination__item usa-pagination__arrow">
+                        <button class="usa-button usa-button--unstyled usa-pagination__link usa-pagination__next-page bg-transparent" data-type="next" aria-label="Next page">
+                          <span class="usa-pagination__link-text">Next </span>
+                          <svg class="usa-icon" aria-hidden="true" role="img">
+                            <use xlink:href="../assets/uswds/img/sprite.svg#navigate_next"></use>
+                          </svg>
+                        </button>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
+
+                <div class="grid-row display-flex flex-justify-center">
+                  <!-- items per page select -->
+                  <form class="usa-form">
+                    <select class="usa-select" name="views" id="views" aria-label="select layout" data-type="items-per-page">
+                      <option value="6" selected> 6 per page </option>
+                      <option value="12"> 12 per page </option>
+                      <option value="0"> View all </option>
+                    </select>
+                  </form>
+
+                </div> 
 
             </div>
 
