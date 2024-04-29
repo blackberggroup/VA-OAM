@@ -2,7 +2,7 @@ var data = {
 
     "data": [
         {
-            "img": "../../assets/img/news-and-events/newsletters/fy24-q2/assistive-technology-design-logo.jpg",
+            "img": "../assets/img/news-and-events/newsletters/fy24-q2/assistive-technology-design-logo.jpg",
             "alt": "Assistive Technology logo",
             "title": "Veteran Prevails with Assistive Technology",
             "description": "",
@@ -10,7 +10,7 @@ var data = {
             "date": "2024-03-18 00:00:00"
         },
         {
-            "img": "../../assets/img/news-and-events/newsletters/fy24-q2/assistive-technology-library-launch.jpg",
+            "img": "../assets/img/news-and-events/newsletters/fy24-q2/assistive-technology-library-launch.jpg",
             "alt": "Pencil holder with pencil and eraser",
             "title": "Assistive Technology Design Library Launch",
             "description": "",
@@ -18,7 +18,7 @@ var data = {
             "date": "2024-03-18 00:00:00"
         },
         {
-            "img": "../../assets/img/news-and-events/newsletters/fy24-q2/radiotherapy-bolus.jpg",
+            "img": "../assets/img/news-and-events/newsletters/fy24-q2/radiotherapy-bolus.jpg",
             "alt": "A man's face with a black nose piece",
             "title": "Radiotherapy Bolus",
             "description": "",
@@ -26,7 +26,7 @@ var data = {
             "date": "2024-03-18 00:00:00"
         },
         {
-            "img": "../../assets/img/news-and-events/newsletters/fy24-q2/thermal-fuse-cover.jpg",
+            "img": "../assets/img/news-and-events/newsletters/fy24-q2/thermal-fuse-cover.jpg",
             "alt": "Two white plastic thermal fuse cover pieces on purple backdrop",
             "title": "Thermal Fuse Cover",
             "description": "",
@@ -34,7 +34,7 @@ var data = {
             "date": "2024-03-18 00:00:00"
         },
         {
-            "img": "../../assets/img/news-and-events/newsletters/fy24-q2/richmond-lab-cutting-ceremony.jpg",
+            "img": "../assets/img/news-and-events/newsletters/fy24-q2/richmond-lab-cutting-ceremony.jpg",
             "alt": "A group of people at a ribbon cutting ceremony, joyfully cutting a ribbon to mark a special occasion",
             "title": "Richmond Lab Ribbon Cutting Ceremony",
             "description": "",
@@ -42,7 +42,7 @@ var data = {
             "date": "2024-03-18 00:00:00"
         },
         {
-            "img": "../../assets/img/news-and-events/newsletters/fy24-q2/under-secretary-of-va-for-health-podcast-q2-2024.jpg",
+            "img": "../assets/img/news-and-events/newsletters/fy24-q2/under-secretary-of-va-for-health-podcast-q2-2024.jpg",
             "alt": "Three people standing in front of a computer screen, engaged in a discussion or collaboration",
             "title": "Under Secretary of VA for Health Podcast",
             "description": "",
@@ -50,7 +50,7 @@ var data = {
             "date": "2024-03-18 00:00:00"
         },
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img-997.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img-997.png",
             "alt": "White plastic 3d jaw model",
             "title": "New 3D printed advanced surgical tool: More efficient care",
             "description": "",
@@ -58,7 +58,7 @@ var data = {
             "date": "2023-11-17 00:00:00"
         },  
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img-998.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img-998.png",
             "alt": "Behind the knife logo",
             "title": "Behind the Knife Podcast: 3DP innovations in surgery",
             "description": "",
@@ -66,7 +66,7 @@ var data = {
             "date": "2022-10-27 00:00:00"
         },
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img-999.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img-999.png",
             "alt": "U.S. Food & Drug Admin logo",
             "title": "VA, FDA collaborate to accelerate medical device innovation",
             "description": "",
@@ -74,7 +74,7 @@ var data = {
             "date": "2022-09-28 00:00:00"
         },         
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img0.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img0.png",
             "alt": "A man in a blue shirt and glasses focused on his computer screen",
             "title": "VA Cleared to use 3DP Tech for Surgery",
             "description": "",
@@ -82,7 +82,7 @@ var data = {
             "date": "2022-08-25 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img1.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img1.png",
             "alt": "A woman standing in front 3d printing machine",
             "title": "VHA 3DP Surgical Fellowship",
             "description": "",
@@ -90,7 +90,7 @@ var data = {
             "date": "2022-07-29 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img2.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img2.png",
             "alt": "FDA Workshop: 3DP Medical Devices at the Point of Care",
             "title": "FDA Workshop: 3DP Medical Devices at the Point of Care",
             "description": "",
@@ -98,7 +98,7 @@ var data = {
             "date": "2021-12-10 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img3.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img3.png",
             "alt": "VHA Collaborates with 3D Systems",
             "title": "VHA Collaborates with 3D Systems",
             "description": "",
@@ -106,7 +106,7 @@ var data = {
             "date": "2020-11-05 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img4.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img4.png",
             "alt": "The Today Show features the GioStent",
             "title": "The Today Show features the GioStent",
             "description": "",
@@ -114,7 +114,7 @@ var data = {
             "date": "2021-05-26 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img5.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img5.png",
             "alt": "3DP for pre-surgical planning",
             "title": "3DP for pre-surgical planning",
             "description": "",
@@ -122,7 +122,7 @@ var data = {
             "date": "2020-10-01 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img6.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img6.png",
             "alt": "3DP for Assistive Technology",
             "title": "3DP for Assistive Technology",
             "description": "",
@@ -130,7 +130,7 @@ var data = {
             "date": "2020-09-01 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img7.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img7.png",
             "alt": "A team of medical professionals, including doctors and nurses, working together in an operating room",
             "title": "3D Printing Transforms Veteran Care",
             "description": "",
@@ -138,7 +138,7 @@ var data = {
             "date": "2022-05-31 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img8.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img8.png",
             "alt": "Government Matters Interview: Dr. Beth Ripley",
             "title": "Government Matters Interview: Dr. Beth Ripley",
             "description": "",
@@ -146,7 +146,7 @@ var data = {
             "date": "2021-05-01 00:00:00"
         },     
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img9.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img9.png",
             "alt": "A female scientist in a laboratory examining data on a tablet computer",
             "title": "Collaboration Spotlight: Advanced Solutions Life Sciences",
             "description": "",
@@ -154,7 +154,7 @@ var data = {
             "date": "2022-05-15 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img10.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img10.png",
             "alt": "3D printing prosthetic test sockets for amputated patients",
             "title": "3D printing prosthetic test sockets for amputated patients",
             "description": "",
@@ -162,7 +162,7 @@ var data = {
             "date": "2021-11-19 00:00:00"
         },     
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img11.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img11.png",
             "alt": "3D Printing, Prosthetic Expansions Bring Customized Care to Veterans",
             "title": "3D Printing, Prosthetic Expansions Bring Customized Care to Veterans",
             "description": "",
@@ -170,7 +170,7 @@ var data = {
             "date": "2021-11-06 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img12.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img12.png",
             "alt": "Dr. Michael Amendola: 3D printing for Veteran Care",
             "title": "Dr. Michael Amendola: 3D printing for Veteran Care",
             "description": "",
@@ -178,7 +178,7 @@ var data = {
             "date": "2021-08-19 00:00:00"
         },     
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img13.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img13.png",
             "alt": "3d printed nasal swabs stored in a box on a table.",
             "title": "Safety and Effectiveness of 3D Printed Nasal Swabs",
             "description": "",
@@ -186,7 +186,7 @@ var data = {
             "date": "2021-08-06 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img14.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img14.png",
             "alt": "A man wearing a 3d printed face mask in front of a white wall, prioritizing safety and protection.",
             "title": "VA Leverages 3DP to Guard Against COVID-19",
             "description": "",
@@ -194,7 +194,7 @@ var data = {
             "date": "2021-05-27 00:00:00"
         },     
         // {
-        //     "img": "../../assets/img/news-and-events/external/si-News-Img15.png",
+        //     "img": "../assets/img/news-and-events/external/si-News-Img15.png",
         //     "alt": "3D Printed Ear Stent Developed at VA",
         //     "title": "3D Printed Ear Stent Developed at VA",
         //     "description": "",
@@ -202,7 +202,7 @@ var data = {
         //     "date": "2021-05-17 00:00:00"
         // }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img16.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img16.png",
             "alt": "Various masks and items displayed on a table.",
             "title": "PAPR Hood System at VA",
             "description": "",
@@ -210,7 +210,7 @@ var data = {
             "date": "2021-05-20 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img17.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img17.png",
             "alt": "",
             "title": "3D Printed Block Preventing In-Patient Suicides",
             "description": "",
@@ -218,7 +218,7 @@ var data = {
             "date": "2021-05-10 00:00:00"
         }, 
         // {
-        //     "img": "../../assets/img/news-and-events/external/si-News-Img18.png",
+        //     "img": "../assets/img/news-and-events/external/si-News-Img18.png",
         //     "alt": "",
         //     "title": "FDA Approves GioStent for a Veteran",
         //     "description": "",
@@ -226,7 +226,7 @@ var data = {
         //     "date": "2021-05-17 00:00:00"
         // }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img19.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img19.png",
             "alt": "",
             "title": "Additive manufacturing in Federal agencies",
             "description": "",
@@ -234,7 +234,7 @@ var data = {
             "date": "2020-12-23 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img20.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img20.png",
             "alt": "",
             "title": "COVID-19 Maker Challenge",
             "description": "",
@@ -242,7 +242,7 @@ var data = {
             "date": "2020-12-30 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img21.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img21.png",
             "alt": "A person using a tool on a machine, focused on their work.",
             "title": "3D Printing to Augment Support Chains",
             "description": "",
@@ -250,7 +250,7 @@ var data = {
             "date": "2020-11-12 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external//si-News-Img22.png",
+            "img": "../assets/img/news-and-events/external//si-News-Img22.png",
             "alt": "A collage of people wearing masks and other items to protect themselves.",
             "title": "Clear Talker Mask",
             "description": "",
@@ -258,7 +258,7 @@ var data = {
             "date": "2020-11-06 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img23.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img23.png",
             "alt": "3D printer creating objects layer by layer. Revolutionizing manufacturing with its precision and versatility.",
             "title": "VA Leverages 3D Printing to Produce Medical Devices In-House",
             "description": "",
@@ -266,7 +266,7 @@ var data = {
             "date": "2020-11-05 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img24.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img24.png",
             "alt": "VA Ventures Launch",
             "title": "VA Ventures Launch",
             "description": "",
@@ -274,7 +274,7 @@ var data = {
             "date": "2020-10-13 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img25.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img25.png",
             "alt": "Two people in suits, Dr. Ripley with Dr. Fauci",
             "title": "Dr. Ripley Discusses Public Service",
             "description": "",
@@ -282,7 +282,7 @@ var data = {
             "date": "2020-10-07 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img26.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img26.png",
             "alt": "Dr. Ripley wins Service to America Medal",
             "title": "Dr. Ripley wins Service to America Medal",
             "description": "",
@@ -290,7 +290,7 @@ var data = {
             "date": "2020-10-05 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img27.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img27.png",
             "alt": "3D printed face shield",
             "title": "3DP in Medical and Military Arenas",
             "description": "",
@@ -298,7 +298,7 @@ var data = {
             "date": "2020-07-14 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img28.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img28.png",
             "alt": "",
             "title": "3D Printing leads to VA award nominations",
             "description": "",
@@ -306,7 +306,7 @@ var data = {
             "date": "2020-05-15 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img29.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img29.png",
             "alt": "A man using an automated mannequin to teach a class",
             "title": "Pandemic response shows revolutionary nature of 3D Printing",
             "description": "",
@@ -314,7 +314,7 @@ var data = {
             "date": "2020-05-14 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img30.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img30.png",
             "alt": "",
             "title": "Dr. Beth Ripley explains how 3D Printing can fight COVID-19",
             "description": "",
@@ -322,7 +322,7 @@ var data = {
             "date": "2020-04-16 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img31.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img31.png",
             "alt": "",
             "title": "VA uses 3D Printing to address COVID-19 while saving money",
             "description": "",
@@ -330,7 +330,7 @@ var data = {
             "date": "2020-04-08 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img32.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img32.png",
             "alt": "",
             "title": "VA creates first 3D Printed mask approved by FDA",
             "description": "",
@@ -338,7 +338,7 @@ var data = {
             "date": "2020-04-06 00:00:00"
         },   
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img33.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img33.png",
             "alt": "",
             "title": "VA steps to the plate with 3D Printing to combat COVID-19",
             "description": "",
@@ -346,7 +346,7 @@ var data = {
             "date": "2020-05-31 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img34.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img34.png",
             "alt": "",
             "title": "Medical 3D Printing changes the game for Veteran care",
             "description": "",
@@ -354,7 +354,7 @@ var data = {
             "date": "2020-02-14 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img36.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img36.png",
             "alt": "",
             "title": "VA pushes the frontier of 3D Printing in medical settings",
             "description": "",
@@ -362,7 +362,7 @@ var data = {
             "date": "2019-10-23 00:00:00"
         },   
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img37.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img37.png",
             "alt": "",
             "title": "3D printing helps VA doctors treat heart conditions",
             "description": "",
@@ -370,7 +370,7 @@ var data = {
             "date": "2019-10-15 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external//si-News-Img38.png",
+            "img": "../assets/img/news-and-events/external//si-News-Img38.png",
             "alt": "",
             "title": "Treating Heart Disease Using 3D Printing",
             "description": "",
@@ -378,7 +378,7 @@ var data = {
             "date": "2019-10-02 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img39.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img39.png",
             "alt": "",
             "title": "Defeating heart disease using 3D Printing",
             "description": "",
@@ -386,7 +386,7 @@ var data = {
             "date": "2019-10-01 00:00:00"
         },   
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img40.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img40.png",
             "alt": "",
             "title": "Dr. Beth Ripley on Advancing 3D Printing in Healthcare",
             "description": "",
@@ -394,7 +394,7 @@ var data = {
             "date": "2019-09-20 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img41.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img41.png",
             "alt": "",
             "title": "Improving Veteran care through collaboration and technology",
             "description": "",
@@ -402,7 +402,7 @@ var data = {
             "date": "2019-08-19 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img42.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img42.png",
             "alt": "",
             "title": "VA transforms patient care through 3D Printing",
             "description": "",
@@ -410,7 +410,7 @@ var data = {
             "date": "2019-08-19 00:00:00"
         },   
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img43.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img43.png",
             "alt": "",
             "title": "VA Leading Innovation in Medical 3D Printing",
             "description": "",
@@ -418,7 +418,7 @@ var data = {
             "date": "2019-08-16 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img44.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img44.png",
             "alt": "",
             "title": "VA charts the future by training staff on 3D Printing",
             "description": "",
@@ -426,7 +426,7 @@ var data = {
             "date": "2019-08-16 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img45.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img45.png",
             "alt": "",
             "title": "VA develops new tool to improve diagnosis accuracy",
             "description": "",
@@ -434,7 +434,7 @@ var data = {
             "date": "2019-07-26 00:00:00"
         },   
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img46.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img46.png",
             "alt": "",
             "title": "3D Printing speeds up Veterans' dental care",
             "description": "",
@@ -442,7 +442,7 @@ var data = {
             "date": "2019-07-19 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img47.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img47.png",
             "alt": "",
             "title": "VA lab uses 3D Printing as a crucial tool",
             "description": "",
@@ -450,7 +450,7 @@ var data = {
             "date": "2019-05-30 00:00:00"
         }, 
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img48.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img48.png",
             "alt": "",
             "title": "VA enters new frontier with 3D Printing",
             "description": "",
@@ -458,7 +458,7 @@ var data = {
             "date": "2019-04-19 00:00:00"
         },   
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img49.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img49.png",
             "alt": "",
             "title": "Creating artificial bones and organs using 3D Printing",
             "description": "",
@@ -466,7 +466,7 @@ var data = {
             "date": "2019-04-17 00:00:00"
         },   
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img50.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img50.png",
             "alt": "",
             "title": "VA uses 3D Printing to improve Veteran care",
             "description": "",
@@ -474,7 +474,7 @@ var data = {
             "date": "2019-05-30 00:00:00"
         },   
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img51.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img51.png",
             "alt": "",
             "title": "VA plans to create 3D-Printed artificial lung",
             "description": "",
@@ -482,7 +482,7 @@ var data = {
             "date": "2019-04-08 00:00:00"
         },   
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img52.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img52.png",
             "alt": "",
             "title": "3D Printing expands across healthcare systems",
             "description": "",
@@ -490,7 +490,7 @@ var data = {
             "date": "2019-05-08 00:00:00"
         },   
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img53.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img53.png",
             "alt": "",
             "title": "3D Printing: The latest weapon against cancer",
             "description": "",
@@ -498,7 +498,7 @@ var data = {
             "date": "2019-02-08 00:00:00"
         },   
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img54.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img54.png",
             "alt": "",
             "title": "New 3D Printing software advances how Veterans receive care",
             "description": "",
@@ -506,7 +506,7 @@ var data = {
             "date": "2019-02-05 00:00:00"
         },   
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img55.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img55.png",
             "alt": "",
             "title": "Expanding 3D Printing network will advance Veterans' healthcare",
             "description": "",
@@ -514,7 +514,7 @@ var data = {
             "date": "2019-01-31 00:00:00"
         },   
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img56.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img56.png",
             "alt": "",
             "title": "Imagine holding your own heart': Accelerating 3D Printing in healthcare",
             "description": "",
@@ -522,7 +522,7 @@ var data = {
             "date": "2018-11-30 00:00:00"
         },   
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img57.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img57.png",
             "alt": "",
             "title": "VA advances patient care with new 3D Printing methods",
             "description": "",
@@ -530,7 +530,7 @@ var data = {
             "date": "2018-11-05 00:00:00"
         },   
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img58.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img58.png",
             "alt": "",
             "title": "Using 3D printing to help Veterans in new ways",
             "description": "",
@@ -538,7 +538,7 @@ var data = {
             "date": "2018-10-31 00:00:00"
         },   
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img60.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img60.png",
             "alt": "",
             "title": "3D Printing of detailed body structures",
             "description": "",
@@ -546,7 +546,7 @@ var data = {
             "date": "2018-06-13 00:00:00"
         },   
         {
-            "img": "../../assets/img/news-and-events/external/si-News-Img61.png",
+            "img": "../assets/img/news-and-events/external/si-News-Img61.png",
             "alt": "",
             "title": "Heart experts show value of 3D Printed Heart Models",
             "description": "",
