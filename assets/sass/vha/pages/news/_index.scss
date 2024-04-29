@@ -1,0 +1,16 @@
+.date {
+    visibility: hidden;
+    display: none;
+}
+
+.jplist-selected {
+    background-color: #005ea2;
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.jplist-selected:hover {
+    color: #fff !important;
+    text-decoration: none;
+    border: 0;
+}

@@ -1,0 +1,119 @@
+<section id="external-articles" class="external-articles padding-y-5 tablet-lg:padding-y-8 bg-primary-lighter bg-pattern-light">
+        <div class="grid-container">
+          <div class="grid-row">
+            <div class="grid-col-12">
+              <h2 class="text-primary margin-top-0">News Articles</h2>
+            </div>
+          </div>
+
+            <!-- pagination control -->
+            <div
+                    data-jplist-control="pagination"
+                    data-group="data-group-1"
+                    data-items-per-page="6"
+                    data-current-page="0"
+                    data-jump=".pagination-controls.one"
+                    data-name="pagination1"
+                    class="pagination-controls one margin-bottom-3">
+
+                    <div class="grid-row display-flex flex-justify-center">
+                      <nav aria-label="Pagination" class="usa-pagination ">
+                          <ul class="usa-pagination__list">
+                            <li class="usa-pagination__item usa-pagination__arrow">
+                              <button class="usa-button usa-button--unstyled usa-pagination__link usa-pagination__previous-page" data-type="prev" aria-label="Previous page">
+                                <svg class="usa-icon" aria-hidden="true" role="img">
+                                  <use xlink:href="../assets/uswds/img/sprite.svg#navigate_before"></use>
+                                </svg>
+                                <span class="usa-pagination__link-text">Previous</span>
+                              </a>
+                            </li>
+                            <li>
+                              <ul class="jplist-holder padding-0" data-type="pages">
+                                <li class="usa-pagination__item usa-pagination__page-no">
+                                  <a href="#" class="usa-pagination__button bg-white" data-type="page" aria-label="Page {pageNumber}">{pageNumber}</a>
+                              </li>
+                            </ul>
+                            </li>
+                            <li class="usa-pagination__item usa-pagination__arrow">
+                              <button class="usa-button usa-button--unstyled usa-pagination__link usa-pagination__next-page bg-transparent" data-type="next" aria-label="Next page">
+                                <span class="usa-pagination__link-text">Next </span>
+                                <svg class="usa-icon" aria-hidden="true" role="img">
+                                  <use xlink:href="../assets/uswds/img/sprite.svg#navigate_next"></use>
+                                </svg>
+                              </button>
+                            </li>
+                          </ul>
+                        </nav>
+                  </div>                 
+
+            </div>
+
+            <!-- hidden sort control -->
+            <div
+                style="display: none"
+                data-jplist-control="hidden-sort"
+                data-group="data-group-1"
+                data-path=".date"
+                data-order="dsc"
+                data-type="datetime">
+            </div>
+
+
+            <div class="grid-row grid-gap oam-news__item-container" data-jplist-group="data-group-1"></div>
+
+            <!-- pagination control -->
+            <div
+                    data-jplist-control="pagination"
+                    data-group="data-group-1"
+                    data-items-per-page="6"
+                    data-current-page="0"
+                    data-jump=".pagination-controls.one"
+                    data-name="pagination1"
+                    class="pagination-controls margin-top-3">
+
+                <div class="grid-row display-flex flex-justify-center">
+                  <nav aria-label="Pagination" class="usa-pagination ">
+                    <ul class="usa-pagination__list">
+                      <li class="usa-pagination__item usa-pagination__arrow">
+                        <button class="usa-button usa-button--unstyled usa-pagination__link usa-pagination__previous-page" data-type="prev" aria-label="Previous page">
+                          <svg class="usa-icon" aria-hidden="true" role="img">
+                            <use xlink:href="../assets/uswds/img/sprite.svg#navigate_before"></use>
+                          </svg>
+                          <span class="usa-pagination__link-text">Previous</span>
+                        </a>
+                      </li>
+                      <li>
+                        <ul class="jplist-holder padding-0" data-type="pages">
+                          <li class="usa-pagination__item usa-pagination__page-no">
+                              <a href="#" class="usa-pagination__button bg-white" data-type="page" aria-label="Page {pageNumber}">{pageNumber}</a>
+                          </li>
+                        </ul>
+                        </li>
+                      <li class="usa-pagination__item usa-pagination__arrow">
+                        <button class="usa-button usa-button--unstyled usa-pagination__link usa-pagination__next-page bg-transparent" data-type="next" aria-label="Next page">
+                          <span class="usa-pagination__link-text">Next </span>
+                          <svg class="usa-icon" aria-hidden="true" role="img">
+                            <use xlink:href="../assets/uswds/img/sprite.svg#navigate_next"></use>
+                          </svg>
+                        </button>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+
+                <div class="grid-row display-flex flex-justify-center">
+                  <!-- items per page select -->
+                  <form class="usa-form">
+                    <select class="usa-select" name="views" id="views" aria-label="select layout" data-type="items-per-page">
+                      <option value="6" selected> 6 per page </option>
+                      <option value="12"> 12 per page </option>
+                      <option value="0"> View all </option>
+                    </select>
+                  </form>
+
+                </div> 
+
+            </div>
+
+        </div>
+</section>
