@@ -19,6 +19,8 @@ Positioning & Rotation
 .top-neg-6 { top:-3rem; }
 .top-neg-10 { top:-5rem; }
 
+.bottom-neg-4 { bottom:-2rem; }
+
 .left-neg-8 { left:-4rem; }
 .left-neg-transform-50 { transform: translateX(-50%); }
 
@@ -33,6 +35,9 @@ Background Patterns
     background-image: url('../../assets/img/decore/pattern-light-blue.png');
 }
 
+.bg-pattern-lighter {
+    background-image: url('../../assets/img/decore/pattern-lighter.png');
+}
 .bg-gradient-primary {
     background: linear-gradient(251.73deg, #1A5694 -10.48%, #081B2E 85.54%);
 }
