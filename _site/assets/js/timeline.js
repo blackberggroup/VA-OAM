@@ -9,7 +9,7 @@
     lastItem = document.querySelector(".timeline li:last-child"),
     xScrolling = 380,
     disabledClass = "disabled";
- 
+
   // START
   window.addEventListener("load", init);
 

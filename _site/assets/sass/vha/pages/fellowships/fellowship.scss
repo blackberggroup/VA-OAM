@@ -1,18 +1,7 @@
-.bg-current-fellows {
-    background: var(--OAM-Primary-Blue-100, #EEF1F7) url(../../assets/img/decore/design-element-2.png) no-repeat top right;
-}
-
-.empower .grid-row {
-    background: var(--OAM-Primary-Blue-300, #B5C7DF);
-}
-
-.empower button {
-    float: right;
-}
 
 @media screen and (max-width: 880px) {
     .fellow-reverse-order-m {
         display: flex;
         flex-flow: column-reverse;
     }
-} 
+}

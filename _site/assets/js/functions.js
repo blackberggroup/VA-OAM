@@ -15,7 +15,7 @@ $('.usa-footer-return-to-top a,.back-to-top, .topper').click(function () {
 	'use strict';
 	$('html, body').animate({
 		scrollTop: 0
-	}, 400); 
+	}, 400);
 	return false;
 });
 
