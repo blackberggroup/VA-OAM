@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="Welcome to VHA Office of Advanced Manufacturing (OAM), where we lead the way in harnessing cutting-edge technologies such as 3D printing for health care applications.">
+  <meta name="keywords" content="VHA Office of Advanced Manufacturing, OAM">
+  <title></title>
+
+  <meta property="og:title" content="Our Team | Office of Advanced Manufacturing">
+  <meta property="og:url" content="https://innovation.va.gov/oam/news-and-events/">
+  <meta property="og:description" content="Welcome to VHA Office of Advanced Manufacturing (OAM), where we lead the way in harnessing cutting-edge technologies such as 3D printing for health care applications.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://innovation.bgsandbox.com/oam/assets/img/og-image.jpg">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/css/styles.css">
+  
+  <link id="favicon" rel="shortcut icon" href="../../../assets/img/favicon.ico">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="../../../assets/uswds/js/uswds-init.min.js"></script>
+</head>
+
+<body>
+
+    <!-- SITE WRAPPER - START -->
+    <div class="site-wrapper">
+      {% include "header-sub-sub-sub.html" %}
+      
+        <main>
+            <section id="page-title" class="page-title">
+                <div class="grid-container">
+                    <nav class="usa-breadcrumb bg-transparent" aria-label="Breadcrumbs,,">
+                        <ol class="usa-breadcrumb__list">
+                            <li class="usa-breadcrumb__list-item">
+                                <a href="/oam/" class="usa-breadcrumb__link"><span>Home</span></a>
+                            </li>
+                            <li class="usa-breadcrumb__list-item">
+                                <a href="/oam/news-and-events/" class="usa-breadcrumb__link"><span>News and Events</span></a>
+                            </li>                            
+                            <li class="usa-breadcrumb__list-item usa-current" aria-current="page">
+                                <span id="article-breadcrumb"></span>
+                            </li>                            
+                        </ol>
+                    </nav>      
+                </div>      
+            </section>
+
+            <section class="padding-y-5">
+                <div class="grid-container">
+                    <div class="grid-row grid-gap">
+                        <div class="grid-col-12 grid-offset-0 tablet-lg:grid-col-8 tablet-lg:grid-offset-2">
+                            <div class=" margin-top-6">
+                                <!-- Title -->
+                                <h1 class="margin-0 gradient-text" id="article-title"></h1>
+                                <!-- Fiscal Year & Quarter -->
+                                <div class="text-bold text-primary" id="article-date"></div>
+                            </div>
+                            <!-- Content -->
+                            <div class="article-body padding-top-5" id="article-content">
+
+						    </div>
+                        </div>																	
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        {% include "footer-sub-sub-sub.html" %}
+
+    </div>
+    <!-- SITE WRAPPER - END -->
+    <script src="../../../assets/uswds/js/uswds.min.js"></script>
+    <script src="../../../assets/js/vendors/parallax-scroll/parallax-scroll.js"></script>
+    <script src="../../../assets/js/functions.js"></script>
+    <script src="../../../assets/js/news-functions.js"></script>
+    <script src="../../../assets/js/news-article.js"></script>
+
+</body>
+
+</html>
