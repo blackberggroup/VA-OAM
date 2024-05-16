@@ -12,8 +12,13 @@ document.addEventListener('DOMContentLoaded', function () {
             const currentDate = new Date(); 
             const currentFiscal = getFiscalYearAndQuarter(currentDate);
 
-
-            data.forEach(item => {
+            // Generate slug for each article
+            const dataFormatted = data.map(item => ({
+                ...item,
+                slug: titleToSlug(item.Title)
+              }));
+              
+            dataFormatted.forEach(item => {
 
               // Get fiscal year and quarter from date
               // TODO - update with item date when the new JSON is ready
@@ -27,14 +32,14 @@ document.addEventListener('DOMContentLoaded', function () {
                       <div class="usa-card__container shadow-3">
                           <div class="usa-card__media usa-card__media--exdent products-overview__item-header">
                               <div class="usa-card__img">
-                                  <a href="/news-and-events/article/index.html?article=${item.ID}" class="display-block">
+                                  <a href="/news-and-events/article/index.html?article=${item.slug}" class="display-block">
                                       <img loading="lazy" src="${item['Image URL']}" alt="${item.Title}" class="img-fluid lazy" />
                                   </a>
                               </div>
                           </div>
                           <div class="usa-card__body products-overview__item-body padding-top-2">
                               <h3 class="margin-0 line-height-sans-3">
-                                  <a href="/news-and-events/article/index.html?article=${item.ID}" class="text-primary text-no-underline">
+                                  <a href="/news-and-events/article/index.html?article=${item.slug}" class="text-primary text-no-underline">
                                       ${item.Title}
                                   </a>
                               </h3>

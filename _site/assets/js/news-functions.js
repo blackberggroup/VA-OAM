@@ -17,3 +17,11 @@ function getFiscalYearAndQuarter(date) {
 
     return `FY${fiscalYear.toString().slice(-2)}Q${quarter}`;
 }
+
+function titleToSlug(title) {
+    return title
+      .toLowerCase() 
+      .replace(/[^a-z0-9 -]/g, '') 
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-');
+  }

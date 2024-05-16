@@ -1,13 +1,37 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const articleId = getQueryVariable('article');
-    fetch('https://data.bgsandbox.com/oam-sharepoint-products/product-data.JSON') // Assumes your JSON file is accessible at this path
+    const slug = getQueryVariable('article');
+    let output = document.getElementById('template-output');
+    let template = '';
+
+    fetch('https://data.bgsandbox.com/oam-sharepoint-products/product-data.JSON') 
     .then(response => response.json())
     .then(data => {
-    const article = data.find(article => article.ID === articleId); // Adjust this according to your JSON structure
+
+    // Generate slug for each article
+    const dataFormatted = data.map(item => ({
+        ...item,
+        slug: titleToSlug(item.Title)
+    }));
+
+    // Find article based on slug
+    const article = dataFormatted.find(article => article.slug === slug); 
     if (article) {
-        document.getElementById('article-breadcrumb').innerHTML = article['Title'];
-        document.getElementById('article-title').innerHTML = article['Title'];
-        document.getElementById('article-content').innerHTML = article['Brief Description'];
+
+        // TODO - update with item date when the new JSON is ready
+        // TODO - update content when the new JSON is ready
+        template += `
+        <div class="grid-col-12 grid-offset-0 tablet-lg:grid-col-8 tablet-lg:grid-offset-2">
+            <div class=" margin-top-6">
+                <h1 class="margin-0 gradient-text" id="article-title">${article['Title']}</h1>
+                <div class="text-bold text-primary" id="article-date">FY24 Q3</div>
+            </div>
+            <div class="article-body padding-top-5" id="article-content">
+            ${article['Brief Description']}
+            </div>
+        </div>	 
+      `;
+
+      output.innerHTML = template;
     } else {
         console.error('Article not found');
         document.getElementById('article-title').innerHTML = 'Article not found';
