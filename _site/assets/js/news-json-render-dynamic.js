@@ -1,79 +1,88 @@
 document.addEventListener('DOMContentLoaded', function () {
   
-    fetch('https://data.bgsandbox.com/oam-sharepoint-products/product-data.JSON')
-
+    fetch('https://data.bgsandbox.com/oam-newsletter-articles/newsletter-data.JSON')
         .then(response => response.json())
         .then(data => {
 
             let output = document.getElementById('template-output');
             let outputArchive = document.getElementById('newsletter-archive');
-            let template = '';
-            let templateArchive = '';
             const currentDate = new Date(); 
             const currentFiscal = getFiscalYearAndQuarter(currentDate);
 
-            // Generate slug for each article
-            const dataFormatted = data.map(item => ({
-                ...item,
-                slug: titleToSlug(item.Title)
-              }));
+            // Format returned data 
+            // Slug: generate slug from Title for dynamic routing
+            // Content: remove \\ from escaped characters
+            // Article URL: build out URL if internal
+            const dataFormatted = data.map(item => {
+                const slug = titleToSlug(item.Title);
+                return {
+                    ...item,
+                    slug: slug,
+                    // Handle escaped quotes and backslashes
+                    Content: item.Content.replace(/\\\"/g, '"').replace(/\\\\/g, '\\'),
+                    'Article URL': item['Article URL'].includes('https://dvagov.sharepoint.com/sites/vhaoam/SitePages/') ? item['Article URL'] : `/news-and-events/article/index.html?article=${slug}`
+                };
+            });
               
             dataFormatted.forEach(item => {
 
-              // Get fiscal year and quarter from date
-              // TODO - update with item date when the new JSON is ready
-              const articleDate = new Date();
-              const articleFiscal = getFiscalYearAndQuarter(articleDate);
+                // Get fiscal year and quarter from date
+                const articleFiscal = getFiscalYearAndQuarter(item.Date);
+                const featuredImage = findImageWithFilenameStartingWith1(item.Image);
+                const article = document.createElement('article');
+                article.className = 'usa-card newsletter-article__item grid-col-12 tablet:grid-col-6 tablet-lg:grid-col-4 desktop:grid-col-4';
 
-              // Filter current articles
-              if (articleFiscal === currentFiscal) {
-                template += `
-                  <article class="usa-card newsletter-article__item grid-col-12 tablet:grid-col-6 tablet-lg:grid-col-4 desktop:grid-col-4">
+                // Filter current articles
+                // TODO - article url needs conditional check
+                if (articleFiscal === currentFiscal) {
+                    article.innerHTML += `
                       <div class="usa-card__container shadow-3">
                           <div class="usa-card__media usa-card__media--exdent products-overview__item-header">
                               <div class="usa-card__img">
-                                  <a href="/news-and-events/article/index.html?article=${item.slug}" class="display-block">
-                                      <img loading="lazy" src="${item['Image URL']}" alt="${item.Title}" class="img-fluid lazy" />
+                                  <a href="${item['Article URL']}" class="display-block">
+                                      <img loading="lazy" src="${featuredImage.URL}" alt="${featuredImage.Alt}" class="img-fluid lazy" />
                                   </a>
                               </div>
                           </div>
                           <div class="usa-card__body products-overview__item-body padding-top-2">
                               <h3 class="margin-0 line-height-sans-3">
-                                  <a href="/news-and-events/article/index.html?article=${item.slug}" class="text-primary text-no-underline">
+                                  <a href="${item['Article URL']}" class="text-primary text-no-underline">
                                       ${item.Title}
                                   </a>
                               </h3>
                           </div>
                       </div>
-                  </article>  
                 `;
+                output.append(article);
               } 
               // Filter archive articles
-              // TODO - change to else statement when the new JSON is ready
-              if (articleFiscal === currentFiscal) {
-                templateArchive += `
-                <article class="usa-card newsletter-article__item grid-col-12 tablet:grid-col-6 tablet-lg:grid-col-4 desktop:grid-col-4" data-jplist-item> 
+              // TODO - article url needs conditional check
+              else if (articleFiscal === currentFiscal) {
+                article.setAttribute('data-jplist-item', '');
+
+                article.innerHTML += `
                     <div class="usa-card__container shadow-3">
                         <div class="usa-card__media usa-card__media--exdent products-overview__item-header">
                             <div class="usa-card__img">
-                            <a href="/news-and-events/article/index.html?article=${item.ID}">
-                                <img loading="lazy" src="${item['Image URL']}" alt="${item.Title}" class="img-fluid" />
+                            <a href="${item['Article URL']}">
+                                <img loading="lazy" src="${item.Image[0].URL}" alt="${item.Image[0].Alt}" class="img-fluid" />
                             </a>
                             </div>
                         </div>
                         <div class="usa-card__body products-overview__item-body padding-top-2">
-                            <h3 class="margin-0 line-height-sans-3"><a href="/news-and-events/article/index.html?article=${item.ID}" class="text-primary text-no-underline">${item.Title}</a></h3>
-                            <span class="date"></span>
+                            <h3 class="margin-0 line-height-sans-3"><a href="${item['Article URL']}" class="text-primary text-no-underline">${item.Title}</a></h3>
+                            <span class="date">${item.Date}</span>
                         </div>
                     </div>
-                </article>
               `;
+
+              outputArchive.append(article);
               }
-            })
-    
-            output.innerHTML = template;
-            outputArchive.innerHTML = templateArchive;
-            
+
+            });
+
+            jplist.init();
         })
         .catch(error => console.error('Error:', error));
 });
+

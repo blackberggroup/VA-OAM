@@ -3,18 +3,20 @@ document.addEventListener("DOMContentLoaded", function() {
     let output = document.getElementById('template-output');
     let template = '';
 
-    fetch('https://data.bgsandbox.com/oam-sharepoint-products/product-data.JSON') 
+    fetch('https://data.bgsandbox.com/oam-newsletter-articles/newsletter-data.JSON') 
     .then(response => response.json())
     .then(data => {
 
     // Generate slug for each article
     const dataFormatted = data.map(item => ({
         ...item,
-        slug: titleToSlug(item.Title)
+        slug: titleToSlug(item.Title),
+        Content: item.Content.replace(/\\\"/g, '"')
     }));
 
     // Find article based on slug
     const article = dataFormatted.find(article => article.slug === slug); 
+
     if (article) {
 
         // TODO - update with item date when the new JSON is ready
@@ -26,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="text-bold text-primary" id="article-date">FY24 Q3</div>
             </div>
             <div class="article-body padding-top-5" id="article-content">
-            ${article['Brief Description']}
+            ${article['Content']}
             </div>
         </div>	 
       `;

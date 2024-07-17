@@ -1,5 +1,6 @@
-function getFiscalYearAndQuarter(date) {
+function getFiscalYearAndQuarter(dateString) {
     // Fiscal year starts in October, adjust if different
+    const date = new Date(dateString);
     const fiscalYearStartMonth = 10; 
     const month = date.getMonth() + 1; 
     const year = date.getFullYear();
@@ -25,3 +26,11 @@ function titleToSlug(title) {
       .replace(/\s+/g, '-')
       .replace(/-+/g, '-');
   }
+
+// Function to find the image with filename starting with "1" or default to the first item
+function findImageWithFilenameStartingWith1(images) {
+    return images.find(image => {
+        const filename = image.URL.split('/').pop();
+        return filename.startsWith('1');
+    }) || images[0];
+}
