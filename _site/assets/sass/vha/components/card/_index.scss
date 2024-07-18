@@ -7,4 +7,10 @@
         font-family: "Myriad-Pro", helvetica, arial, sans-serif;
     }
 
+    &.newsletter-article__item {
+        .usa-card__img {
+            height: 220px;
+        }
+    }
+
 }

@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
 
+            console.log('JSON Data: ', data);
             let output = document.getElementById('template-output');
             let outputArchive = document.getElementById('newsletter-archive');
             const currentDate = new Date(); 
@@ -20,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     slug: slug,
                     // Handle escaped quotes and backslashes
                     Content: item.Content.replace(/\\\"/g, '"').replace(/\\\\/g, '\\'),
-                    'Article URL': item['Article URL'].includes('https://dvagov.sharepoint.com/sites/vhaoam/SitePages/') ? item['Article URL'] : `/news-and-events/article/index.html?article=${slug}`
+                    'Article URL': item['Article URL'].includes('https://dvagov.test.com/sites/vhaoam/SitePages/') ? item['Article URL'] : `/news-and-events/article/index.html?article=${slug}`
                 };
             });
               
@@ -57,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
               } 
               // Filter archive articles
               // TODO - article url needs conditional check
-              else if (articleFiscal === currentFiscal) {
+              else if (articleFiscal !== currentFiscal) {
                 article.setAttribute('data-jplist-item', '');
 
                 article.innerHTML += `

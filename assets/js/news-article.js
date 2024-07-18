@@ -8,27 +8,56 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(data => {
 
     // Generate slug for each article
+    // TODO - change to format after finding article
     const dataFormatted = data.map(item => ({
         ...item,
         slug: titleToSlug(item.Title),
-        Content: item.Content.replace(/\\\"/g, '"')
+        Content: item.Content.replace(/\\\"/g, '"'),
+        FiscalDate: getFiscalYearAndQuarter(item.Date)
     }));
 
     // Find article based on slug
     const article = dataFormatted.find(article => article.slug === slug); 
 
+    // Set breadcrumb with title
+    document.getElementById("article-breadcrumb").innerHTML = article.Title;
+
+    // Find featured image 
+    const featuredImage = findImageWithFilenameStartingWith1(article.Image);
+
+    // Split the content by <br><br> tags
+    let contentParts = article.Content.split('\u003Cbr\u003E\u003Cbr\u003E');
+    let imageIndex = 0;
+    let contentWithImages = '';
+
+    // Insert images at every other split point
+    for (let i = 0; i < contentParts.length; i++) {
+        contentWithImages += contentParts[i];
+        if (i % 2 === 1 && imageIndex < article.Image.length) {
+            contentWithImages += `<img src="${article.Image[imageIndex].URL}" alt="${article.Image[imageIndex].Alt}" class="inserted-image">`;
+            imageIndex++;
+        }
+        if (i < contentParts.length - 1) {
+            contentWithImages += '<br><br>';
+        }
+    }
+
+    // Append any remaining images at the end if not all images have been used
+    while (imageIndex < article.Image.length) {
+        contentWithImages += `<img src="${article.Image[imageIndex].URL}" alt="${article.Image[imageIndex].Alt}" class="inserted-image">`;
+        imageIndex++;
+    }
+
     if (article) {
 
-        // TODO - update with item date when the new JSON is ready
-        // TODO - update content when the new JSON is ready
         template += `
         <div class="grid-col-12 grid-offset-0 tablet-lg:grid-col-8 tablet-lg:grid-offset-2">
             <div class=" margin-top-6">
                 <h1 class="margin-0 gradient-text" id="article-title">${article['Title']}</h1>
-                <div class="text-bold text-primary" id="article-date">FY24 Q3</div>
+                <div class="text-bold text-primary" id="article-date">${article['FiscalDate']}</div>
             </div>
             <div class="article-body padding-top-5" id="article-content">
-            ${article['Content']}
+             ${contentWithImages}
             </div>
         </div>	 
       `;

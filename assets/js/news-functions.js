@@ -16,7 +16,7 @@ function getFiscalYearAndQuarter(dateString) {
         quarter = Math.ceil((month + 12 - fiscalYearStartMonth + 1) / 3);
     }
 
-    return `FY${fiscalYear.toString().slice(-2)}Q${quarter}`;
+    return `FY${fiscalYear.toString().slice(-2)} Q${quarter}`;
 }
 
 function titleToSlug(title) {
@@ -33,4 +33,13 @@ function findImageWithFilenameStartingWith1(images) {
         const filename = image.URL.split('/').pop();
         return filename.startsWith('1');
     }) || images[0];
+
+    // const index = images.findIndex(image => {
+    //     const filename = image.URL.split('/').pop();
+    //     return filename.startsWith('1');
+    // });
+    // if (index !== -1) {
+    //     return images.splice(index, 1)[0]; // Remove and return the image
+    // }
+    // return images.splice(0, 1)[0]; // Remove and return the first image if no match is found
 }
