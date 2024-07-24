@@ -8,9 +8,14 @@
     }
 
     &.newsletter-article__item {
-        .usa-card__img {
-            height: 220px;
+        .usa-card__img img {
+            max-height: 310px;
+            object-position: top;
+
+
+            @media ( min-width: 1200px ) {
+                max-height: 230px;
+            }
         }
     }
-
 }

@@ -27,19 +27,22 @@ function titleToSlug(title) {
       .replace(/-+/g, '-');
   }
 
-// Function to find the image with filename starting with "1" or default to the first item
 function findImageWithFilenameStartingWith1(images) {
     return images.find(image => {
         const filename = image.URL.split('/').pop();
         return filename.startsWith('1');
     }) || images[0];
+}
 
-    // const index = images.findIndex(image => {
-    //     const filename = image.URL.split('/').pop();
-    //     return filename.startsWith('1');
-    // });
-    // if (index !== -1) {
-    //     return images.splice(index, 1)[0]; // Remove and return the image
-    // }
-    // return images.splice(0, 1)[0]; // Remove and return the first image if no match is found
+function removeImagesStartingWithOne(array) {
+    const imageToRemove = array.find(image => {
+        const filename = image.URL.split('/').pop();
+        return filename.startsWith('1');
+    });
+
+    if (imageToRemove) {
+        return array.filter(image => image !== imageToRemove);
+    }
+
+    return array;
 }

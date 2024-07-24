@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 article.className = 'usa-card newsletter-article__item grid-col-12 tablet:grid-col-6 tablet-lg:grid-col-4 desktop:grid-col-4';
 
                 // Filter current articles
-                // TODO - article url needs conditional check
                 if (articleFiscal === currentFiscal) {
                     article.innerHTML += `
                       <div class="usa-card__container shadow-3">
@@ -57,7 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 output.append(article);
               } 
               // Filter archive articles
-              // TODO - article url needs conditional check
               else if (articleFiscal !== currentFiscal) {
                 article.setAttribute('data-jplist-item', '');
 
@@ -65,9 +63,9 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="usa-card__container shadow-3">
                         <div class="usa-card__media usa-card__media--exdent products-overview__item-header">
                             <div class="usa-card__img">
-                            <a href="${item['Article URL']}">
-                                <img loading="lazy" src="${item.Image[0].URL}" alt="${item.Image[0].Alt}" class="img-fluid" />
-                            </a>
+                                <a href="${item['Article URL']}">
+                                    <img loading="lazy" src="${item.Image[0].URL}" alt="${item.Image[0].Alt}" class="img-fluid" />
+                                </a>
                             </div>
                         </div>
                         <div class="usa-card__body products-overview__item-body padding-top-2">
