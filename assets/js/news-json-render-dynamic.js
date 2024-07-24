@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
 
-            console.log('JSON Data: ', data);
+            //console.log('JSON Data: ', data);
             let output = document.getElementById('template-output');
             let outputArchive = document.getElementById('newsletter-archive');
             const currentDate = new Date(); 
