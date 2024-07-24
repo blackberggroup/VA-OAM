@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     slug: slug,
                     // Handle escaped quotes and backslashes
                     Content: item.Content.replace(/\\\"/g, '"').replace(/\\\\/g, '\\'),
-                    'Article URL': item['Article URL'].includes('https://dvagov.test.com/sites/vhaoam/SitePages/') ? item['Article URL'] : `/news-and-events/article/index.html?article=${slug}`
+                    'Article URL': item['Article URL'].includes('https://dvagov.test.com/sites/vhaoam/SitePages/') ? item['Article URL'] : `article/index.html?article=${slug}`
                 };
             });
               
