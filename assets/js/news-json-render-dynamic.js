@@ -86,6 +86,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
             jplist.init();
         })
-        .catch(error => console.error('Error:', error));
+        .catch(error => {
+
+            document.getElementById('no-data').innerHTML = 'News not found';
+            document.getElementById("external-articles").style.display = "none";
+
+        });
 });
 

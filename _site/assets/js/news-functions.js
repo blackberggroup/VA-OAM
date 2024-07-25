@@ -46,7 +46,7 @@ function titleToSlug(title) {
 function findImageWithFilenameStartingWith1(images) {
     return images.find(image => {
         const filename = image.URL.split('/').pop();
-        return filename.startsWith('1');
+        return filename.startsWith('1') || filename.startsWith('01');
     }) || images[0];
 }
 
@@ -58,7 +58,7 @@ function findImageWithFilenameStartingWith1(images) {
 function removeImagesStartingWith1(array) {
     const imageToRemove = array.find(image => {
         const filename = image.URL.split('/').pop();
-        return filename.startsWith('1');
+        return /^0?1/.test(filename); // Check if the filename starts with '1' or '01'
     });
 
     if (imageToRemove) {

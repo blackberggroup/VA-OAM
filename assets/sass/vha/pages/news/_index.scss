@@ -49,6 +49,12 @@
             .grid-item:nth-child(even){
                 min-height: 175px;
             }
+
+            display: none;
+
+            @media ( min-width: 1200px ) {
+                display: block;
+            }
         }
 
 
