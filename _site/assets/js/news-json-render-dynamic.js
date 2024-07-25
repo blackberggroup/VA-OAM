@@ -80,6 +80,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
             });
 
+            if(outputArchive.innerHTML === "") {
+                document.getElementById("external-articles").style.display = "none";
+            }
+
             jplist.init();
         })
         .catch(error => console.error('Error:', error));

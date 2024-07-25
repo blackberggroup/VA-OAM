@@ -1,3 +1,8 @@
+/**
+ * Get the fiscal year and quarter from a given date string.
+ * @param {string} dateString - The date string to be processed.
+ * @returns {string} The fiscal year and quarter in the format 'FYXX QX'.
+ */
 function getFiscalYearAndQuarter(dateString) {
     // Fiscal year starts in October, adjust if different
     const date = new Date(dateString);
@@ -19,6 +24,11 @@ function getFiscalYearAndQuarter(dateString) {
     return `FY${fiscalYear.toString().slice(-2)} Q${quarter}`;
 }
 
+/**
+ * Convert a title to a slug.
+ * @param {string} title - The title to be converted.
+ * @returns {string} The slugified title.
+ */
 function titleToSlug(title) {
     return title
         .trim()
@@ -28,6 +38,11 @@ function titleToSlug(title) {
         .replace(/-+/g, '-');
   }
 
+/**
+ * Find an image with a filename starting with '1'.
+ * @param {Array} images - The array of image objects.
+ * @returns {Object} The found image object or the first image if none found.
+ */
 function findImageWithFilenameStartingWith1(images) {
     return images.find(image => {
         const filename = image.URL.split('/').pop();
@@ -35,6 +50,11 @@ function findImageWithFilenameStartingWith1(images) {
     }) || images[0];
 }
 
+/**
+ * Remove images with filenames starting with '1' from an array.
+ * @param {Array} array - The array of image objects.
+ * @returns {Array} The array with the specified images removed.
+ */
 function removeImagesStartingWithOne(array) {
     const imageToRemove = array.find(image => {
         const filename = image.URL.split('/').pop();
