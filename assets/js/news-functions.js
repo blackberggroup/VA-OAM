@@ -55,7 +55,7 @@ function findImageWithFilenameStartingWith1(images) {
  * @param {Array} array - The array of image objects.
  * @returns {Array} The array with the specified images removed.
  */
-function removeImagesStartingWithOne(array) {
+function removeImagesStartingWith1(array) {
     const imageToRemove = array.find(image => {
         const filename = image.URL.split('/').pop();
         return filename.startsWith('1');

@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let midpoint = Math.floor(contentParts.length / 2);
 
         // Combine content parts and insert images at the midpoint
-        const images = removeImagesStartingWithOne(article.Image);
+        const images = removeImagesStartingWith1(article.Image);
         let contentWithImages = '';
         for (let i = 0; i < contentParts.length; i++) {
             contentWithImages += contentParts[i];
