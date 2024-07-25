@@ -7,47 +7,58 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(response => response.json())
     .then(data => {
 
+    // Find article based on slug
+    const tempArticle = data.find(item => titleToSlug(item.Title) === slug);
+
+    // Format the data in the found article
+    const article = {
+        ...tempArticle,
+        slug: titleToSlug(tempArticle.Title),
+        Content: tempArticle.Content.replace(/\\\"/g, '"'),
+        FiscalDate: getFiscalYearAndQuarter(tempArticle.Date)
+    };
+
     // Generate slug for each article
     // TODO - change to format after finding article
-    const dataFormatted = data.map(item => ({
-        ...item,
-        slug: titleToSlug(item.Title),
-        Content: item.Content.replace(/\\\"/g, '"'),
-        FiscalDate: getFiscalYearAndQuarter(item.Date)
-    }));
+    // const dataFormatted = data.map(item => ({
+    //     ...item,
+    //     slug: titleToSlug(item.Title),
+    //     Content: item.Content.replace(/\\\"/g, '"'),
+    //     FiscalDate: getFiscalYearAndQuarter(item.Date)
+    // }));
 
     // Find article based on slug
-    const article = dataFormatted.find(article => article.slug === slug); 
-
-    // Set breadcrumb with title
-    document.getElementById("article-breadcrumb").innerHTML = article.Title;
-
-    // Split the content by <br><br> tags
-    let contentParts = article.Content.split('\u003Cbr\u003E\u003Cbr\u003E');
-    let midpoint = Math.floor(contentParts.length / 2);
-
-    // Combine content parts and insert images at the midpoint
-    const images = removeImagesStartingWithOne(article.Image);
-    let contentWithImages = '';
-    for (let i = 0; i < contentParts.length; i++) {
-        contentWithImages += contentParts[i];
-        if (i === midpoint) {
-            contentWithImages += '<div class="grid grid-image"><div class="grid-col grid-col--1"></div><div class="grid-col grid-col--2"></div><div class="grid-col grid-col--3"></div>';
-            images.forEach((image,index) => {
-                if (index % 3 === 0) {
-                    contentWithImages += `<div class="grid-item"><img src="${image.URL}" alt="${image.Alt}" class="inserted-image"></div>`;
-                } else {
-                    contentWithImages += `<div class="grid-item"><img src="${image.URL}" alt="${image.Alt}" class="inserted-image"></div>`;
-                }
-            });
-            contentWithImages += '</div>';
-        }
-        if (i < contentParts.length - 1) {
-            contentWithImages += '\u003Cbr\u003E\u003Cbr\u003E';
-        }
-    }
+    //const article = dataFormatted.find(article => article.slug === slug); 
 
     if (article) {
+
+        // Set breadcrumb with title
+        document.getElementById("article-breadcrumb").innerHTML = article.Title;
+
+        // Split the content by <br><br> tags
+        let contentParts = article.Content.split('\u003Cbr\u003E\u003Cbr\u003E');
+        let midpoint = Math.floor(contentParts.length / 2);
+
+        // Combine content parts and insert images at the midpoint
+        const images = removeImagesStartingWithOne(article.Image);
+        let contentWithImages = '';
+        for (let i = 0; i < contentParts.length; i++) {
+            contentWithImages += contentParts[i];
+            if (i === midpoint) {
+                contentWithImages += '<div class="grid grid-image"><div class="grid-col grid-col--1"></div><div class="grid-col grid-col--2"></div><div class="grid-col grid-col--3"></div>';
+                images.forEach((image,index) => {
+                    if (index % 3 === 0) {
+                        contentWithImages += `<div class="grid-item"><img src="${image.URL}" alt="${image.Alt}" class="inserted-image"></div>`;
+                    } else {
+                        contentWithImages += `<div class="grid-item"><img src="${image.URL}" alt="${image.Alt}" class="inserted-image"></div>`;
+                    }
+                });
+                contentWithImages += '</div>';
+            }
+            if (i < contentParts.length - 1) {
+                contentWithImages += '\u003Cbr\u003E\u003Cbr\u003E';
+            }
+        }
 
         template += `
             <div class="grid-col-12 grid-offset-0 tablet-lg:grid-col-8 tablet-lg:grid-offset-2">
