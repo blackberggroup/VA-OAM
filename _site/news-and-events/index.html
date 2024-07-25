@@ -22,7 +22,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="../assets/uswds/js/uswds-init.min.js"></script>
 </head>
-
 <body>
 
     <!-- SITE WRAPPER - START -->
@@ -227,100 +226,11 @@
                 <h2 class="text-primary margin-top-0">OAM Newsletter Articles</h2>
             </div>
         </div>
-        <div class="grid-row grid-gap">
-            <article class="usa-card newsletter-article__item grid-col-12 tablet:grid-col-6 tablet-lg:grid-col-4 desktop:grid-col-4">
-                <div class="usa-card__container shadow-3">
-                    <div class="usa-card__media usa-card__media--exdent products-overview__item-header">
-                        <div class="usa-card__img">
-                            <a href="fy24-q3/pre-procedural-medical-models/" class="display-block">
-                                <img data-src="../assets/img/news-and-events/newsletters/fy24-q3/pre-procedural-medical-models.jpg" alt="Revolutionizing Surgical Planning: A Dive into 3D Printing in Medicine" class="img-fluid lazy" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="usa-card__body products-overview__item-body padding-top-2">
-                        <h3 class="margin-0 line-height-sans-3">
-                            <a href="fy24-q3/pre-procedural-medical-models/" class="text-primary text-no-underline">
-                                Revolutionizing Surgical Planning: A Dive into 3D Printing in Medicine
-                            </a>
-                        </h3>
-                    </div>
-                </div>
-            </article>
-            <article class="usa-card newsletter-article__item grid-col-12 tablet:grid-col-6 tablet-lg:grid-col-4 desktop:grid-col-4">
-                <div class="usa-card__container shadow-3">
-                    <div class="usa-card__media usa-card__media--exdent products-overview__item-header">
-                        <div class="usa-card__img">
-                            <a href="fy24-q3/additive-manufacturing-dental-technician/">
-                                <img data-src="../assets/img/news-and-events/newsletters/fy24-q3/additive-manufacturing-dental-technician.jpg" alt="Position Spotlight: Additive Manufacturing Dental Technician" class="img-fluid lazy" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="usa-card__body products-overview__item-body padding-top-2">
-                        <h3 class="margin-0 line-height-sans-3">
-                            <a href="fy24-q3/additive-manufacturing-dental-technician/" class="text-primary text-no-underline">
-                                Position Spotlight: Additive Manufacturing Dental Technician
-                            </a>
-                        </h3>
-                    </div>
-                </div>
-            </article>            
-            <article class="usa-card newsletter-article__item grid-col-12 tablet:grid-col-6 tablet-lg:grid-col-4 desktop:grid-col-4">
-                <div class="usa-card__container shadow-3">
-                    <div class="usa-card__media usa-card__media--exdent products-overview__item-header">
-                        <div class="usa-card__img">
-                            <a href="fy24-q3/transforming-smiles-impact-of-innovative-denture-solutions-for-veterans/">
-                                <img data-src="../assets/img/news-and-events/newsletters/fy24-q3/transforming-smiles-impact-of-innovative-denture-solutions-for-veterans.jpg" alt="Transforming Smiles: The Impact of Innovative Denture Solutions for Veterans" class="img-fluid lazy" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="usa-card__body products-overview__item-body padding-top-2">
-                        <h3 class="margin-0 line-height-sans-3">
-                            <a href="fy24-q3/transforming-smiles-impact-of-innovative-denture-solutions-for-veterans/" class="text-primary text-no-underline">
-                                Transforming Smiles: The Impact of Innovative Denture Solutions for Veterans
-                            </a>
-                        </h3>
-                    </div>
-                </div>
-            </article>
-            <article class="usa-card newsletter-article__item grid-col-12 tablet:grid-col-6 tablet-lg:grid-col-4 desktop:grid-col-4">
-                <div class="usa-card__container shadow-3">
-                    <div class="usa-card__media usa-card__media--exdent products-overview__item-header">
-                        <div class="usa-card__img">
-                            <a href="fy24-q3/naloxone-trainer/">
-                                <img data-src="../assets/img/news-and-events/newsletters/fy24-q3/naloxone-trainer.jpg" alt="3D-printed Naloxone Trainer Unveiled: A Milestone in Opioid Overdose Response" class="img-fluid lazy" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="usa-card__body products-overview__item-body padding-top-2">
-                        <h3 class="margin-0 line-height-sans-3">
-                            <a href="fy24-q3/naloxone-trainer/" class="text-primary text-no-underline">
-                                3D-printed Naloxone Trainer Unveiled: A Milestone in Opioid Overdose Response
-                            </a>
-                        </h3>
-                    </div>
-                </div>
-            </article> 
-            <article class="usa-card newsletter-article__item grid-col-12 tablet:grid-col-6 tablet-lg:grid-col-4 desktop:grid-col-4">
-                <div class="usa-card__container shadow-3">
-                    <div class="usa-card__media usa-card__media--exdent products-overview__item-header">
-                        <div class="usa-card__img">
-                            <a href="fy24-q3/dean-qms/">
-                                <img data-src="../assets/img/news-and-events/newsletters/fy24-q3/dean-qms.jpg" alt="How OAM Ensures Safe and Quality Products for Veterans" class="img-fluid lazy" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="usa-card__body products-overview__item-body padding-top-2">
-                        <h3 class="margin-0 line-height-sans-3">
-                            <a href="fy24-q3/dean-qms.html/" class="text-primary text-no-underline">
-                                How OAM Ensures Safe and Quality Products for Veterans
-                            </a>
-                        </h3>
-                    </div>
-                </div>
-            </article>                        
-        </div>
+        <!-- Article Template from json file -->
+        <div class="grid-row grid-gap" id="template-output"></div>
     </div>
 </section>
+<!-- END Product Template from json file -->
             <section id="external-articles" class="external-articles padding-y-5 tablet-lg:padding-y-8 bg-primary-lighter bg-pattern-light">
         <div class="grid-container">
           <div class="grid-row">
@@ -382,7 +292,7 @@
             </div>
 
 
-            <div class="grid-row grid-gap oam-news__item-container" data-jplist-group="data-group-1"></div>
+            <div class="grid-row grid-gap oam-news__item-container" data-jplist-group="data-group-1" id="newsletter-archive"></div>
 
             <!-- pagination control -->
             <div
@@ -701,10 +611,10 @@
     <script src="../assets/js/vendors/lazy/jquery.lazy.min.js"></script>
     <script src="../assets/js/vendors/parallax-scroll/parallax-scroll.js"></script>
     <script src="../assets/js/functions.js"></script>
-    <script src="../assets/js/news-json-render.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mustache@4.2.0/mustache.min.js"></script>
+    <script src="../assets/js/news-functions.js"></script>
+    <script src="../assets/js/news-json-render-dynamic.js"></script>
     <script src="../assets/js/jplist.min.js"></script>
-    <script>jplist.init();</script>
-
 </body>
 
 </html>
