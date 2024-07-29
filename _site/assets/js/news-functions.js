@@ -67,3 +67,42 @@ function removeImagesStartingWith1(array) {
 
     return array;
 }
+
+/**
+ * Processes the content to find external links and update the Article URL accordingly.
+ * Added after migrated article links were added to Content field 
+ * 
+ * @param {Object} item - The item containing the content and Article URL.
+ * @returns {string} The updated Article URL if an external link is found, otherwise the original Article URL.
+ */
+function getArticleLink(item) {
+    const internalDomain = 'https://dvagov.sharepoint.com/sites/vhaoam/SitePages/';
+    const htmlLinkRegex = /<a href=\\"(https:\/\/[^\\]+)\\"[^>]*>([^<]+)<\/a>/g;
+    const plainUrlRegex = /(https:\/\/[^\s\\]+)/g;
+    const content = item['Content'];
+    let match;
+
+    // Check for HTML links first
+    while ((match = htmlLinkRegex.exec(content)) !== null) {
+      const url = match[1];
+      if (!url.includes(internalDomain)) {
+        // External link found, update Article_URL
+        item['Article URL'] = url;
+        return item['Article URL'];
+      }
+    }
+
+    // If no HTML links are found, check for plain URLs
+    match = plainUrlRegex.exec(content);
+    if (match !== null) {
+      const url = match[1];
+      if (!url.includes(internalDomain)) {
+        // External link found, update Article_URL
+        item['Article URL'] = url;
+        return item['Article URL'];
+      }
+    }
+
+    // If no external links are found, return the existing Article_URL
+    return item['Article URL'];
+  }
