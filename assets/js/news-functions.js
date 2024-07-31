@@ -69,40 +69,53 @@ function removeImagesStartingWith1(array) {
 }
 
 /**
- * Processes the content to find external links and update the Article URL accordingly.
- * Added after migrated article links were added to Content field 
  * 
- * @param {Object} item - The item containing the content and Article URL.
+ * @param {Object} item - The item containing the Article URL.
  * @returns {string} The updated Article URL if an external link is found, otherwise the original Article URL.
  */
 function getArticleLink(item) {
     const internalDomain = 'https://dvagov.sharepoint.com/sites/vhaoam/SitePages/';
-    const htmlLinkRegex = /<a href=\\"(https:\/\/[^\\]+)\\"[^>]*>([^<]+)<\/a>/g;
-    const plainUrlRegex = /(https:\/\/[^\s\\]+)/g;
-    const content = item['Content'];
-    let match;
+    const articleUrl = item['Article URL'];
+    const title = item['Title'];
+    const slug = titleToSlug(title);
 
-    // Check for HTML links first
-    while ((match = htmlLinkRegex.exec(content)) !== null) {
-      const url = match[1];
-      if (!url.includes(internalDomain)) {
-        // External link found, update Article_URL
-        item['Article URL'] = url;
-        return item['Article URL'];
-      }
+    // Check if the Article URL is an internal link
+    if (articleUrl.includes(internalDomain)) {
+        return "article/index.html?article=" + slug;
+    } 
+
+    // Check if the Article URL is empty
+    else if (articleUrl === "") {
+        return "article/index.html?article=" + slug;
+    } 
+    
+    else {
+        return articleUrl;
     }
+}
 
-    // If no HTML links are found, check for plain URLs
-    match = plainUrlRegex.exec(content);
-    if (match !== null) {
-      const url = match[1];
-      if (!url.includes(internalDomain)) {
-        // External link found, update Article_URL
-        item['Article URL'] = url;
-        return item['Article URL'];
-      }
-    }
+/**
+ * Normalize  data.
+ * @param {Array} array - The array of article objects.
+ * @returns {Array} The array with normalized data.
+ */
+function normalizeData(data) {
+    return data.map(item => {
+        // Generate slug from title
+        const slug = titleToSlug(item.Title);
 
-    // If no external links are found, return the existing Article_URL
-    return item['Article URL'];
-  }
+        // Get and process the article link
+        let link = getArticleLink(item);
+
+        // Determine if the link is internal or external
+        const isInternalLink = link.includes('article/index.html?article');
+        const externalLink = link && !isInternalLink;
+
+        return {
+            ...item,
+            slug,
+            'Article URL': link,
+            'External': externalLink
+        };
+    });
+}

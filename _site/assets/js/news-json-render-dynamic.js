@@ -9,28 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let outputArchive = document.getElementById('newsletter-archive');
             const currentDate = new Date(); 
             const currentFiscal = getFiscalYearAndQuarter(currentDate);
-
-            // Format returned data 
-            // Slug: generate slug from Title for dynamic routing
-            // Content: remove \\ from escaped characters
-            // Article URL: build out URL if internal - need multiple checks for external links as they got added to the Content field instead of [Article URL]
-            const dataFormatted = data.map(item => {
-                const slug = titleToSlug(item.Title);
-                let link = getArticleLink(item);
-                const isInternalLink = link.includes('https://dvagov.sharepoint.com/sites/vhaoam/SitePages');
-                const externalLink = link && !isInternalLink;
-
-                link = link ? (isInternalLink ? `article/index.html?article=${slug}` : link) : `article/index.html?article=${slug}`;
-
-                return {
-                    ...item,
-                    slug,
-                    // Handle escaped quotes and backslashes
-                    Content: item.Content.replace(/\\\"/g, '"').replace(/\\\\/g, '\\'),
-                    'Article URL': link,
-                    'External': externalLink
-                };
-            });
+            const dataFormatted = normalizeData(data);
               
             dataFormatted.forEach(item => {
 

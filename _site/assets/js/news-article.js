@@ -18,9 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
         FiscalDate: getFiscalYearAndQuarter(tempArticle.Date)
     };
 
-    // Find article based on slug
-    //const article = dataFormatted.find(article => article.slug === slug); 
-
     if (article) {
 
         // Set breadcrumb with title
@@ -58,7 +55,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     contentWithImages += '\u003Cbr\u003E\u003Cbr\u003E';
                 }
             }
-        
 
         template += `
             <div class="grid-col-12 grid-offset-0 tablet-lg:grid-col-8 tablet-lg:grid-offset-2">
