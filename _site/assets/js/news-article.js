@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             for (let i = 0; i < contentParts.length; i++) {
 
-                contentWithImages += contentParts[i];
+                contentWithImages += "<p>" + contentParts[i] + "</p>";
 
                 if(images.length > 1){
                     if (i === midpoint) {
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
                 if (i < contentParts.length - 1) {
-                    contentWithImages += '\u003Cbr\u003E\u003Cbr\u003E';
+                    contentWithImages += '';
                 }
             }
 
