@@ -18,9 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
         FiscalDate: getFiscalYearAndQuarter(tempArticle.Date)
     };
 
-    // Find article based on slug
-    //const article = dataFormatted.find(article => article.slug === slug); 
-
     if (article) {
 
         // Set breadcrumb with title
@@ -39,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             for (let i = 0; i < contentParts.length; i++) {
 
-                contentWithImages += contentParts[i];
+                contentWithImages += "<p>" + contentParts[i] + "</p>";
 
                 if(images.length > 1){
                     if (i === midpoint) {
@@ -55,10 +52,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
                 }
                 if (i < contentParts.length - 1) {
-                    contentWithImages += '\u003Cbr\u003E\u003Cbr\u003E';
+                    contentWithImages += '';
                 }
             }
-        
 
         template += `
             <div class="grid-col-12 grid-offset-0 tablet-lg:grid-col-8 tablet-lg:grid-offset-2">

@@ -9,21 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let outputArchive = document.getElementById('newsletter-archive');
             const currentDate = new Date(); 
             const currentFiscal = getFiscalYearAndQuarter(currentDate);
-
-            // Format returned data 
-            // Slug: generate slug from Title for dynamic routing
-            // Content: remove \\ from escaped characters
-            // Article URL: build out URL if internal
-            const dataFormatted = data.map(item => {
-                const slug = titleToSlug(item.Title);
-                return {
-                    ...item,
-                    slug: slug,
-                    // Handle escaped quotes and backslashes
-                    Content: item.Content.replace(/\\\"/g, '"').replace(/\\\\/g, '\\'),
-                    'Article URL': item['Article URL'].includes('https://dvagov.test.com/sites/vhaoam/SitePages/') ? item['Article URL'] : `article/index.html?article=${slug}`
-                };
-            });
+            const dataFormatted = normalizeData(data);
               
             dataFormatted.forEach(item => {
 
@@ -31,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const articleFiscal = getFiscalYearAndQuarter(item.Date);
                 const featuredImage = findImageWithFilenameStartingWith1(item.Image);
                 const article = document.createElement('article');
+                const targetAttribute = item['External'] ? ' target="_blank"' : '';
                 article.className = 'usa-card newsletter-article__item grid-col-12 tablet:grid-col-6 tablet-lg:grid-col-4 desktop:grid-col-4';
 
                 // Filter current articles
@@ -39,14 +26,14 @@ document.addEventListener('DOMContentLoaded', function () {
                       <div class="usa-card__container shadow-3">
                           <div class="usa-card__media usa-card__media--exdent products-overview__item-header">
                               <div class="usa-card__img">
-                                  <a href="${item['Article URL']}" class="display-block">
+                                  <a href="${item['Article URL']}" class="display-block" ${targetAttribute}>
                                       <img loading="lazy" src="${featuredImage.URL}" alt="${featuredImage.Alt}" class="img-fluid lazy" />
                                   </a>
                               </div>
                           </div>
                           <div class="usa-card__body products-overview__item-body padding-top-2">
                               <h3 class="margin-0 line-height-sans-3">
-                                  <a href="${item['Article URL']}" class="text-primary text-no-underline">
+                                  <a href="${item['Article URL']}" ${targetAttribute} class="text-primary text-no-underline">
                                       ${item.Title}
                                   </a>
                               </h3>
@@ -63,13 +50,13 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="usa-card__container shadow-3">
                         <div class="usa-card__media usa-card__media--exdent products-overview__item-header">
                             <div class="usa-card__img">
-                                <a href="${item['Article URL']}">
+                                <a href="${item['Article URL']}" ${targetAttribute}>
                                     <img loading="lazy" src="${item.Image[0].URL}" alt="${item.Image[0].Alt}" class="img-fluid" />
                                 </a>
                             </div>
                         </div>
                         <div class="usa-card__body products-overview__item-body padding-top-2">
-                            <h3 class="margin-0 line-height-sans-3"><a href="${item['Article URL']}" class="text-primary text-no-underline">${item.Title}</a></h3>
+                            <h3 class="margin-0 line-height-sans-3"><a href="${item['Article URL']}" ${targetAttribute} class="text-primary text-no-underline">${item.Title}</a></h3>
                             <span class="date">${item.Date}</span>
                         </div>
                     </div>

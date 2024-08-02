@@ -67,3 +67,55 @@ function removeImagesStartingWith1(array) {
 
     return array;
 }
+
+/**
+ * 
+ * @param {Object} item - The item containing the Article URL.
+ * @returns {string} The updated Article URL if an external link is found, otherwise the original Article URL.
+ */
+function getArticleLink(item) {
+    const internalDomain = 'https://dvagov.sharepoint.com/sites/vhaoam/SitePages/';
+    const articleUrl = item['Article URL'];
+    const title = item['Title'];
+    const slug = titleToSlug(title);
+
+    // Check if the Article URL is an internal link
+    if (articleUrl.includes(internalDomain)) {
+        return "article/index.html?article=" + slug;
+    } 
+
+    // Check if the Article URL is empty
+    else if (articleUrl === "") {
+        return "article/index.html?article=" + slug;
+    } 
+    
+    else {
+        return articleUrl;
+    }
+}
+
+/**
+ * Normalize  data.
+ * @param {Array} array - The array of article objects.
+ * @returns {Array} The array with normalized data.
+ */
+function normalizeData(data) {
+    return data.map(item => {
+        // Generate slug from title
+        const slug = titleToSlug(item.Title);
+
+        // Get and process the article link
+        let link = getArticleLink(item);
+
+        // Determine if the link is internal or external
+        const isInternalLink = link.includes('article/index.html?article');
+        const externalLink = link && !isInternalLink;
+
+        return {
+            ...item,
+            slug,
+            'Article URL': link,
+            'External': externalLink
+        };
+    });
+}
