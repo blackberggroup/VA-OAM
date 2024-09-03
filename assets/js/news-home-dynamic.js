@@ -7,13 +7,13 @@ document.addEventListener('DOMContentLoaded', function () {
             //console.log('JSON Data: ', data);
             let output = document.getElementById('news-home-row');
             const currentDate = new Date(); 
-            const currentFiscal = getFiscalYearAndQuarter(currentDate);
+            const currentFiscal = getFiscalFullYearAndQuarter(currentDate);
             const dataFormatted = normalizeData(data);
               
             dataFormatted.forEach(item => {
 
                 // Get fiscal year and quarter from date
-                const articleFiscal = getFiscalYearAndQuarter(item.Date);
+                const articleFiscal = getFiscalFullYearAndQuarter(item.Date);
                 const article = document.createElement('div');
                 const targetAttribute = item['External'] ? ' target="_blank"' : '';
                 article.className = 'grid-col-12 tablet-lg:grid-col-6 news-and-events__item-column margin-bottom-4';
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 </a>
                             </h3>
                           <p class="news-and-events__item-description">
-                            ${item['Brief Description'] || (item.Content ? (item.Content.length > 180 ? item.Content.substr(0, 180) + "..." : item.Content) : "No summary available.")}
+                          ${item['Brief Description'] || (item.Content ? item.Content.split(/(?<=\.)\s/)[0] : "No summary available.")}
                           </p>
                       </div>
                 `;
