@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 </a>
                             </h3>
                           <p class="news-and-events__item-description">
-                            ${item['Brief Description'] || item.Content.substr(0,180) + "..." || "No summary available."}
+                            ${item['Brief Description'] || (item.Content ? (item.Content.length > 180 ? item.Content.substr(0, 180) + "..." : item.Content) : "No summary available.")}
                           </p>
                       </div>
                 `;
