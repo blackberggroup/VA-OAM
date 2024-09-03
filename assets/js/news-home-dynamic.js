@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
                       <div class="news-and-events__item">
                          <span class="news-and-events__item-date">${articleFiscal}</span><br />
                             <h3 class="news-and-events__item-title margin-top-1 text-primary">
-                                <a href="/news-and-events/${item['Article URL']}" class="link text-primary news-and-events__item-link" ${targetAttribute}>
+                                <a href="news-and-events/${item['Article URL']}" class="link text-primary news-and-events__item-link" ${targetAttribute}>
                                     ${item.Title}
                                 </a>
                             </h3>
