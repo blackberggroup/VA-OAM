@@ -71,6 +71,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById("external-articles").style.display = "none";
             }
 
+            if(output.innerHTML === "") {
+                document.getElementById("newsletter-article-current").style.display = "none";
+            }
+
             jplist.init();
         })
         .catch(error => {
