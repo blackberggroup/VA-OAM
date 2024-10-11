@@ -145,3 +145,35 @@ function normalizeData(data) {
         };
     });
 }
+
+/**
+ * Get the previous fiscal year and quarter from a given date string.
+ * @param {string} dateString - The date string to be processed.
+ * @returns {string} The previous fiscal year and quarter in the format 'FYXX QX'.
+ */
+function getPreviousFiscalQuarter(dateString) {
+    const date = new Date(dateString);
+    const fiscalYearStartMonth = 10;
+    const month = date.getMonth() + 1; 
+    const year = date.getFullYear();
+
+    let fiscalYear;
+    let quarter;
+
+    if (month >= fiscalYearStartMonth) {
+        fiscalYear = year + 1;
+        quarter = Math.ceil((month - fiscalYearStartMonth + 1) / 3);
+    } else {
+        fiscalYear = year;
+        quarter = Math.ceil((month + 12 - fiscalYearStartMonth + 1) / 3);
+    }
+
+    if (quarter === 1) {
+        fiscalYear -= 1;
+        quarter = 4;
+    } else {
+        quarter -= 1; 
+    }
+
+    return `FY${fiscalYear.toString()} Q${quarter}`;
+}
