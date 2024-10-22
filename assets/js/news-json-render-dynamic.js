@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let output = document.getElementById('template-output');
             let outputArchive = document.getElementById('newsletter-archive');
             const currentDate = new Date();
-            const currentFiscal = getFiscalYearAndQuarter(currentDate);
+            const currentFiscal = getFiscalFullYearAndQuarter(currentDate);
             const lastFiscal = getPreviousFiscalQuarter(currentDate);
             let dataFormatted = normalizeData(data);
 
@@ -26,10 +26,18 @@ document.addEventListener('DOMContentLoaded', function () {
             const isLastQuarter = currentArticles.length === 0; // Flag to hide dates if showing last quarter
 
             // Remove articles that are displayed as current (or last quarter) from the archive
-            dataFormatted = dataFormatted.filter(item => {
-                const articleFiscal = getFiscalFullYearAndQuarter(item.Date);
-                return !(articleFiscal === currentFiscal || articleFiscal === lastFiscal);
-            });
+            if (currentArticles.length < 0) {
+                dataFormatted = dataFormatted.filter(item => {
+                    const articleFiscal = getFiscalFullYearAndQuarter(item.Date);
+                    return !(articleFiscal === currentFiscal || articleFiscal === lastFiscal);
+                });
+            } else {
+            // Remove current quarter's articles from the archive if showing last quarter articles
+                dataFormatted = dataFormatted.filter(item => {
+                    const articleFiscal = getFiscalFullYearAndQuarter(item.Date);
+                    return articleFiscal !== currentFiscal;
+                });
+            }
 
             // Display current (or last quarter) articles
             articlesToShow.forEach(item => {

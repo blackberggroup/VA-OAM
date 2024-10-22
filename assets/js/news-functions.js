@@ -172,8 +172,8 @@ function getPreviousFiscalQuarter(dateString) {
         fiscalYear -= 1;
         quarter = 4;
     } else {
-        quarter -= 1; 
+        quarter -= 1;
     }
 
-    return `FY${fiscalYear.toString()} Q${quarter}`;
+    return `FY${fiscalYear} Q${quarter}`;
 }
