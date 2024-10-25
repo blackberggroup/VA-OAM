@@ -50,3 +50,5 @@ i.e.
    --font-serif: #{family("serif")};
    --font-mono: #{family("mono")};  
 }
+
+.text-oam-blue--light { color: #{color("blue-warm-20")} };
