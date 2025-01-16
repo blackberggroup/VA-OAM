@@ -64,3 +64,36 @@
     height: 100%;
   }
 }
+
+
+
+
+.bg-pattern-light.yt-vid-links {
+  height: 340px;
+}
+
+@media screen and (max-width: 1300px) {
+  .bg-pattern-light.yt-vid-links {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .bg-pattern-light.yt-vid-links {
+    height: 280px;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .bg-pattern-light.yt-vid-links {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .bg-pattern-light.yt-vid-links {
+    height: inherit;
+    margin-bottom: 30px;
+  }
+}
